@@ -42,9 +42,10 @@ jobs:
           privateKey: ${{ secrets.DOC_SSH_KEY }}
 
       - name: SSH Remote Commands
-        uses: appleboy/ssh-action@v0.1.4
+        uses: garygrossgarten/github-action-ssh@release
         with:
           host: ${{ secrets.DOC_SSH_HOST }}
-          username: ${{ secrets.DOC_SSH_USERNAME }}
           port: ${{ secrets.DOC_SSH_PORT }}
-          script: ${{ secrets.DOC_SSH_SCRIPT }}
+          username: ${{ secrets.DOC_SSH_USERNAME }}
+          privateKey: ${{ secrets.DOC_SSH_KEY }}
+          command: ${{ secrets.DOC_SSH_SCRIPT }}

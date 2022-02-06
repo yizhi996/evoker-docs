@@ -39,6 +39,7 @@ jobs:
           key: ${{ secrets.DOC_SSH_KEY }}
           source: "./.vitepress/dist/"
           target: "./service/html"
+          overwrite: true
 
       - name: SSH Remote Commands
         uses: garygrossgarten/github-action-ssh@release

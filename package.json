@@ -1,0 +1,25 @@
+{
+  "name": "@lilith/document",
+  "version": "1.0.0",
+  "description": "Lilith documents.",
+  "scripts": {
+    "dev": "vitepress",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "dependencies": {
+    "vue": "^3.2.29",
+    "vitepress": "^0.21.6"
+  },
+  "devDependencies": {},
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "react",
+        "react-dom",
+        "@types/react"
+      ]
+    }
+  }
+}

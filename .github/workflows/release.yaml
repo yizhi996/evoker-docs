@@ -38,7 +38,7 @@ jobs:
           password: ''
           username: ${{ secrets.DOC_SSH_USERNAME }}
           localPath: './.vitepress/dist'
-          remotePath: '~/service/html'
+          remotePath: './service/html'
           privateKey: ${{ secrets.DOC_SSH_KEY }}
 
       - name: SSH Remote Commands

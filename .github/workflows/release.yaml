@@ -30,16 +30,15 @@ jobs:
 
       - run: pnpm build
 
-      - name: SFTP SSH Action
-        uses: Creepios/sftp-action@v1.0.3
+      - name: SCP Command to Transfer Files
+        uses: appleboy/scp-action@v0.1.2
         with:
           host: ${{ secrets.DOC_SSH_HOST }}
           port: ${{ secrets.DOC_SSH_PORT }}
-          password: ''
           username: ${{ secrets.DOC_SSH_USERNAME }}
-          localPath: './.vitepress/dist'
-          remotePath: './service/html'
-          privateKey: ${{ secrets.DOC_SSH_KEY }}
+          key: ${{ secrets.DOC_SSH_KEY }}
+          source: "./.vitepress/dist/"
+          target: "./service/html"
 
       - name: SSH Remote Commands
         uses: garygrossgarten/github-action-ssh@release

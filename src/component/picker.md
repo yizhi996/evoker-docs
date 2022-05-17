@@ -224,8 +224,8 @@ const dateEvents = [
 
 ```vue
 <template>
-  <picker class="w-full h-10" :range="fruit.range" :value="fruit.value" @change="onChange">
-    <div class="px-2.5">Selected: {{ fruit.range[fruit.value] }}</div>
+  <picker :range="fruit.range" :value="fruit.value" @change="onChange">
+    <span>Selected: {{ fruit.range[fruit.value] }}</span>
   </picker>
 </template>
 
@@ -261,16 +261,8 @@ const onChange = ev => {
 
 ```vue
 <template>
-  <picker
-    class="w-full h-10"
-    mode="multiSelector"
-    :range="weeks.range"
-    :value="weeks.value"
-    @change="onChange"
-  >
-    <div class="px-2.5">
-      Selected: {{ weeks.range[0][weeks.value[0]] }} {{ weeks.range[1][weeks.value[1]] }}
-    </div>
+  <picker mode="multiSelector" :range="weeks.range" :value="weeks.value" @change="onChange">
+    <span>Selected: {{ weeks.range[0][weeks.value[0]] }} {{ weeks.range[1][weeks.value[1]] }}</span>
   </picker>
 </template>
 
@@ -293,17 +285,16 @@ const onChange = ev => {
 ```vue
 <template>
   <picker
-    class="w-full h-10"
     mode="multiSelector"
     :range="cities.range"
     :value="cities.value"
     @change="onChange"
     @columnchange="onColumnChange"
   >
-    <div class="px-2.5">
+    <span>
       Selected: {{ cities.range[0][cities.value[0]] }} {{ cities.range[1][cities.value[1]] }}
       {{ cities.range[2][cities.value[2]] }}
-    </div>
+    </span>
   </picker>
 </template>
 
@@ -368,8 +359,8 @@ const onColumnChange = ev => {
 
 ```vue
 <template>
-  <picker class="w-full h-10" :value="timeValue" mode="time" @change="onChange">
-    <div class="px-2.5">Selected: {{ timeValue }}</div>
+  <picker :value="timeValue" mode="time" @change="onChange">
+    <span>Selected: {{ timeValue }}</span>
   </picker>
 </template>
 
@@ -400,8 +391,8 @@ const onChange = ev => {
 
 ```vue
 <template>
-  <picker class="w-full h-10" :value="dateValue" mode="date" @change="onChange">
-    <div class="px-2.5">Selected: {{ dateValue }}</div>
+  <picker :value="dateValue" mode="date" @change="onChange">
+    <span>Selected: {{ dateValue }}</span>
   </picker>
 </template>
 

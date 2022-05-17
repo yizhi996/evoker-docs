@@ -2,8 +2,8 @@
 
 ## Project
 
-[NZoth]("https://github.com/yizhi996/nzoth")
+[NZoth](https://github.com/yizhi996/nzoth)
 
 ## Document
 
-[Document]("https://nzothdev.com")
+[Document](https://nzothdev.com)

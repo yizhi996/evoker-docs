@@ -10,19 +10,18 @@
 </template>
 
 <script setup lang="ts">
-import LLTable from "./Table.vue"
+import LLTable from './Table.vue'
 
-const headers = ["事件名", "说明", "回调参数", "最低版本"]
+const headers = ['事件名', '说明', '回调参数', '最低版本']
 
 interface DataItem {
   name: string
-  desc: string,
-  event: string,
+  desc: string
+  event: string
   version: string
 }
 
 const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
   data: () => []
 })
-
 </script>

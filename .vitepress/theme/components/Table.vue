@@ -11,7 +11,6 @@
 const props = withDefaults(defineProps<{ headers: string[] }>(), {
   headers: () => []
 })
-
 </script>
 
 <style>

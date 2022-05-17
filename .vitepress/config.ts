@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/',
   title: 'NZoth',
   lang: 'zh-Hans',
-  description: '一款基于 Vue3 & Vite 的小程序容器，小程序引擎',
+  description: '一个基于 Vue3 的小程序容器，小程序引擎',
 
   themeConfig: {
     repo: 'yizhi996/nzoth',
@@ -76,7 +76,8 @@ export default defineConfig({
             { text: 'checkbox', link: '/component/checkbox' },
             { text: 'checkbox-group', link: '/component/checkbox-group' },
             { text: 'input', link: '/component/input' },
-            { text: 'textarea', link: '/component/textarea' }
+            { text: 'textarea', link: '/component/textarea' },
+            { text: 'picker', link: '/component/picker' }
           ]
         },
         {

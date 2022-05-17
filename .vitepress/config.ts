@@ -77,7 +77,9 @@ export default defineConfig({
             { text: 'checkbox-group', link: '/component/checkbox-group' },
             { text: 'input', link: '/component/input' },
             { text: 'textarea', link: '/component/textarea' },
-            { text: 'picker', link: '/component/picker' }
+            { text: 'picker', link: '/component/picker' },
+            { text: 'picker-view', link: '/component/picker-view' },
+            { text: 'picker-view-column', link: '/component/picker-view-column' }
           ]
         },
         {

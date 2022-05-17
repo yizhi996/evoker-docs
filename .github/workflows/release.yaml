@@ -1,14 +1,14 @@
-name: release
+name: deploy
 
 on:
   push:
     branches:
-      - '**'
+      - 'main'
 
   pull_request:
     branches:
-      - '**'
-
+      - 'main'
+ 
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -29,23 +29,11 @@ jobs:
       - run: pnpm install
 
       - run: pnpm build
-
-      - name: SCP Command to Transfer Files
-        uses: appleboy/scp-action@v0.1.2
+      
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          host: ${{ secrets.DOC_SSH_HOST }}
-          port: ${{ secrets.DOC_SSH_PORT }}
-          username: ${{ secrets.DOC_SSH_USERNAME }}
-          key: ${{ secrets.DOC_SSH_KEY }}
-          source: "./.vitepress/dist/"
-          target: "./service/html"
-          overwrite: true
-
-      - name: SSH Remote Commands
-        uses: garygrossgarten/github-action-ssh@release
-        with:
-          host: ${{ secrets.DOC_SSH_HOST }}
-          port: ${{ secrets.DOC_SSH_PORT }}
-          username: ${{ secrets.DOC_SSH_USERNAME }}
-          privateKey: ${{ secrets.DOC_SSH_KEY }}
-          command: ${{ secrets.DOC_SSH_SCRIPT }}
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./.vitepress/dist/
+          cname: nzothvue.com
+          force_orphan: true

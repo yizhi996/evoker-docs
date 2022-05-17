@@ -75,11 +75,13 @@ export default defineConfig({
             { text: 'button', link: '/component/button' },
             { text: 'checkbox', link: '/component/checkbox' },
             { text: 'checkbox-group', link: '/component/checkbox-group' },
+            { text: 'radio', link: '/component/radio' },
+            { text: 'radio-group', link: '/component/radio-group' },
             { text: 'input', link: '/component/input' },
             { text: 'textarea', link: '/component/textarea' },
             { text: 'picker', link: '/component/picker' },
             { text: 'picker-view', link: '/component/picker-view' },
-            { text: 'picker-view-column', link: '/component/picker-view-column' }
+            { text: 'picker-view-column', link: '/component/picker-view-column' },
           ]
         },
         {

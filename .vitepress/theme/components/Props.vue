@@ -2,23 +2,31 @@
   <LLTable :headers="headers">
     <template v-for="item of data" :key="item.name">
       <tr>
-        <td style="width: 100px;">{{ item.name }}</td>
+        <td>{{ item.name }}</td>
         <td>{{ item.type }}</td>
         <td>{{ item.default }}</td>
         <td>{{ item.required ? '是' : '否' }}</td>
-        <td style="width: auto;">{{ item.desc }}</td>
+        <td v-html="item.desc"></td>
         <td>{{ item.version }}</td>
       </tr>
-      <table v-if="item.types" class="ll-table__types">
-        <tr>
-          <th class="ll-table__types__header">合法值</th>
-          <th class="ll-table__types__header">说明</th>
-        </tr>
-        <tr v-for="t of item.types" :key="t.type" class="ll-table__type">
-          <td style="width:100px;">{{ t.type }}</td>
-          <td>{{ t.desc }}</td>
-        </tr>
-      </table>
+      <tr v-if="item.types">
+        <td colspan="6">
+          <table class="ll-table__types">
+            <thead>
+              <tr>
+                <th>合法值</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="t of item.types" :key="t.type">
+                <td>{{ t.type }}</td>
+                <td v-html="t.desc"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
     </template>
   </LLTable>
 </template>
@@ -55,14 +63,8 @@ const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
   background-color: #f0f0f0;
 }
 
-.ll-table__type td {
-  width: auto;
+.ll-table__types td {
   border-top: solid 1px #e6e6e6;
   background-color: #f0f0f0;
-}
-
-.ll-table__types__header {
-  font-size: 14px;
-  text-align: left;
 }
 </style>

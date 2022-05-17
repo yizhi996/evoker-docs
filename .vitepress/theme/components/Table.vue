@@ -1,9 +1,13 @@
 <template>
   <table class="ll-table">
-    <tr class="ll-table-headers">
-      <th v-for="header of headers" :key="header">{{ header }}</th>
-    </tr>
-    <slot></slot>
+    <thead>
+      <tr class="ll-table-headers">
+        <th v-for="header of headers" :key="header">{{ header }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <slot></slot>
+    </tbody>
   </table>
 </template>
 
@@ -27,10 +31,24 @@ tr,
 td {
   border: none;
   background-color: #fafafa;
+  padding: 10px 20px;
+}
+
+.ll-table th {
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.ll-table th:first-child {
+  padding-left: 5px;
+}
+
+.ll-table th:last-child {
+  padding-right: 5px;
 }
 
 .ll-table td {
-  width: 80px;
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -38,8 +56,11 @@ td {
   text-align: left;
 }
 
-.ll-table-headers {
-  font-weight: 600;
-  text-align: left;
+.ll-table td:first-child {
+  padding-left: 5px;
+}
+
+.ll-table td:last-child {
+  padding-right: 5px;
 }
 </style>

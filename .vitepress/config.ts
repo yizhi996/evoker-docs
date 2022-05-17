@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   srcDir: 'src',
-
+  base: '/',
   title: 'NZoth',
   lang: 'zh-Hans',
   description: '一款基于 Vue3 & Vite 的小程序容器，小程序引擎',

@@ -19,22 +19,24 @@ const props = withDefaults(defineProps<{ headers: string[] }>(), {
   font-size: 14px;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  background-color: rgb(248 250 252);
+  border: 1px solid #f1f4f8;
+  background-color: #fafafa;
 }
 
 .ll-table th,
-tr {
+tr,
+td {
   border: none;
+  background-color: #fafafa;
 }
 
 .ll-table td {
-  background-color: #fff;
+  width: 80px;
   border-bottom: none;
   border-left: none;
   border-right: none;
   border-top: solid 1px #f1f4f8;
-  background-color: rgb(248 250 252);
+  text-align: left;
 }
 
 .ll-table-headers {

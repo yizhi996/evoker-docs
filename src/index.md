@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: Lilith
+heroText: NZoth
 tagline: 一款基于 Vue3 & Vite 的小程序容器
 actionText: 快速开始
 actionLink: /guide/introduction.html

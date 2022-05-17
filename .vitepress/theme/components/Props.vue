@@ -1,13 +1,25 @@
 <template>
   <LLTable :headers="headers">
-    <tr v-for="item of data" :key="item.name">
-      <td>{{ item.name }}</td>
-      <td>{{ item.type }}</td>
-      <td>{{ item.default }}</td>
-      <td>{{ item.required ? '是' : '否' }}</td>
-      <td>{{ item.desc }}</td>
-      <td>{{ item.version }}</td>
-    </tr>
+    <template v-for="item of data" :key="item.name">
+      <tr>
+        <td style="width: 100px;">{{ item.name }}</td>
+        <td>{{ item.type }}</td>
+        <td>{{ item.default }}</td>
+        <td>{{ item.required ? '是' : '否' }}</td>
+        <td style="width: auto;">{{ item.desc }}</td>
+        <td>{{ item.version }}</td>
+      </tr>
+      <table v-if="item.types" class="ll-table__types">
+        <tr>
+          <th class="ll-table__types__header">合法值</th>
+          <th class="ll-table__types__header">说明</th>
+        </tr>
+        <tr v-for="t of item.types" :key="t.type" class="ll-table__type">
+          <td style="width:100px;">{{ t.type }}</td>
+          <td>{{ t.desc }}</td>
+        </tr>
+      </table>
+    </template>
   </LLTable>
 </template>
 
@@ -30,3 +42,28 @@ const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
 })
 
 </script>
+
+<style scoped>
+.ll-table__types {
+  margin-left: 20px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #e6e6e6;
+}
+
+.ll-table__types th {
+  background-color: #f0f0f0;
+}
+
+.ll-table__type td {
+  width: auto;
+  border-top: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+}
+
+.ll-table__types__header {
+  font-size: 14px;
+  text-align: left;
+}
+</style>

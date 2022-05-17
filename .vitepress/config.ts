@@ -3,12 +3,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   srcDir: 'src',
 
-  title: 'Lilith',
+  title: 'NZoth',
   lang: 'zh-Hans',
   description: '一款基于 Vue3 & Vite 的小程序容器，小程序引擎',
 
   themeConfig: {
-    repo: 'yizhi996/lilith',
+    repo: 'yizhi996/nzoth',
     docsDir: 'docs',
     docsBranch: 'main',
     editLinks: true,
@@ -75,7 +75,16 @@ export default defineConfig({
             { text: 'button', link: '/component/button' },
             { text: 'checkbox', link: '/component/checkbox' },
             { text: 'checkbox-group', link: '/component/checkbox-group' },
-            { text: 'input', link: '/component/input' }
+            { text: 'input', link: '/component/input' },
+            { text: 'textarea', link: '/component/textarea' }
+          ]
+        },
+        {
+          text: '媒体组件',
+          children: [
+            { text: 'image', link: '/component/image' },
+            { text: 'video', link: '/component/video' },
+            { text: 'camera', link: '/component/camera' }
           ]
         }
       ]

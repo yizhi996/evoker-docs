@@ -1,17 +1,16 @@
 {
-  "name": "@lilith/document",
+  "name": "@nzoth/document",
   "version": "1.0.0",
-  "description": "Lilith documents.",
+  "description": "NZoth documents.",
   "scripts": {
     "dev": "vitepress",
     "build": "vitepress build",
     "serve": "vitepress serve"
   },
   "dependencies": {
-    "vue": "^3.2.29",
-    "vitepress": "^0.21.6"
+    "vitepress": "^0.22.4",
+    "vue": "^3.2.33"
   },
-  "devDependencies": {},
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [

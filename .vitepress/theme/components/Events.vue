@@ -2,7 +2,7 @@
   <LLTable :headers="headers">
     <tr v-for="item of data" :key="item.name">
       <td>{{ item.name }}</td>
-      <td>{{ item.desc }}</td>
+      <td style="width: auto;">{{ item.desc }}</td>
       <td style="white-space: pre-wrap;">{{ item.event }}</td>
       <td>{{ item.version }}</td>
     </tr>

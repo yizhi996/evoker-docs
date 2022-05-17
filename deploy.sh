@@ -9,6 +9,9 @@ pnpm build
 # 进入构建文件夹
 cd ./.vitepress/dist
 
+# 如果你要部署到自定义域名
+echo 'nzothdev.com' > CNAME
+
 git init
 git checkout -b main
 git add -A

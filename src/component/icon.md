@@ -1,14 +1,31 @@
 <script setup>
 import Props from '/@theme/components/Props.vue'
 
+const icon = (type)=> {
+    return `<nz-icon ><i class="nz-icon--${type}" style="width: 20px; height: 20px;" /></nz-icon>`
+}
+
 const props = [
     {
         name: "type", 
         type: "string",
         default: "",
         required: true, 
-        desc:`icon的类型，有效值：success, success-no-circle, info, warn, waiting, cancel, download, search, clear, circle, info-circle`, 
-        version: "0.1.0"
+        desc:`icon的类型`, 
+        version: "0.1.0",
+        types: [
+            {type: "success", desc: icon("success") },
+            {type: "success-no-circle", desc: icon("success-no-circle") },
+            {type: "info", desc: icon("info") },
+            {type: "warn", desc: icon("warn") },
+            {type: "waiting", desc: icon("waiting") },
+            {type: "cancel", desc: icon("cancel") },
+            {type: "download", desc: icon("download") },
+            {type: "search", desc: icon("search") },
+            {type: "clear", desc: icon("clear") },
+            {type: "circle", desc: icon("circle") },
+            {type: "info-circle", desc: icon("info-circle") },
+        ]
     },
     {
         name: "size", 
@@ -20,7 +37,7 @@ const props = [
     },
     {
         name: "color", 
-        type:"string",
+        type:"color",
         default: "",
         required: false, 
         desc:"icon的颜色", 
@@ -41,5 +58,7 @@ const props = [
 ### Example
 
 ```vue
-<icon type="success" :size="93" color="#000" />
+<template>
+  <icon type="success" :size="93" />
+</template>
 ```

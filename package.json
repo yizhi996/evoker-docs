@@ -20,5 +20,8 @@
         "@types/react"
       ]
     }
+  },
+  "devDependencies": {
+    "less": "^4.1.2"
   }
 }

@@ -11,9 +11,13 @@
 ```vue
 <template>
   <radio-group @change="onChange">
-    <template v-for="fruit of fruits" :key="fruit.value">
-      <radio :value="fruit.value" :checked="fruit.checked">{{ fruit.name }}</radio>
-    </template>
+    <radio
+      v-for="fruit of fruits"
+      :key="fruit.value"
+      :value="fruit.value"
+      :checked="fruit.checked"
+      >{{ fruit.name }}</radio
+    >
   </radio-group>
 </template>
 

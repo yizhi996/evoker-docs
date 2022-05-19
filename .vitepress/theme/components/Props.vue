@@ -4,7 +4,13 @@
       <tr>
         <td>{{ item.name }}</td>
         <td>{{ item.type }}</td>
-        <td>{{ item.default }}</td>
+        <td>
+          <div v-if="isColor(item.default)" class="ll-table__default">
+            <div class="ll-table__color-box" :style="{ 'background-color': item.default }"></div>
+            {{ item.default }}
+          </div>
+          <span v-else>{{ item.default }}</span>
+        </td>
         <td>{{ item.required ? '是' : '否' }}</td>
         <td v-html="item.desc"></td>
         <td>{{ item.version }}</td>
@@ -48,6 +54,10 @@ interface DataItem {
 const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
   data: () => []
 })
+
+const isColor = (value: string) => {
+  return value.startsWith('#')
+}
 </script>
 
 <style scoped>
@@ -66,5 +76,17 @@ const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
 .ll-table__types td {
   border-top: solid 1px #e6e6e6;
   background-color: #f0f0f0;
+}
+
+.ll-table__default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ll-table__color-box {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
 }
 </style>

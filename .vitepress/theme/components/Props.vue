@@ -56,7 +56,7 @@ const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
 })
 
 const isColor = (value: string) => {
-  return value.startsWith('#')
+  return value.startsWith('#') || value.startsWith('rgb')
 }
 </script>
 
@@ -85,6 +85,7 @@ const isColor = (value: string) => {
 }
 
 .ll-table__color-box {
+  flex-shrink: 0;
   width: 12px;
   height: 12px;
   margin-right: 3px;

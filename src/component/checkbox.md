@@ -63,7 +63,7 @@ const props = [
     },
     {
         name: "color", 
-        type:"string",
+        type:"color",
         default: "#1989fa",
         required: false, 
         desc:"颜色", 

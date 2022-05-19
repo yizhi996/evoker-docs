@@ -69,7 +69,7 @@ const props = [
     },
     {
         name: "color", 
-        type:"string",
+        type:"color",
         default: "#1989fa",
         required: false, 
         desc:"radio 的颜色", 

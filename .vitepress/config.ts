@@ -85,6 +85,7 @@ export default defineConfig({
             { text: 'switch', link: '/component/switch' },
             { text: 'label', link: '/component/label' },
             { text: 'slider', link: '/component/slider' },
+            { text: 'form', link: '/component/form' },
           ]
         },
         {

@@ -1,3 +1,32 @@
+# video
+
+视频组件。
+
+### Props
+
+<Props :data="props" />
+
+### Events
+
+<Events :data="events" />
+
+### Example
+
+```vue
+<template>
+  <video
+    src="https://exmaple.com/test.mp4"
+    title="text.mp4"
+    vslide-gesture
+    :show-center-play-btn="false"
+    :autoplay="false"
+    muted
+    show-mute-btn
+    loop
+  ></video>
+</template>
+```
+
 <script setup>
 import Props from '/@theme/components/Props.vue'
 import Events from '/@theme/components/Events.vue'
@@ -113,6 +142,14 @@ const props = [
     version: '0.1.0',
   },
   {
+    name: 'show-screen-lock-button',
+    type: 'boolean',
+    default: 'false',
+    required: false,
+    desc: '是否显示锁屏按钮，仅在全屏时显示，锁屏后控制栏的操作',
+    version: '0.1.0',
+  },
+  {
     name: 'object-fit',
     type: 'string',
     default: 'contain',
@@ -187,20 +224,73 @@ const props = [
   },
 ]
 
+const events = [
+    {
+        name: "play", 
+        desc: "开始/继续播放时触发", 
+        event:"",
+        version: "0.1.0"
+    },
+    {
+        name: "pause", 
+        desc: "暂停播放时触发", 
+        event:"",
+        version: "0.1.0"
+    },
+    {
+        name: "ended", 
+        desc: "播放到末尾时触发", 
+        event:"",
+        version: "0.1.0"
+    },
+    {
+        name: "timeupdate", 
+        desc: "播放进度变化时触发，触发频率 250ms 一次", 
+        event:"{ currentTime: number, duration: number }",
+        version: "0.1.0"
+    },
+    {
+        name: "fullscreenchange", 
+        desc: "视频进入和退出全屏时触发", 
+        event:"{fullScreen: boolean, direction: 'vertical' | 'horizontal' }",
+        version: "0.1.0"
+    },
+    {
+        name: "waiting", 
+        desc: "视频出现缓冲时触发", 
+        event:"",
+        version: "0.1.0"
+    },
+    {
+        name: "error", 
+        desc: "视频播放出错时触发", 
+        event:"",
+        version: "0.1.0"
+    },
+    {
+        name: "progress", 
+        desc: "加载进度变化时触发，只支持一段加载，单位为百分比", 
+        event:"{ buffered: number }",
+        version: "0.1.0"
+    },
+    {
+        name: "loadedmetadata", 
+        desc: "视频元数据加载完成时触发", 
+        event:"{ width: number, height: number, duration: number }",
+        version: "0.1.0"
+    },
+    {
+        name: "controlstoggle", 
+        desc: "切换 controls 显示隐藏时触发", 
+        event:"{ show: boolean }",
+        version: "0.1.0"
+    },
+    {
+        name: "seekcomplete", 
+        desc: "seek 完成时触发，单位为秒", 
+        event:"{ position: number }",
+        version: "0.1.0"
+    },
+]
+
 </script>
-
-# video
-
-视频组件。
-
-### Props
-
-<Props :data="props" />
-
-### Example
-
-```vue
-<template>
-  <image src="../test.png" /> <image src="https://example.com/test.png" />
-</template>
-```

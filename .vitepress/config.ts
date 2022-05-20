@@ -82,6 +82,8 @@ export default defineConfig({
             { text: 'picker', link: '/component/picker' },
             { text: 'picker-view', link: '/component/picker-view' },
             { text: 'picker-view-column', link: '/component/picker-view-column' },
+            { text: 'switch', link: '/component/switch' },
+            { text: 'label', link: '/component/label' },
           ]
         },
         {

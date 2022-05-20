@@ -1,9 +1,9 @@
-# NZoth document
+# NZoth documentation
 
 ## Project
 
 [NZoth](https://github.com/yizhi996/nzoth)
 
-## Document
+## Documentation
 
-[Document](https://nzothdev.com)
+[https://nzothdev.com](https://nzothdev.com)

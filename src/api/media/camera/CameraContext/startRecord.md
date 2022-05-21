@@ -1,6 +1,6 @@
 # [CameraContext](./../CameraContext).startRecord
 
-> 支持 Promise
+> <Icon type="success" /> 支持 Promise
 
 开始录像。
 
@@ -23,8 +23,5 @@ const record = () => {
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-
 const props = []
-
 </script>

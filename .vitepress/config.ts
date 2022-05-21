@@ -107,7 +107,9 @@ export default defineConfig({
           children: [
             { text: 'nz.navigateTo', link: '/api/route/navigateTo' },
             { text: 'nz.navigateBack', link: '/api/route/navigateBack' },
-            { text: 'nz.redirectTo', link: '/api/route/redirectTo' }
+            { text: 'nz.reLaunch', link: '/api/route/reLaunch' },
+            { text: 'nz.redirectTo', link: '/api/route/redirectTo' },
+            { text: 'nz.switchTab', link: '/api/route/switchTab' }
           ]
         },
         {

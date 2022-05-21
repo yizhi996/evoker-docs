@@ -1,6 +1,6 @@
 # [CameraContext](./../CameraContext).takePhoto
 
-> 支持 Promise
+> <Icon type="success" /> 支持 Promise
 
 拍摄照片。
 
@@ -10,7 +10,7 @@
 
 ### 调用成功返回
 
-<Result :data="result" />
+<Results :data="results" />
 
 ### Example
 
@@ -26,8 +26,6 @@ const fn = async () => {
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-import Result from '/@theme/components/Result.vue'
 
 const props = [
   {
@@ -45,7 +43,7 @@ const props = [
   },
 ]
 
-const result = [
+const results = [
   {
     name: 'tempImagePath',
     type: 'string',

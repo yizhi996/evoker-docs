@@ -7,8 +7,6 @@
 <Events :data="events" />
 
 <script setup>
-import Events from '/@theme/components/Events.vue'
-
 const events = [
     {
         name: "change", 

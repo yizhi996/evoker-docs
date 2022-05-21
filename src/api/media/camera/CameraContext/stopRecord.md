@@ -1,6 +1,6 @@
 # [CameraContext](./../CameraContext).stopRecord
 
-> 支持 Promise
+> <Icon type="success" /> 支持 Promise
 
 结束录像。
 
@@ -10,7 +10,7 @@
 
 ### 调用成功返回
 
-<Result :data="result" />
+<Results :data="results" />
 
 ### Example
 
@@ -27,9 +27,6 @@ const record = () => {
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-import Result from '/@theme/components/Result.vue'
-
 const props = [
   {
     name: 'compressed',
@@ -41,7 +38,7 @@ const props = [
   },
 ]
 
-const result = [
+const results = [
   {
     name: 'tempThumbPath',
     type: 'string',
@@ -55,5 +52,4 @@ const result = [
     version: '0.1.0',
   },
 ]
-
 </script>

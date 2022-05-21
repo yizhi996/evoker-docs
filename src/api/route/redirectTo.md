@@ -1,6 +1,6 @@
 # nz.redirectTo
 
-> 支持 Promise
+> <Icon type="success" /> 支持 Promise
 
 关闭当前页面，跳转到应用内的某个页面。但是不允许跳转到 tabBar 页面。
 
@@ -15,8 +15,6 @@ nz.redirectTo({ url: 'profile?id=1' })
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-
 const props = [
   {
     name: 'url',
@@ -27,5 +25,4 @@ const props = [
     version: '0.1.0',
   },
 ]
-
 </script>

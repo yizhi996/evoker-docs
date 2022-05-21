@@ -1,8 +1,6 @@
 <script setup>
-import Props from '/@theme/components/Props.vue'
-
 const icon = (type)=> {
-    return `<nz-icon ><i class="nz-icon--${type}" style="width: 20px; height: 20px;" /></nz-icon>`
+    return `<div class="nz-icon"><i class="nz-icon--${type}" style="width: 23px; height: 23px;" /></div>`
 }
 
 const props = [

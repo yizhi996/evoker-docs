@@ -1,6 +1,6 @@
 # [CameraContext](./../CameraContext).zetZoom
 
-> 支持 Promise
+> <Icon type="success" /> 支持 Promise
 
 设置缩放级别。
 
@@ -10,7 +10,7 @@
 
 ### 调用成功返回
 
-<Result :data="result" />
+<Results :data="results" />
 
 ### Example
 
@@ -25,9 +25,6 @@ const fn = () => {
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-import Result from '/@theme/components/Result.vue'
-
 const props = [
   {
     name: 'zoom',
@@ -39,7 +36,7 @@ const props = [
   },
 ]
 
-const result = [
+const results = [
   {
     name: 'zoom',
     type: 'number',
@@ -47,5 +44,4 @@ const result = [
     version: '0.1.0',
   },
 ]
-
 </script>

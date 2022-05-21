@@ -42,8 +42,6 @@ const onChange = ev => {
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-
 const props = [
     {
         name: "value", 
@@ -78,5 +76,4 @@ const props = [
         version: "0.1.0"
     },
 ]
-
 </script>

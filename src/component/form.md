@@ -102,8 +102,6 @@ const onChangePicker = ev => {
 ```
 
 <script setup>
-import Events from '/@theme/components/Events.vue'
-
 const events = [
     {
         name: "submit", 

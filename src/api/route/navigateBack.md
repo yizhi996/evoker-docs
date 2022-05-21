@@ -1,6 +1,6 @@
 # nz.navigateBack
 
-> 支持 Promise
+> <Icon type="success" /> 支持 Promise
 
 关闭当前页面，返回上一页面或多级页面。
 
@@ -15,8 +15,6 @@ nz.navigateBack()
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-
 const props = [
   {
     name: 'delta',
@@ -27,5 +25,4 @@ const props = [
     version: '0.1.0',
   },
 ]
-
 </script>

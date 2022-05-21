@@ -1,7 +1,4 @@
 <script setup>
-import Props from '/@theme/components/Props.vue'
-import Events from '/@theme/components/Events.vue'
-
 const props = [
     {
         name: "src", 
@@ -52,7 +49,6 @@ const props = [
         version: "0.1.0"
     },
 ]
-
 </script>
 
 # image

@@ -1,7 +1,30 @@
-<script setup>
-import Props from '/@theme/components/Props.vue'
-import Events from '/@theme/components/Events.vue'
+# button
 
+按钮。
+
+### Props
+
+<Props :data="props" />
+
+### Events
+
+<Events :data="events" />
+
+### Example
+
+```vue
+<template>
+  <button type="primary" @click="onClick">Click</button>
+</template>
+
+<script setup lang="ts">
+const onClick = () => {
+  console.log('click')
+}
+</script>
+```
+
+<script setup>
 const props = [
     {
         name: "type", 
@@ -94,29 +117,3 @@ const events = [
     },
 ]
 </script>
-
-# button
-
-按钮。
-
-### Props
-
-<Props :data="props" />
-
-### Events
-
-<Events :data="events" />
-
-### Example
-
-```vue
-<template>
-  <button type="primary" @click="onClick">Click</button>
-</template>
-
-<script setup lang="ts">
-const onClick = () => {
-  console.log('click')
-}
-</script>
-```

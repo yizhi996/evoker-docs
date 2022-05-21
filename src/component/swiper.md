@@ -28,9 +28,6 @@ const items = ['blue', 'red', 'yellow', 'green']
 ```
 
 <script setup>
-import Props from '/@theme/components/Props.vue'
-import Events from '/@theme/components/Events.vue'
-
 const props = [
     {
         name: "indicator-dots", 

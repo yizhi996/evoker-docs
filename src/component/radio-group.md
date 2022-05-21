@@ -7,8 +7,6 @@
 <Events :data="events" />
 
 <script setup>
-import Events from '/@theme/components/Events.vue'
-
 const events = [
     {
         name: "change", 
@@ -17,5 +15,4 @@ const events = [
         version: "0.1.0"
     }
 ]
-
 </script>

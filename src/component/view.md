@@ -1,6 +1,4 @@
 <script setup>
-import Props from '/@theme/components/Props.vue'
-
 const props = [
     {
         name: "hover-class", 

@@ -1,6 +1,6 @@
 <template>
   <LLTable :headers="headers">
-    <template v-for="item of data" :key="item.name">
+    <template v-for="item of _data" :key="item.name">
       <tr>
         <td>{{ item.name }}</td>
         <td>{{ item.type }}</td>
@@ -38,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import LLTable from './Table.vue'
 
 const headers = ['参数', '类型', '默认值', '必填', '说明', '最低版本']
@@ -49,15 +50,64 @@ interface DataItem {
   required: boolean
   desc: string
   version: string
+  types?: DataItemType[]
 }
 
-const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
-  data: () => []
-})
+interface DataItemType {
+  type: string
+  desc: string
+}
+
+const props = withDefaults(
+  defineProps<{
+    data: DataItem[]
+    options?: boolean
+  }>(),
+  {
+    data: () => [],
+    options: false
+  }
+)
 
 const isColor = (value: string) => {
   return value.startsWith('#') || value.startsWith('rgb')
 }
+
+const _data = computed(() => {
+  if (props.options) {
+    const res = props.data
+    res.push(
+      ...[
+        {
+          name: 'success',
+          type: 'function',
+          default: '',
+          required: false,
+          desc: '接口调用成功的回调函数',
+          version: '0.1.0'
+        },
+        {
+          name: 'fail',
+          type: 'function',
+          default: '',
+          required: false,
+          desc: '接口调用失败的回调函数',
+          version: '0.1.0'
+        },
+        {
+          name: 'complete',
+          type: 'function',
+          default: '',
+          required: false,
+          desc: '接口调用结束的回调函数（调用成功、失败都会执行）',
+          version: '0.1.0'
+        }
+      ]
+    )
+    return res
+  }
+  return props.data
+})
 </script>
 
 <style scoped>

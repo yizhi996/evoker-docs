@@ -19,14 +19,18 @@ export default defineConfig({
       {
         text: '指南',
         link: '/guide/introduction',
-        activeMatch: '^/$|^/guide/'
+        activeMatch: '^/guide/'
       },
       {
         text: '组件',
         link: '/component/view',
-        activeMatch: '^/$|^/component/'
+        activeMatch: '^/component/'
       },
-      { text: 'API', link: '/api', activeMatch: '^/$|^/api/' }
+      {
+        text: 'API',
+        link: '/api/index',
+        activeMatch: '^/api/'
+      }
     ],
 
     sidebar: {
@@ -85,7 +89,7 @@ export default defineConfig({
             { text: 'switch', link: '/component/switch' },
             { text: 'label', link: '/component/label' },
             { text: 'slider', link: '/component/slider' },
-            { text: 'form', link: '/component/form' },
+            { text: 'form', link: '/component/form' }
           ]
         },
         {
@@ -94,6 +98,41 @@ export default defineConfig({
             { text: 'image', link: '/component/image' },
             { text: 'video', link: '/component/video' },
             { text: 'camera', link: '/component/camera' }
+          ]
+        }
+      ],
+      '/api/': [
+        {
+          text: '媒体',
+          children: [
+            {
+              text: '相机',
+              children: [
+                { text: 'createCameraContext', link: '/api/media/camera/createCameraContext' },
+                {
+                  text: 'CameraContext',
+                  link: '/api/media/camera/CameraContext',
+                  children: [
+                    {
+                      text: 'CameraContext.takePhoto',
+                      link: '/api/media/camera/CameraContext.takePhoto.html'
+                    },
+                    {
+                      text: 'CameraContext.zetZoom',
+                      link: '/api/media/camera/CameraContext.zetZoom.html'
+                    },
+                    {
+                      text: 'CameraContext.startRecord',
+                      link: '/api/media/camera/CameraContext.startRecord.html'
+                    },
+                    {
+                      text: 'CameraContext.stopRecord',
+                      link: '/api/media/camera/CameraContext.stopRecord.html'
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         }
       ]

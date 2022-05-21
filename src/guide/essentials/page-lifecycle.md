@@ -8,8 +8,6 @@ NZoth 并非一个单页应用，所以额外增加了页面的显示隐藏等�
 
 在页面被首次加载时触发。
 
-- Type
-
 ```ts
 function onLoad(callback: (query: Record<string, any>) => void): void
 ```
@@ -17,8 +15,6 @@ function onLoad(callback: (query: Record<string, any>) => void): void
 ### onShow
 
 在页面显示或进入前台时触发。
-
-- Type
 
 ```ts
 function onShow(callback: () => void): void
@@ -30,17 +26,13 @@ function onShow(callback: () => void): void
 
 也可以直接使用 Vue 的 [onMounted](https://vuejs.org/api/composition-api-lifecycle.html#onmounted) 代替。
 
-- Type
-
 ```ts
 function onReady(callback: () => void): void
 ```
 
 ### onHide
 
-在页面隐藏/切入后台时触发。 如 [li.navigateTo](../../api/navigate-to) 或底部 Tab 切换到其他页面，应用切入后台等。
-
-- Type
+在页面隐藏/切入后台时触发。 如 [nz.navigateTo](../../api/route/navigateTo) 或底部 Tab 切换到其他页面，应用切入后台等。
 
 ```ts
 function onHide(callback: () => void): void
@@ -48,11 +40,9 @@ function onHide(callback: () => void): void
 
 ### onUnload
 
-页面卸载时触发。如 [li.redirectTo](../../api/redirect-to) 或 [li.navigateBack](../../api/navigate-back) 到其他页面时。
+页面卸载时触发。如 [nz.redirectTo](../../api/route/redirectTo) 或 [nz.navigateBack](../../api/route/navigateBack) 到其他页面时。
 
 也可以直接使用 Vue 的 [onUnmounted](https://vuejs.org/api/composition-api-lifecycle.html#onunmounted) 代替。
-
-- Type
 
 ```ts
 function onUnload(callback: () => void): void

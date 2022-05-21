@@ -6,15 +6,13 @@
 
 在应用被首次加载时触发。
 
-- Type
-
 ```ts
-function onLaunch(callback: (options: AppLaunchOptions) => void): void
-
 interface AppLaunchOptions {
   path: string
   query: Record<string, any>
 }
+
+function onLaunch(callback: (options: AppLaunchOptions) => void): void
 ```
 
 - Detail
@@ -27,15 +25,13 @@ interface AppLaunchOptions {
 
 在应用启动或者从后台进入前台时触发。
 
-- Type
-
 ```ts
-function onShow(callback: (options: AppShowOptions) => void): void
-
 interface AppShowOptions {
   path: string
   query: Record<string, any>
 }
+
+function onShow(callback: (options: AppShowOptions) => void): void
 ```
 
 - Detail
@@ -47,8 +43,6 @@ interface AppShowOptions {
 ### onHide
 
 在应用从前台进入后台时触发。
-
-- Type
 
 ```ts
 function onHide(callback: () => void): void

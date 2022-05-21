@@ -103,31 +103,39 @@ export default defineConfig({
       ],
       '/api/': [
         {
+          text: '路由',
+          children: [
+            { text: 'nz.navigateTo', link: '/api/route/navigateTo' },
+            { text: 'nz.navigateBack', link: '/api/route/navigateBack' },
+            { text: 'nz.redirectTo', link: '/api/route/redirectTo' }
+          ]
+        },
+        {
           text: '媒体',
           children: [
             {
               text: '相机',
               children: [
-                { text: 'createCameraContext', link: '/api/media/camera/createCameraContext' },
+                { text: 'nz.createCameraContext', link: '/api/media/camera/createCameraContext' },
                 {
                   text: 'CameraContext',
                   link: '/api/media/camera/CameraContext',
                   children: [
                     {
                       text: 'CameraContext.takePhoto',
-                      link: '/api/media/camera/CameraContext.takePhoto.html'
+                      link: '/api/media/camera/CameraContext/takePhoto'
                     },
                     {
                       text: 'CameraContext.zetZoom',
-                      link: '/api/media/camera/CameraContext.zetZoom.html'
+                      link: '/api/media/camera/CameraContext/zetZoom'
                     },
                     {
                       text: 'CameraContext.startRecord',
-                      link: '/api/media/camera/CameraContext.startRecord.html'
+                      link: '/api/media/camera/CameraContext/startRecord'
                     },
                     {
                       text: 'CameraContext.stopRecord',
-                      link: '/api/media/camera/CameraContext.stopRecord.html'
+                      link: '/api/media/camera/CameraContext/stopRecord'
                     }
                   ]
                 }

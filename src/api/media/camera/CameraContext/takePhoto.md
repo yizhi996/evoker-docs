@@ -1,4 +1,4 @@
-# CameraContext.takePhoto
+# [CameraContext](./../CameraContext).takePhoto
 
 > 支持 Promise
 

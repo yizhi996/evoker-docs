@@ -1,4 +1,4 @@
-# CameraContext.zetZoom
+# [CameraContext](./../CameraContext).zetZoom
 
 > 支持 Promise
 

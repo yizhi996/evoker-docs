@@ -1,4 +1,4 @@
-# CameraContext.startRecord
+# [CameraContext](./../CameraContext).startRecord
 
 > 支持 Promise
 

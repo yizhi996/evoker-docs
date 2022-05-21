@@ -1,4 +1,4 @@
-# createCameraContext
+# nz.createCameraContext
 
 > 相关组件 [camera](../../../component/camera)
 
@@ -8,4 +8,4 @@
 
 ### 返回值
 
-**[CameraContext](./cameraContext)**
+**[CameraContext](./CameraContext)**

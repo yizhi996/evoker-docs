@@ -43,10 +43,10 @@ const props = [
         required: false, 
         desc:"键盘类型", 
         version: "0.1.0",
-        types: [
-            { type: "text", desc: "文本输入键盘" },
-            { type: "number", desc: "数字输入键盘" },
-            { type: "digit", desc: "带小数点的数字键盘" },
+        values: [
+            { value: "text", desc: "文本输入键盘" },
+            { value: "number", desc: "数字输入键盘" },
+            { value: "digit", desc: "带小数点的数字键盘" },
         ]
     },
     {
@@ -120,12 +120,12 @@ const props = [
         required: false, 
         desc:"设置键盘右下角按钮的文字，仅在type='text'时生效", 
         version: "0.1.0",
-        types: [
-            { type: "send", desc: "发送" },
-            { type: "search", desc: "搜索" },
-            { type: "next", desc: "下一个" },
-            { type: "go", desc: "前往" },
-            { type: "done", desc: "完成" },
+        values: [
+            { value: "send", desc: "发送" },
+            { value: "search", desc: "搜索" },
+            { value: "next", desc: "下一个" },
+            { value: "go", desc: "前往" },
+            { value: "done", desc: "完成" },
         ]
     },
     {

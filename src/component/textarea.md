@@ -163,13 +163,13 @@ const props = [
         required: false, 
         desc:"设置键盘右下角按钮的文字", 
         version: "0.1.0",
-        types: [
-            { type: "send", desc: "发送" },
-            { type: "search", desc: "搜索" },
-            { type: "next", desc: "下一个" },
-            { type: "go", desc: "前往" },
-            { type: "done", desc: "完成" },
-            { type: "return", desc: "换行" },
+        values: [
+            { value: "send", desc: "发送" },
+            { value: "search", desc: "搜索" },
+            { value: "next", desc: "下一个" },
+            { value: "go", desc: "前往" },
+            { value: "done", desc: "完成" },
+            { value: "return", desc: "换行" },
         ]
     },
     {

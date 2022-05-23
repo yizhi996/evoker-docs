@@ -92,10 +92,10 @@ const props = [
     required: false,
     desc: '设置全屏时视频的方向，不指定则根据宽高比自动判断',
     version: '0.1.0',
-    types: [
-      { type: 0, desc: '正常竖向' },
-      { type: 90, desc: '屏幕逆时针90度' },
-      { type: -90, desc: '屏幕顺时针90度' },
+    values: [
+      { value: 0, desc: '正常竖向' },
+      { value: 90, desc: '屏幕逆时针90度' },
+      { value: -90, desc: '屏幕顺时针90度' },
     ],
   },
   {
@@ -153,10 +153,10 @@ const props = [
     required: false,
     desc: '当视频大小与 video 容器大小不一致时，视频的表现形式',
     version: '0.1.0',
-    types: [
-      { type: 'contain', desc: '包含' },
-      { type: 'fill', desc: '填充' },
-      { type: 'cover', desc: '覆盖' },
+    values: [
+      { value: 'contain', desc: '包含' },
+      { value: 'fill', desc: '填充' },
+      { value: 'cover', desc: '覆盖' },
     ],
   },
   {
@@ -182,9 +182,9 @@ const props = [
     required: false,
     desc: '播放按钮的位置',
     version: '0.1.0',
-    types: [
-      { type: 'bottom', desc: '控制栏' },
-      { type: 'center', desc: '视频中间' }
+    values: [
+      { value: 'bottom', desc: '控制栏' },
+      { value: 'center', desc: '视频中间' }
     ],
   },
    {

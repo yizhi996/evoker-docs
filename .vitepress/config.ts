@@ -103,6 +103,25 @@ export default defineConfig({
       ],
       '/api/': [
         {
+          text: '基础',
+          children: [
+            { text: 'nz.env', link: '/api/base/env' },
+            {
+              text: '系统',
+              children: [
+                { text: 'nz.getWindowInfo', link: '/api/base/system/getWindowInfo' },
+                { text: 'nz.getSystemSetting', link: '/api/base/system/getSystemSetting' },
+                { text: 'nz.getDeviceInfo', link: '/api/base/system/getDeviceInfo' },
+                { text: 'nz.getAppBaseInfo', link: '/api/base/system/getAppBaseInfo' },
+                { text: 'nz.getAppAuthorizeSetting', link: '/api/base/system/getAppAuthorizeSetting' },
+                { text: 'nz.getSystemInfo', link: '/api/base/system/getSystemInfo' },
+                { text: 'nz.getSystemInfoAsync', link: '/api/base/system/getSystemInfoAsync' },
+                { text: 'nz.getSystemInfoSync', link: '/api/base/system/getSystemInfoSync' },
+              ]
+            }
+          ]
+        },
+        {
           text: '路由',
           children: [
             { text: 'nz.navigateTo', link: '/api/route/navigateTo' },

@@ -132,12 +132,12 @@ const props = [
         required: false, 
         desc:"指定 swiper 切换缓动动画类型", 
         version: "0.1.0",
-        types: [
-            {type: "default", desc: "默认"},
-            {type: "linear", desc: "线性"},
-            {type: "easeInCubic", desc: "缓入"},
-            {type: "easeOutCubic", desc: "缓出"},
-            {type: "easeInOutCubic", desc: "缓入缓出"}
+        values: [
+            { value: "default", desc: "默认"},
+            { value: "linear", desc: "线性"},
+            { value: "easeInCubic", desc: "缓入"},
+            { value: "easeOutCubic", desc: "缓出"},
+            { value: "easeInOutCubic", desc: "缓入缓出"}
         ]
     },
 ]

@@ -35,10 +35,10 @@ const props = [
     required: false,
     desc: '成像质量',
     version: '0.1.0',
-    types: [
-        { type: "high", desc: "高质量" },
-        { type: "normal", desc: "普通质量" },
-        { type: "low", desc: "低质量" },
+    values: [
+        { value: "high", desc: "高质量" },
+        { value: "normal", desc: "普通质量" },
+        { value: "low", desc: "低质量" },
     ],
   },
 ]

@@ -226,11 +226,11 @@ const props = [
         required: false, 
         desc:"选择器类型", 
         version: "0.1.0",
-         types: [
-            { type: "selector", desc: '普通选择器' },
-            { type: "multiSelector", desc: '多列选择器' },
-            { type: "time", desc: '时间选择器' },
-            { type: "date", desc: '日期选择器' },
+         values: [
+            { value: "selector", desc: '普通选择器' },
+            { value: "multiSelector", desc: '多列选择器' },
+            { value: "time", desc: '时间选择器' },
+            { value: "date", desc: '日期选择器' },
         ],
     },
     {

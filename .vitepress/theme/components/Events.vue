@@ -11,17 +11,11 @@
 
 <script setup lang="ts">
 import LLTable from './Table.vue'
+import type { EventsDataItem } from "../models"
 
 const headers = ['事件名', '说明', '回调参数', '最低版本']
 
-interface DataItem {
-  name: string
-  desc: string
-  event: string
-  version: string
-}
-
-const props = withDefaults(defineProps<{ data: DataItem[] }>(), {
+const props = withDefaults(defineProps<{ data: EventsDataItem[] }>(), {
   data: () => []
 })
 </script>

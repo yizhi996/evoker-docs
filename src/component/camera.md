@@ -35,9 +35,9 @@ const props = [
     required: false,
     desc: '应用模式，只在初始化时有效，不能动态变更',
     version: '0.1.0',
-    types: [
-        { type: "normal", desc: "相机模式" },
-        { type: "scanCode", desc: "扫码模式" },
+    values: [
+        { value: "normal", desc: "相机模式" },
+        { value: "scanCode", desc: "扫码模式" },
     ]
   },
   {
@@ -47,10 +47,10 @@ const props = [
     required: false,
     desc: '分辨率，不支持动态修改',
     version: '0.1.0',
-    types: [
-        { type: "low", desc: "低" },
-        { type: "medium", desc: "中" },
-        { type: "high", desc: "高" },
+    values: [
+        { value: "low", desc: "低" },
+        { value: "medium", desc: "中" },
+        { value: "high", desc: "高" },
     ]
   },
   {
@@ -60,9 +60,9 @@ const props = [
     required: false,
     desc: '摄像头朝向',
     version: '0.1.0',
-    types: [
-        { type: "front", desc: "前置" },
-        { type: "back", desc: "后置" },
+    values: [
+        { value: "front", desc: "前置" },
+        { value: "back", desc: "后置" },
     ]
   },
   {
@@ -72,11 +72,11 @@ const props = [
     required: false,
     desc: '闪光灯',
     version: '0.1.0',
-    types: [
-        { type: "auto", desc: "自动" },
-        { type: "on", desc: "打开" },
-        { type: "off", desc: "关闭" },
-        { type: "torch", desc: "常亮" },
+    values: [
+        { value: "auto", desc: "自动" },
+        { value: "on", desc: "打开" },
+        { value: "off", desc: "关闭" },
+        { value: "torch", desc: "常亮" },
     ]
   },
 ]

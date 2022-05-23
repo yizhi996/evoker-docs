@@ -15,24 +15,7 @@
         <td v-html="item.desc"></td>
         <td>{{ item.version }}</td>
       </tr>
-      <tr v-if="item.types">
-        <td colspan="6">
-          <table class="ll-table__types">
-            <thead>
-              <tr>
-                <th>合法值</th>
-                <th>说明</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="t of item.types" :key="t.type">
-                <td>{{ t.type }}</td>
-                <td v-html="t.desc"></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
+      <LLValues v-if="item.values" :values="item.values"> </LLValues>
     </template>
   </LLTable>
 </template>
@@ -40,27 +23,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import LLTable from './Table.vue'
+import LLValues from './Values.vue'
+import type { PropsDataItem } from "../models"
 
 const headers = ['参数', '类型', '默认值', '必填', '说明', '最低版本']
 
-interface DataItem {
-  name: string
-  type: string
-  default: string
-  required: boolean
-  desc: string
-  version: string
-  types?: DataItemType[]
-}
-
-interface DataItemType {
-  type: string
-  desc: string
-}
-
 const props = withDefaults(
   defineProps<{
-    data: DataItem[]
+    data: PropsDataItem[]
     options?: boolean
   }>(),
   {
@@ -111,23 +81,6 @@ const _data = computed(() => {
 </script>
 
 <style scoped>
-.ll-table__types {
-  margin-left: 20px;
-  padding: 0 10px;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  border: 1px solid #e6e6e6;
-}
-
-.ll-table__types th {
-  background-color: #f0f0f0;
-}
-
-.ll-table__types td {
-  border-top: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
-}
-
 .ll-table__default {
   display: flex;
   flex-direction: row;

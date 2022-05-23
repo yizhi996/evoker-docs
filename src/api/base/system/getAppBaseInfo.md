@@ -1,0 +1,52 @@
+# nz.getAppBaseInfo
+
+获取宿主 APP 基础信息。
+
+### 返回
+
+<Results :data="results" />
+
+### Example
+
+```ts
+const info = nz.getAppBaseInfo()
+```
+
+<script setup>
+const results = [
+  {
+    name: 'SDKVersion',
+    type: 'string',
+    desc: '客户端JS基础库版本',
+    version: '0.1.0',
+  },
+  {
+    name: 'nativeSDKVersion',
+    type: 'string',
+    desc: '原生客户端基础库版本',
+    version: '0.1.0',
+  },
+  {
+    name: 'version',
+    type: 'string',
+    desc: '宿主版本号',
+    version: '0.1.0',
+  },
+  {
+    name: 'language',
+    type: 'string',
+    desc: '系统语言',
+    version: '0.1.0',
+  },
+  {
+    name: 'theme',
+    type: 'string',
+    desc: '系统当前主题',
+    version: '0.1.0',
+    types: [
+      { type: "light", desc:"浅色主题" },
+      { type: "dark", desc:"深色主题" },
+    ]
+  },
+]
+</script>

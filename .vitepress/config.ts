@@ -113,12 +113,22 @@ export default defineConfig({
                 { text: 'nz.getSystemSetting', link: '/api/base/system/getSystemSetting' },
                 { text: 'nz.getDeviceInfo', link: '/api/base/system/getDeviceInfo' },
                 { text: 'nz.getAppBaseInfo', link: '/api/base/system/getAppBaseInfo' },
-                { text: 'nz.getAppAuthorizeSetting', link: '/api/base/system/getAppAuthorizeSetting' },
+                {
+                  text: 'nz.getAppAuthorizeSetting',
+                  link: '/api/base/system/getAppAuthorizeSetting'
+                },
                 { text: 'nz.getSystemInfo', link: '/api/base/system/getSystemInfo' },
                 { text: 'nz.getSystemInfoAsync', link: '/api/base/system/getSystemInfoAsync' },
-                { text: 'nz.getSystemInfoSync', link: '/api/base/system/getSystemInfoSync' },
+                { text: 'nz.getSystemInfoSync', link: '/api/base/system/getSystemInfoSync' }
               ]
             }
+          ]
+        },
+        {
+          text: '跳转',
+          children: [
+            { text: 'nz.navigateToMiniProgram', link: '/api/navigate/navigateToMiniProgram' },
+            { text: 'nz.exitMiniProgram', link: '/api/navigate/exitMiniProgram' }
           ]
         },
         {

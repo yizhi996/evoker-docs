@@ -47,3 +47,50 @@ function onShow(callback: (options: AppShowOptions) => void): void
 ```ts
 function onHide(callback: () => void): void
 ```
+
+### onError
+
+Vue 错误，JS 错误，API 调用报错时触发。
+
+```ts
+function onError(callback: (error: string) => void): void
+```
+
+### onThemeChange
+
+主题发生改变时触发。
+
+```ts
+interface AppThemeChangeResult {
+  theme: 'light' | 'dark'
+}
+function onThemeChange(callback: (res: AppThemeChangeResult) => void): void
+```
+
+### Example
+
+```ts
+import { useApp } from 'nzoth'
+
+const { onLaunch, onShow, onHide, onError, onThemeChange } = useApp()
+
+onLaunch(options => {
+  console.log('APP onLaunch: ', options)
+})
+
+onShow(options => {
+  console.log('APP onShow: ', options)
+})
+
+onHide(() => {
+  console.log('APP onHide')
+})
+
+onError(error => {
+  console.log('APP Error: ', error)
+})
+
+onThemeChange(options => {
+  console.log('theme change: ', options.theme)
+})
+```

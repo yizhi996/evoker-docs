@@ -132,6 +132,22 @@ export default defineConfig({
           ]
         },
         {
+          text: '界面',
+          children: [
+            {
+              text: '交互',
+              children: [
+                { text: 'nz.showToast', link: '/api/ui/interaction/showToast' },
+                { text: 'nz.hideToast', link: '/api/ui/interaction/hideToast' },
+                { text: 'nz.showModal', link: '/api/ui/interaction/showModal' },
+                { text: 'nz.showLoading', link: '/api/ui/interaction/showLoading' },
+                { text: 'nz.hideLoading', link: '/api/ui/interaction/hideLoading' },
+                { text: 'nz.showActionSheet', link: '/api/ui/interaction/showActionSheet' },
+              ]
+            }
+          ]
+        },
+        {
           text: '路由',
           children: [
             { text: 'nz.navigateTo', link: '/api/route/navigateTo' },

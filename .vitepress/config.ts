@@ -142,7 +142,32 @@ export default defineConfig({
                 { text: 'nz.showModal', link: '/api/ui/interaction/showModal' },
                 { text: 'nz.showLoading', link: '/api/ui/interaction/showLoading' },
                 { text: 'nz.hideLoading', link: '/api/ui/interaction/hideLoading' },
-                { text: 'nz.showActionSheet', link: '/api/ui/interaction/showActionSheet' },
+                { text: 'nz.showActionSheet', link: '/api/ui/interaction/showActionSheet' }
+              ]
+            },
+            {
+              text: '导航栏',
+              children: [
+                {
+                  text: 'nz.showNavigationBarLoading',
+                  link: '/api/ui/navigation/showNavigationBarLoading'
+                },
+                {
+                  text: 'nz.hideNavigationBarLoading',
+                  link: '/api/ui/navigation/hideNavigationBarLoading'
+                },
+                {
+                  text: 'nz.setNavigationBarTitle',
+                  link: '/api/ui/navigation/setNavigationBarTitle'
+                },
+                {
+                  text: 'nz.setNavigationBarColor',
+                  link: '/api/ui/navigation/setNavigationBarColor'
+                },
+                {
+                  text: 'nz.hideHomeButton',
+                  link: '/api/ui/navigation/hideHomeButton'
+                }
               ]
             }
           ]

@@ -169,6 +169,19 @@ export default defineConfig({
                   link: '/api/ui/navigation/hideHomeButton'
                 }
               ]
+            },
+            {
+              text: 'Tab Bar',
+              children: [
+                { text: 'nz.showTabBarRedDot', link: '/api/ui/tabBar/showTabBarRedDot' },
+                { text: 'nz.hideTabBarRedDot', link: '/api/ui/tabBar/hideTabBarRedDot' },
+                { text: 'nz.showTabBar', link: '/api/ui/tabBar/showTabBar' },
+                { text: 'nz.hideTabBar', link: '/api/ui/tabBar/hideTabBar' },
+                { text: 'nz.setTabBarStyle', link: '/api/ui/tabBar/setTabBarStyle' },
+                { text: 'nz.setTabBarItem', link: '/api/ui/tabBar/setTabBarItem' },
+                { text: 'nz.setTabBarBadge', link: '/api/ui/tabBar/setTabBarBadge' },
+                { text: 'nz.removeTabBarBadge', link: '/api/ui/tabBar/removeTabBarBadge' },
+              ]
             }
           ]
         },

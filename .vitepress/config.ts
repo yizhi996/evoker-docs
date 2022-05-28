@@ -186,6 +186,79 @@ export default defineConfig({
             {
               text: '字体',
               children: [{ text: 'nz.loadFontFace', link: '/api/ui/font/loadFontFace' }]
+            },
+            {
+              text: '下拉刷新',
+              children: [
+                {
+                  text: 'nz.startPullDownRefresh',
+                  link: '/api/ui/pullDownRefresh/startPullDownRefresh'
+                },
+                {
+                  text: 'nz.stopPullDownRefresh',
+                  link: '/api/ui/pullDownRefresh/stopPullDownRefresh'
+                }
+              ]
+            },
+            {
+              text: '滚动',
+              children: [{ text: 'nz.pageScrollTo', link: '/api/ui/scroll/pageScrollTo' }]
+            },
+            {
+              text: '动画',
+              children: [
+                { text: 'nz.createAnimation', link: '/api/ui/animation/createAnimation' },
+                {
+                  text: 'Animation',
+                  link: '/api/ui/animation/Animation',
+                  children: [
+                    { text: 'Animation.export', link: '/api/ui/animation/Animation/export' },
+                    { text: 'Animation.step', link: '/api/ui/animation/Animation/step' },
+                    {
+                      text: 'Animation.backgroundColor',
+                      link: '/api/ui/animation/Animation/backgroundColor'
+                    },
+                    { text: 'Animation.top', link: '/api/ui/animation/Animation/top' },
+                    { text: 'Animation.bottom', link: '/api/ui/animation/Animation/bottom' },
+                    { text: 'Animation.left', link: '/api/ui/animation/Animation/left' },
+                    { text: 'Animation.right', link: '/api/ui/animation/Animation/right' },
+                    { text: 'Animation.width', link: '/api/ui/animation/Animation/width' },
+                    { text: 'Animation.height', link: '/api/ui/animation/Animation/height' },
+                    { text: 'Animation.rotate', link: '/api/ui/animation/Animation/rotate' },
+                    { text: 'Animation.rotateX', link: '/api/ui/animation/Animation/rotateX' },
+                    { text: 'Animation.rotateY', link: '/api/ui/animation/Animation/rotateY' },
+                    { text: 'Animation.rotateZ', link: '/api/ui/animation/Animation/rotateZ' },
+                    { text: 'Animation.rotate3d', link: '/api/ui/animation/Animation/rotate3d' },
+                    { text: 'Animation.scale', link: '/api/ui/animation/Animation/scale' },
+                    { text: 'Animation.scaleX', link: '/api/ui/animation/Animation/scaleX' },
+                    { text: 'Animation.scaleY', link: '/api/ui/animation/Animation/scaleY' },
+                    { text: 'Animation.scaleZ', link: '/api/ui/animation/Animation/scaleZ' },
+                    { text: 'Animation.scale3d', link: '/api/ui/animation/Animation/scale3d' },
+                    { text: 'Animation.translate', link: '/api/ui/animation/Animation/translate' },
+                    {
+                      text: 'Animation.translateX',
+                      link: '/api/ui/animation/Animation/translateX'
+                    },
+                    {
+                      text: 'Animation.translateY',
+                      link: '/api/ui/animation/Animation/translateY'
+                    },
+                    {
+                      text: 'Animation.translateZ',
+                      link: '/api/ui/animation/Animation/translateZ'
+                    },
+                    {
+                      text: 'Animation.translate3d',
+                      link: '/api/ui/animation/Animation/translate3d'
+                    },
+                    { text: 'Animation.skew', link: '/api/ui/animation/Animation/skew' },
+                    { text: 'Animation.skewX', link: '/api/ui/animation/Animation/skewX' },
+                    { text: 'Animation.skewY', link: '/api/ui/animation/Animation/skewY' },
+                    { text: 'Animation.matrix', link: '/api/ui/animation/Animation/matrix' },
+                    { text: 'Animation.matrix3d', link: '/api/ui/animation/Animation/matrix3d' },
+                  ]
+                }
+              ]
             }
           ]
         },

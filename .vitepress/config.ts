@@ -180,8 +180,12 @@ export default defineConfig({
                 { text: 'nz.setTabBarStyle', link: '/api/ui/tabBar/setTabBarStyle' },
                 { text: 'nz.setTabBarItem', link: '/api/ui/tabBar/setTabBarItem' },
                 { text: 'nz.setTabBarBadge', link: '/api/ui/tabBar/setTabBarBadge' },
-                { text: 'nz.removeTabBarBadge', link: '/api/ui/tabBar/removeTabBarBadge' },
+                { text: 'nz.removeTabBarBadge', link: '/api/ui/tabBar/removeTabBarBadge' }
               ]
+            },
+            {
+              text: '字体',
+              children: [{ text: 'nz.loadFontFace', link: '/api/ui/font/loadFontFace' }]
             }
           ]
         },

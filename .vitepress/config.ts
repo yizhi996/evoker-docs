@@ -125,6 +125,16 @@ export default defineConfig({
           ]
         },
         {
+          text: '路由',
+          children: [
+            { text: 'nz.navigateTo', link: '/api/route/navigateTo' },
+            { text: 'nz.navigateBack', link: '/api/route/navigateBack' },
+            { text: 'nz.reLaunch', link: '/api/route/reLaunch' },
+            { text: 'nz.redirectTo', link: '/api/route/redirectTo' },
+            { text: 'nz.switchTab', link: '/api/route/switchTab' }
+          ]
+        },
+        {
           text: '跳转',
           children: [
             { text: 'nz.navigateToMiniProgram', link: '/api/navigate/navigateToMiniProgram' },
@@ -255,7 +265,7 @@ export default defineConfig({
                     { text: 'Animation.skewX', link: '/api/ui/animation/Animation/skewX' },
                     { text: 'Animation.skewY', link: '/api/ui/animation/Animation/skewY' },
                     { text: 'Animation.matrix', link: '/api/ui/animation/Animation/matrix' },
-                    { text: 'Animation.matrix3d', link: '/api/ui/animation/Animation/matrix3d' },
+                    { text: 'Animation.matrix3d', link: '/api/ui/animation/Animation/matrix3d' }
                   ]
                 }
               ]
@@ -263,13 +273,81 @@ export default defineConfig({
           ]
         },
         {
-          text: '路由',
+          text: '网络',
           children: [
-            { text: 'nz.navigateTo', link: '/api/route/navigateTo' },
-            { text: 'nz.navigateBack', link: '/api/route/navigateBack' },
-            { text: 'nz.reLaunch', link: '/api/route/reLaunch' },
-            { text: 'nz.redirectTo', link: '/api/route/redirectTo' },
-            { text: 'nz.switchTab', link: '/api/route/switchTab' }
+            {
+              text: '请求',
+              children: [
+                {
+                  text: 'nz.request',
+                  link: '/api/network/request/request'
+                },
+                {
+                  text: 'RequestTask',
+                  link: '/api/network/request/RequestTask',
+                  children: [
+                    {
+                      text: 'RequestTask.abort',
+                      link: '/api/network/request/RequestTask/abort'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '下载',
+              children: [
+                {
+                  text: 'nz.downloadFile',
+                  link: '/api/network/download/downloadFile'
+                },
+                {
+                  text: 'DownloadTask',
+                  link: '/api/network/download/DownloadTask',
+                  children: [
+                    {
+                      text: 'DownloadTask.abort',
+                      link: '/api/network/download/DownloadTask/abort'
+                    },
+                    {
+                      text: 'DownloadTask.onProgressUpdate',
+                      link: '/api/network/download/DownloadTask/onProgressUpdate'
+                    },
+                    {
+                      text: 'DownloadTask.offProgressUpdate',
+                      link: '/api/network/download/DownloadTask/offProgressUpdate'
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '上传',
+              children: [
+                {
+                  text: 'nz.uploadFile',
+                  link: '/api/network/upload/uploadFile'
+                },
+                {
+                  text: 'UploadTask',
+                  link: '/api/network/upload/UploadTask',
+                  children: [
+                    {
+                      text: 'UploadTask.abort',
+                      link: '/api/network/upload/UploadTask/abort'
+                    },
+                    {
+                      text: 'UploadTask.onProgressUpdate',
+                      link: '/api/network/upload/UploadTask/onProgressUpdate'
+                    },
+                    {
+                      text: 'UploadTask.offProgressUpdate',
+                      link: '/api/network/upload/UploadTask/offProgressUpdate'
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {

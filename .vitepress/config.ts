@@ -351,6 +351,21 @@ export default defineConfig({
           ]
         },
         {
+          text: '数据缓存',
+          children: [
+            { text: 'nz.getStorage', link: '/api/storage/getStorage' },
+            { text: 'nz.getStorageSync', link: '/api/storage/getStorageSync' },
+            { text: 'nz.setStorage', link: '/api/storage/setStorage' },
+            { text: 'nz.setStorageSync', link: '/api/storage/setStorageSync' },
+            { text: 'nz.removeStorage', link: '/api/storage/removeStorage' },
+            { text: 'nz.removeStorageSync', link: '/api/storage/removeStorageSync' },
+            { text: 'nz.clearStorage', link: '/api/storage/clearStorage' },
+            { text: 'nz.clearStorageSync', link: '/api/storage/clearStorageSync' },
+            { text: 'nz.getStorageInfo', link: '/api/storage/getStorageInfo' },
+            { text: 'nz.getStorageInfoSync', link: '/api/storage/getStorageInfoSync' }
+          ]
+        },
+        {
           text: '媒体',
           children: [
             {

@@ -369,6 +369,31 @@ export default defineConfig({
           text: '媒体',
           children: [
             {
+              text: '图片',
+              children: [
+                {
+                  text: 'nz.saveImageToPhotosAlbum',
+                  link: '/api/media/image/saveImageToPhotosAlbum'
+                },
+                {
+                  text: 'nz.previewImage',
+                  link: '/api/media/image/previewImage'
+                },
+                {
+                  text: 'nz.getImageInfo',
+                  link: '/api/media/image/getImageInfo'
+                },
+                {
+                  text: 'nz.compressImage',
+                  link: '/api/media/image/compressImage'
+                },
+                {
+                  text: 'nz.chooseImage',
+                  link: '/api/media/image/chooseImage'
+                }
+              ]
+            },
+            {
               text: '相机',
               children: [
                 { text: 'nz.createCameraContext', link: '/api/media/camera/createCameraContext' },

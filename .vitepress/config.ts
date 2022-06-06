@@ -390,7 +390,28 @@ export default defineConfig({
                 {
                   text: 'nz.chooseImage',
                   link: '/api/media/image/chooseImage'
-                }
+                },
+              ]
+            },
+            {
+              text: '视频',
+              children: [
+                {
+                  text: 'nz.saveVideoToPhotosAlbum',
+                  link: '/api/media/video/saveVideoToPhotosAlbum'
+                },
+                {
+                  text: 'nz.getVideoInfo',
+                  link: '/api/media/video/getVideoInfo'
+                },
+                {
+                  text: 'nz.compressVideo',
+                  link: '/api/media/video/compressVideo'
+                },
+                {
+                  text: 'nz.chooseVideo',
+                  link: '/api/media/video/chooseVideo'
+                },
               ]
             },
             {

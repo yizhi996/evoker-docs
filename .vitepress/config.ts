@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from '@evoker/vitepress'
 
 export default defineConfig({
   srcDir: 'src',
@@ -7,13 +7,19 @@ export default defineConfig({
   lang: 'zh-Hans',
   description: '一个基于 Vue3 的小程序容器，小程序引擎',
 
+  lastUpdated: true,
+
   themeConfig: {
-    repo: 'yizhi996/nzoth',
-    docsDir: 'docs',
-    docsBranch: 'main',
-    editLinks: true,
-    editLinkText: 'Edit this page on GitHub',
-    lastUpdated: 'Last Updated',
+    footer: {
+      message: 'MIT Licensed',
+      copyright: 'Copyright © 2022-present YiZhi'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/yizhi996/nzoth-docs/edit/main/src/:path'
+    },
+
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yizhi996/nzoth' }],
 
     nav: [
       {
@@ -37,7 +43,7 @@ export default defineConfig({
       '/guide/': [
         {
           text: '开始',
-          children: [
+          items: [
             { text: '简介', link: '/guide/introduction' },
             {
               text: '快速开始',
@@ -47,7 +53,7 @@ export default defineConfig({
         },
         {
           text: '基础',
-          children: [
+          items: [
             { text: '应用生命周期', link: '/guide/essentials/app-lifecycle' },
             { text: '页面生命周期', link: '/guide/essentials/page-lifecycle' }
           ]
@@ -56,7 +62,7 @@ export default defineConfig({
       '/component/': [
         {
           text: '视图容器',
-          children: [
+          items: [
             { text: 'view', link: '/component/view' },
             { text: 'scroll-view', link: '/component/scroll-view' },
             { text: 'movable-area', link: '/component/movable-area' },
@@ -67,7 +73,7 @@ export default defineConfig({
         },
         {
           text: '基础内容',
-          children: [
+          items: [
             { text: 'icon', link: '/component/icon' },
             { text: 'progress', link: '/component/progress' },
             { text: 'text', link: '/component/text' }
@@ -75,7 +81,7 @@ export default defineConfig({
         },
         {
           text: '表单组件',
-          children: [
+          items: [
             { text: 'button', link: '/component/button' },
             { text: 'checkbox', link: '/component/checkbox' },
             { text: 'checkbox-group', link: '/component/checkbox-group' },
@@ -94,7 +100,7 @@ export default defineConfig({
         },
         {
           text: '媒体组件',
-          children: [
+          items: [
             { text: 'image', link: '/component/image' },
             { text: 'video', link: '/component/video' },
             { text: 'camera', link: '/component/camera' }
@@ -104,11 +110,15 @@ export default defineConfig({
       '/api/': [
         {
           text: '基础',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             { text: 'nz.env', link: '/api/base/env' },
+            { text: 'nz.arrayBufferToBase64', link: '/api/base/arrayBufferToBase64' },
+            { text: 'nz.base64ToArrayBuffer', link: '/api/base/base64ToArrayBuffer' },
             {
               text: '系统',
-              children: [
+              items: [
                 { text: 'nz.getWindowInfo', link: '/api/base/system/getWindowInfo' },
                 { text: 'nz.getSystemSetting', link: '/api/base/system/getSystemSetting' },
                 { text: 'nz.getDeviceInfo', link: '/api/base/system/getDeviceInfo' },
@@ -126,7 +136,9 @@ export default defineConfig({
         },
         {
           text: '路由',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             { text: 'nz.navigateTo', link: '/api/route/navigateTo' },
             { text: 'nz.navigateBack', link: '/api/route/navigateBack' },
             { text: 'nz.reLaunch', link: '/api/route/reLaunch' },
@@ -136,17 +148,21 @@ export default defineConfig({
         },
         {
           text: '跳转',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             { text: 'nz.navigateToMiniProgram', link: '/api/navigate/navigateToMiniProgram' },
             { text: 'nz.exitMiniProgram', link: '/api/navigate/exitMiniProgram' }
           ]
         },
         {
           text: '界面',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             {
               text: '交互',
-              children: [
+              items: [
                 { text: 'nz.showToast', link: '/api/ui/interaction/showToast' },
                 { text: 'nz.hideToast', link: '/api/ui/interaction/hideToast' },
                 { text: 'nz.showModal', link: '/api/ui/interaction/showModal' },
@@ -157,7 +173,7 @@ export default defineConfig({
             },
             {
               text: '导航栏',
-              children: [
+              items: [
                 {
                   text: 'nz.showNavigationBarLoading',
                   link: '/api/ui/navigation/showNavigationBarLoading'
@@ -182,7 +198,7 @@ export default defineConfig({
             },
             {
               text: 'Tab Bar',
-              children: [
+              items: [
                 { text: 'nz.showTabBarRedDot', link: '/api/ui/tabBar/showTabBarRedDot' },
                 { text: 'nz.hideTabBarRedDot', link: '/api/ui/tabBar/hideTabBarRedDot' },
                 { text: 'nz.showTabBar', link: '/api/ui/tabBar/showTabBar' },
@@ -195,11 +211,11 @@ export default defineConfig({
             },
             {
               text: '字体',
-              children: [{ text: 'nz.loadFontFace', link: '/api/ui/font/loadFontFace' }]
+              items: [{ text: 'nz.loadFontFace', link: '/api/ui/font/loadFontFace' }]
             },
             {
               text: '下拉刷新',
-              children: [
+              items: [
                 {
                   text: 'nz.startPullDownRefresh',
                   link: '/api/ui/pullDownRefresh/startPullDownRefresh'
@@ -212,16 +228,16 @@ export default defineConfig({
             },
             {
               text: '滚动',
-              children: [{ text: 'nz.pageScrollTo', link: '/api/ui/scroll/pageScrollTo' }]
+              items: [{ text: 'nz.pageScrollTo', link: '/api/ui/scroll/pageScrollTo' }]
             },
             {
               text: '动画',
-              children: [
+              items: [
                 { text: 'nz.createAnimation', link: '/api/ui/animation/createAnimation' },
                 {
                   text: 'Animation',
                   link: '/api/ui/animation/Animation',
-                  children: [
+                  items: [
                     { text: 'Animation.export', link: '/api/ui/animation/Animation/export' },
                     { text: 'Animation.step', link: '/api/ui/animation/Animation/step' },
                     {
@@ -274,10 +290,12 @@ export default defineConfig({
         },
         {
           text: '网络',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             {
               text: '请求',
-              children: [
+              items: [
                 {
                   text: 'nz.request',
                   link: '/api/network/request/request'
@@ -285,7 +303,7 @@ export default defineConfig({
                 {
                   text: 'RequestTask',
                   link: '/api/network/request/RequestTask',
-                  children: [
+                  items: [
                     {
                       text: 'RequestTask.abort',
                       link: '/api/network/request/RequestTask/abort'
@@ -296,7 +314,7 @@ export default defineConfig({
             },
             {
               text: '下载',
-              children: [
+              items: [
                 {
                   text: 'nz.downloadFile',
                   link: '/api/network/download/downloadFile'
@@ -304,7 +322,7 @@ export default defineConfig({
                 {
                   text: 'DownloadTask',
                   link: '/api/network/download/DownloadTask',
-                  children: [
+                  items: [
                     {
                       text: 'DownloadTask.abort',
                       link: '/api/network/download/DownloadTask/abort'
@@ -323,7 +341,7 @@ export default defineConfig({
             },
             {
               text: '上传',
-              children: [
+              items: [
                 {
                   text: 'nz.uploadFile',
                   link: '/api/network/upload/uploadFile'
@@ -331,7 +349,7 @@ export default defineConfig({
                 {
                   text: 'UploadTask',
                   link: '/api/network/upload/UploadTask',
-                  children: [
+                  items: [
                     {
                       text: 'UploadTask.abort',
                       link: '/api/network/upload/UploadTask/abort'
@@ -352,7 +370,9 @@ export default defineConfig({
         },
         {
           text: '数据缓存',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             { text: 'nz.getStorage', link: '/api/storage/getStorage' },
             { text: 'nz.getStorageSync', link: '/api/storage/getStorageSync' },
             { text: 'nz.setStorage', link: '/api/storage/setStorage' },
@@ -367,10 +387,12 @@ export default defineConfig({
         },
         {
           text: '媒体',
-          children: [
+          collapsible: true,
+          collapsed: true,
+          items: [
             {
               text: '图片',
-              children: [
+              items: [
                 {
                   text: 'nz.saveImageToPhotosAlbum',
                   link: '/api/media/image/saveImageToPhotosAlbum'
@@ -390,12 +412,12 @@ export default defineConfig({
                 {
                   text: 'nz.chooseImage',
                   link: '/api/media/image/chooseImage'
-                },
+                }
               ]
             },
             {
               text: '视频',
-              children: [
+              items: [
                 {
                   text: 'nz.saveVideoToPhotosAlbum',
                   link: '/api/media/video/saveVideoToPhotosAlbum'
@@ -411,17 +433,95 @@ export default defineConfig({
                 {
                   text: 'nz.chooseVideo',
                   link: '/api/media/video/chooseVideo'
+                }
+              ]
+            },
+            {
+              text: '音频',
+              items: [
+                {
+                  text: 'nz.createInnerAudioContext',
+                  link: '/api/media/audio/createInnerAudioContext'
                 },
+                {
+                  text: 'InnerAudioContext',
+                  link: '/api/media/audio/InnerAudioContext',
+                  items: [
+                    { text: 'play', link: '/api/media/audio/InnerAudioContext/play' },
+                    { text: 'pause', link: '/api/media/audio/InnerAudioContext/pause' },
+                    { text: 'stop', link: '/api/media/audio/InnerAudioContext/stop' },
+                    { text: 'seek', link: '/api/media/audio/InnerAudioContext/seek' },
+                    { text: 'destroy', link: '/api/media/audio/InnerAudioContext/destroy' },
+                    { text: 'onCanplay', link: '/api/media/audio/InnerAudioContext/onCanplay' },
+                    { text: 'offCanplay', link: '/api/media/audio/InnerAudioContext/offCanplay' },
+                    { text: 'onPlay', link: '/api/media/audio/InnerAudioContext/onPlay' },
+                    { text: 'offPlay', link: '/api/media/audio/InnerAudioContext/offPlay' },
+                    { text: 'onPause', link: '/api/media/audio/InnerAudioContext/onPause' },
+                    { text: 'offPause', link: '/api/media/audio/InnerAudioContext/offPause' },
+                    { text: 'onStop', link: '/api/media/audio/InnerAudioContext/onStop' },
+                    { text: 'offStop', link: '/api/media/audio/InnerAudioContext/offStop' },
+                    { text: 'onEnded', link: '/api/media/audio/InnerAudioContext/onEnded' },
+                    { text: 'offEnded', link: '/api/media/audio/InnerAudioContext/offEnded' },
+                    {
+                      text: 'onTimeUpdate',
+                      link: '/api/media/audio/InnerAudioContext/onTimeUpdate'
+                    },
+                    {
+                      text: 'offTimeUpdate',
+                      link: '/api/media/audio/InnerAudioContext/offTimeUpdate'
+                    },
+                    { text: 'onError', link: '/api/media/audio/InnerAudioContext/onError' },
+                    { text: 'offError', link: '/api/media/audio/InnerAudioContext/offError' },
+                    { text: 'onWaiting', link: '/api/media/audio/InnerAudioContext/onWaiting' },
+                    { text: 'offWaiting', link: '/api/media/audio/InnerAudioContext/offWaiting' },
+                    { text: 'onSeeking', link: '/api/media/audio/InnerAudioContext/onSeeking' },
+                    { text: 'offSeeking', link: '/api/media/audio/InnerAudioContext/offSeeking' },
+                    { text: 'onSeeked', link: '/api/media/audio/InnerAudioContext/onSeeked' },
+                    { text: 'offSeeked', link: '/api/media/audio/InnerAudioContext/offSeeked' }
+                  ]
+                }
+              ]
+            },
+            {
+              text: '录音',
+              items: [
+                {
+                  text: 'nz.getRecorderManager',
+                  link: '/api/media/recorder/getRecorderManager'
+                },
+                {
+                  text: 'RecorderManager',
+                  link: '/api/media/recorder/RecorderManager',
+                  items: [
+                    { text: 'start', link: '/api/media/recorder/RecorderManager/start' },
+                    { text: 'pause', link: '/api/media/recorder/RecorderManager/pause' },
+                    { text: 'resume', link: '/api/media/recorder/RecorderManager/resume' },
+                    { text: 'stop', link: '/api/media/recorder/RecorderManager/stop' },
+                    { text: 'onStart', link: '/api/media/recorder/RecorderManager/onStart' },
+                    { text: 'onResume', link: '/api/media/recorder/RecorderManager/onResume' },
+                    { text: 'onPause', link: '/api/media/recorder/RecorderManager/onPause' },
+                    { text: 'onStop', link: '/api/media/recorder/RecorderManager/onStop' },
+                    { text: 'onError', link: '/api/media/recorder/RecorderManager/onError' },
+                    {
+                      text: 'onInterruptionBegin',
+                      link: '/api/media/recorder/RecorderManager/onInterruptionBegin'
+                    },
+                    {
+                      text: 'onInterruptionEnd',
+                      link: '/api/media/recorder/RecorderManager/onInterruptionEnd'
+                    }
+                  ]
+                }
               ]
             },
             {
               text: '相机',
-              children: [
+              items: [
                 { text: 'nz.createCameraContext', link: '/api/media/camera/createCameraContext' },
                 {
                   text: 'CameraContext',
                   link: '/api/media/camera/CameraContext',
-                  children: [
+                  items: [
                     {
                       text: 'CameraContext.takePhoto',
                       link: '/api/media/camera/CameraContext/takePhoto'
@@ -440,6 +540,143 @@ export default defineConfig({
                     }
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          text: '位置',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'nz.getLocation', link: '/api/location/getLocation' },
+            { text: 'nz.startLocationUpdate', link: '/api/location/startLocationUpdate' },
+            { text: 'nz.stopLocationUpdate', link: '/api/location/stopLocationUpdate' },
+            { text: 'nz.onLocationChange', link: '/api/location/onLocationChange' },
+            { text: 'nz.offLocationChange', link: '/api/location/offLocationChange' },
+            { text: 'nz.onLocationChangeError', link: '/api/location/onLocationChangeError' },
+            { text: 'nz.offLocationChangeError', link: '/api/location/offLocationChangeError' }
+          ]
+        },
+        {
+          text: '开放接口',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: '登录',
+              items: [
+                { text: 'nz.login', link: '/api/open/login/login' },
+                { text: 'nz.checkSession', link: '/api/open/login/checkSession' }
+              ]
+            },
+            {
+              text: '用户信息',
+              items: [
+                { text: 'nz.getUserInfo', link: '/api/open/user/getUserInfo' },
+                { text: 'nz.getUserProfile', link: '/api/open/user/getUserProfile' }
+              ]
+            },
+            {
+              text: '授权',
+              items: [{ text: 'nz.authorize', link: '/api/open/authorize' }]
+            },
+            {
+              text: '设置',
+              items: [
+                { text: 'nz.openSetting', link: '/api/open/setting/openSetting' },
+                { text: 'nz.getSetting', link: '/api/open/setting/getSetting' }
+              ]
+            }
+          ]
+        },
+        {
+          text: '设备',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: '电量',
+              items: [{ text: 'nz.getBatteryInfo', link: '/api/device/battery/getBatteryInfo' }]
+            },
+            {
+              text: '剪切板',
+              items: [
+                { text: 'nz.getClipboardData', link: '/api/device/clipboard/getClipboardData' },
+                { text: 'nz.setClipboardData', link: '/api/device/clipboard/setClipboardData' }
+              ]
+            },
+            {
+              text: '网络',
+              items: [
+                { text: 'nz.getNetworkType', link: '/api/device/network/getNetworkType' },
+                { text: 'nz.getLocalIPAddress', link: '/api/device/network/getLocalIPAddress' },
+                {
+                  text: 'nz.onNetworkStatusChange',
+                  link: '/api/device/network/onNetworkStatusChange'
+                },
+                {
+                  text: 'nz.offNetworkStatusChange',
+                  link: '/api/device/network/offNetworkStatusChange'
+                }
+              ]
+            },
+            {
+              text: '加密',
+              items: [
+                { text: 'nz.getRandomValues', link: '/api/device/crypto/getRandomValues' },
+                { text: 'nz.rsa', link: '/api/device/crypto/rsa' }
+              ]
+            },
+            {
+              text: '屏幕',
+              items: [
+                { text: 'nz.getScreenBrightness', link: '/api/device/screen/getScreenBrightness' },
+                { text: 'nz.setScreenBrightness', link: '/api/device/screen/setScreenBrightness' },
+                { text: 'nz.setKeepScreenOn', link: '/api/device/screen/setKeepScreenOn' },
+                { text: 'nz.onUserCaptureScreen', link: '/api/device/screen/onUserCaptureScreen' },
+                { text: 'nz.offUserCaptureScreen', link: '/api/device/screen/offUserCaptureScreen' }
+              ]
+            },
+            {
+              text: '键盘',
+              items: [
+                {
+                  text: 'nz.onKeyboardHeightChange',
+                  link: '/api/device/keyboard/onKeyboardHeightChange'
+                },
+                {
+                  text: 'nz.offKeyboardHeightChange',
+                  link: '/api/device/keyboard/offKeyboardHeightChange'
+                },
+                { text: 'nz.hideKeyboard', link: '/api/device/keyboard/hideKeyboard' }
+              ]
+            },
+            {
+              text: '电话',
+              items: [{ text: 'nz.makePhoneCall', link: '/api/open/phone/makePhoneCall' }]
+            },
+            {
+              text: '振动',
+              items: [
+                { text: 'nz.vibrateShort', link: '/api/open/vibrate/vibrateShort' },
+                { text: 'nz.vibrateLong', link: '/api/open/vibrate/vibrateLong' }
+              ]
+            }
+          ]
+        },
+        {
+          text: 'HTML',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'nz.createSelectorQuery', link: '/api/HTML/createSelectorQuery' },
+            {
+              text: 'SelectorQuery',
+              link: '/api/HTML/SelectorQuery',
+              items: [
+                { text: 'SelectorQuery.exec', link: '/api/HTML/SelectorQuery/exec' },
+                { text: 'SelectorQuery.in', link: '/api/HTML/SelectorQuery/in' }
               ]
             }
           ]

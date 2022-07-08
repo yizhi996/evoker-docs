@@ -1,4 +1,4 @@
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from '@evoker/vitepress/theme'
 import './index.css'
 
 import Icon from './components/Icon.vue'

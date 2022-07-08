@@ -55,7 +55,7 @@ const props = [
         type: "Object",
         default: "",
         required: false, 
-        desc: "设置请求的 header，header 中不能设置 Referer，content-type 默认为 application/json", 
+        desc: "设置请求的 header，header 中不能设置 Referrer，content-type 默认为 application/json", 
         version: "0.1.0"
     },
     {

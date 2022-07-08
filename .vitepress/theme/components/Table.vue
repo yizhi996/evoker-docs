@@ -22,15 +22,19 @@ const props = withDefaults(defineProps<{ headers: string[] }>(), {
   font-size: 14px;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #f1f4f8;
-  background-color: #fafafa;
+  border: 1px solid var(--vp-c-text-inverse-2);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.ll-table thead tr {
+  border: none;
 }
 
 .ll-table th,
 tr,
 td {
   border: none;
-  background-color: #fafafa;
+  background-color: var(--vp-c-bg-alt);
   padding: 10px 20px;
 }
 
@@ -52,7 +56,7 @@ td {
   border-bottom: none;
   border-left: none;
   border-right: none;
-  border-top: solid 1px #f1f4f8;
+  border-top: solid 1px var(--vp-c-text-inverse-2);
   text-align: left;
 }
 

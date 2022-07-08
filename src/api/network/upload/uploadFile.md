@@ -81,7 +81,7 @@ const props = [
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP 请求的 Header，Header 中不能设置 Referer", 
+        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer", 
         version: "0.1.0"
     },
     {

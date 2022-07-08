@@ -30,16 +30,24 @@ defineProps<{ values: DataItemValue[] }>()
   margin-left: 20px;
   padding: 0 10px;
   border-radius: 8px;
-  background-color: #f0f0f0;
-  border: 1px solid #e6e6e6;
+  background-color: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-text-inverse-2);
+}
+
+.ll-table__values thead tr {
+  border: none;
+}
+
+.ll-table__values tr {
+  border-top: 1px solid var(--vp-c-text-inverse-2);
 }
 
 .ll-table__values th {
-  background-color: #f0f0f0;
+  background-color: var(--vp-c-bg-mute);
 }
 
 .ll-table__values td {
-  border-top: solid 1px #e6e6e6;
-  background-color: #f0f0f0;
+  border-top: solid 1px var(---vp-c-text-inverse-2);
+  background-color: var(--vp-c-bg-mute);
 }
 </style>

@@ -1,4 +1,4 @@
-# nz.hideKeyboard
+# ek.hideKeyboard
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,5 +11,5 @@
 ### Example
 
 ```ts
-nz.hideKeyboard()
+ek.hideKeyboard()
 ```

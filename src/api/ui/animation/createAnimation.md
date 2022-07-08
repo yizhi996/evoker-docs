@@ -1,4 +1,4 @@
-# nz.createAnimation
+# ek.createAnimation
 
 > <Icon type="success" /> 支持 Promise
 
@@ -25,11 +25,11 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { usePage } from 'nzoth'
+import { usePage } from 'evoker'
 
 const { onShow } = usePage()
 
-const animation = nz.createAnimation({
+const animation = ek.createAnimation({
   duration: 1000,
   timingFunction: 'ease'
 })

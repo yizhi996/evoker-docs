@@ -1,4 +1,4 @@
-# nz.startPullDownRefresh
+# ek.startPullDownRefresh
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,5 +11,5 @@
 ### Example
 
 ```ts
-nz.startPullDownRefresh()
+ek.startPullDownRefresh()
 ```

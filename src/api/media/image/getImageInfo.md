@@ -1,4 +1,4 @@
-# nz.getImageInfo
+# ek.getImageInfo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const res = await nz.getImageInfo({
+const res = await ek.getImageInfo({
   src: 'https://example.com/test.png'
 })
 console.log(res.width, res.height, res.path)

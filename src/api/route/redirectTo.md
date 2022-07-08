@@ -1,4 +1,4 @@
-# nz.redirectTo
+# ek.redirectTo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.redirectTo({ url: 'profile?id=1' })
+ek.redirectTo({ url: 'profile?id=1' })
 ```
 
 <script setup>

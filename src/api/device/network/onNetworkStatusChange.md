@@ -1,4 +1,4 @@
-# nz.onNetworkStatusChange
+# ek.onNetworkStatusChange
 
 监听网络状态变化事件。
 
@@ -17,7 +17,7 @@ Object
 ### Example
 
 ```ts
-nz.onNetworkStatusChange(({ isConnected, networkType }) => {
+ek.onNetworkStatusChange(({ isConnected, networkType }) => {
   console.log(isConnected)
   console.log(networkType)
 })

@@ -1,4 +1,4 @@
-# nz.removeStorage
+# ek.removeStorage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.removeStorage({
+ek.removeStorage({
   key: 'key_abc',
   success: () => {
     console.log('ok')

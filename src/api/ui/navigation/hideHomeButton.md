@@ -1,4 +1,4 @@
-# nz.hideHomeButton
+# ek.hideHomeButton
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,12 +11,12 @@
 ### Example
 
 ```ts
-import { usePage } from 'nzoth'
+import { usePage } from 'evoker'
 
 const { onShow } = usePage()
 
 onShow(() => {
-  nz.hideHomeButton()
+  ek.hideHomeButton()
 })
 ```
 

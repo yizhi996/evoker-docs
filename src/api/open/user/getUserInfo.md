@@ -1,4 +1,4 @@
-# nz.getUserInfo
+# ek.getUserInfo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -27,10 +27,10 @@
 
 <script setup lang="ts">
 // 在已经授权的情况下可以直接获取用户信息，无需通过 open-type 的方式获取
-nz.getSetting({
+ek.getSetting({
   success: async res => {
     if (res.authSetting['scope.userInfo']) {
-      const { userInfo } = await nz.getUserInfo()
+      const { userInfo } = await ek.getUserInfo()
       console.log(userInfo)
     }
   }

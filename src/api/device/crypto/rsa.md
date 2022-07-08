@@ -1,4 +1,4 @@
-# nz.rsa
+# ek.rsa
 
 > <Icon type="success" /> 支持 Promise
 
@@ -22,13 +22,13 @@ const privateKey =
 
 const text = 'password'
 
-const { encrypted } = await nz.rsa({
+const { encrypted } = await ek.rsa({
   action: 'encrypt',
   text,
   key: publicKey
 })
 
-const { decrypted } = await nz.rsa({
+const { decrypted } = await ek.rsa({
   action: 'decrypt',
   text: encrypted,
   key: privateKey

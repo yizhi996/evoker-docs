@@ -1,4 +1,4 @@
-# nz.offLocationChange
+# ek.offLocationChange
 
 取消监听实时地理位置变化事件。
 

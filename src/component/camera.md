@@ -4,7 +4,7 @@
 
 > 需要用户授权 `scope.camera`。
 
-> 相关 api [nz.createCameraContext](../api/media/camera/createCameraContext)
+> 相关 api [ek.createCameraContext](../api/media/camera/createCameraContext)
 
 ### Props
 

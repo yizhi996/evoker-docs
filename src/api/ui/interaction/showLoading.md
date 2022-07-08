@@ -1,8 +1,8 @@
-# nz.showLoading
+# ek.showLoading
 
 > <Icon type="success" /> 支持 Promise
 
-显示 loading 提示框，需主动调用 [nz.hideLoading](./hideLoading) 才能关闭提示框。
+显示 loading 提示框，需主动调用 [ek.hideLoading](./hideLoading) 才能关闭提示框。
 
 ### 参数
 
@@ -12,19 +12,19 @@
 
 ```ts
 const loading = () => {
-  nz.showLoading({
+  ek.showLoading({
     title: 'Loading...',
     mask: 'true'
   })
   setTimeout(() => {
-    nz.hideLoading()
+    ek.hideLoading()
   }, 2000)
 }
 ```
 
 ### Tips
 
-- [nz.showLoading](./showLoading) 和 [nz.showToast](./showToast) 同时只能显示一个。
+- [ek.showLoading](./showLoading) 和 [ek.showToast](./showToast) 同时只能显示一个。
 
 <script setup>
 const props = [

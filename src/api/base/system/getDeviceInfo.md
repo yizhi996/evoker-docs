@@ -1,4 +1,4 @@
-# nz.getDeviceInfo
+# ek.getDeviceInfo
 
 获取设备基础信息。
 
@@ -9,7 +9,7 @@
 ### Example
 
 ```ts
-const info = nz.getDeviceInfo()
+const info = ek.getDeviceInfo()
 ```
 
 <script setup>

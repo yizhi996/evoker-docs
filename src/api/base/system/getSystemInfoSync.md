@@ -1,12 +1,12 @@
-# nz.getSystemInfoSync
+# ek.getSystemInfoSync
 
 获取系统信息。
 
-是 [nz.getSystemInfo](./getSystemInfo) 的同步方法。
+是 [ek.getSystemInfo](./getSystemInfo) 的同步方法。
 
 ### Example
 
 ```ts
-const info = nz.getSystemInfoSync()
+const info = ek.getSystemInfoSync()
 console.log(info)
 ```

@@ -1,4 +1,4 @@
-# nz.setTabBarStyle
+# ek.setTabBarStyle
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.setTabBarStyle({
+ek.setTabBarStyle({
   color: '#fff',
   selectedColor: '#1989fa',
   backgroundColor: '#000'

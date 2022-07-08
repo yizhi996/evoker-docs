@@ -1,8 +1,8 @@
-# nz.authorize
+# ek.authorize
 
 > <Icon type="success" /> 支持 Promise
 
-提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。更多用法详见 [用户授权]()
+提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。更多用法详见 [用户授权](scope.md)
 
 ### 参数
 
@@ -12,11 +12,11 @@
 
 ```ts
 // 先判断一下之前是否已经授权过
-const { authSetting } = await nz.getSetting()
+const { authSetting } = await ek.getSetting()
 
 const scope = 'scope.record'
 if (!authSetting[scope]) {
-  await nz.authorize({ scope })
+  await ek.authorize({ scope })
   // 调用相关的接口
 }
 ```

@@ -1,4 +1,4 @@
-# nz.base64ToArrayBuffer
+# ek.base64ToArrayBuffer
 
 将 Base64 字符串转成 ArrayBuffer 对象。
 
@@ -18,5 +18,5 @@ ArrayBuffer 对象
 
 ```ts
 const base64 = 'CxYh'
-const arrayBuffer = nz.base64ToArrayBuffer(base64)
+const arrayBuffer = ek.base64ToArrayBuffer(base64)
 ```

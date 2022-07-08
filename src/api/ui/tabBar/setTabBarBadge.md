@@ -1,4 +1,4 @@
-# nz.setTabBarBadge
+# ek.setTabBarBadge
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.setTabBarBadge({
+ek.setTabBarBadge({
   index: 0,
   text: '1'
 })

@@ -70,7 +70,7 @@ function onThemeChange(callback: (res: AppThemeChangeResult) => void): void
 ### Example
 
 ```ts
-import { useApp } from 'nzoth'
+import { useApp } from 'evoker'
 
 const { onLaunch, onShow, onHide, onError, onThemeChange } = useApp()
 

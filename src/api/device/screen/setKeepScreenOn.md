@@ -1,4 +1,4 @@
-# nz.setKeepScreen
+# ek.setKeepScreen
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.setKeepScreen({ keepScreenOn: true })
+ek.setKeepScreen({ keepScreenOn: true })
 ```
 
 <script setup>

@@ -1,4 +1,4 @@
-# nz.onLocationChangeError
+# ek.onLocationChangeError
 
 监听持续定位接口返回失败事件。
 

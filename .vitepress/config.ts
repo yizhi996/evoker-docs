@@ -1,9 +1,9 @@
-import { defineConfig } from '@evoker/vitepress'
+import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   srcDir: 'src',
   base: '/',
-  title: 'NZoth',
+  title: 'Evoker',
   lang: 'zh-Hans',
   description: '一个基于 Vue3 的小程序容器，小程序引擎',
 
@@ -16,10 +16,10 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/yizhi996/nzoth-docs/edit/main/src/:path'
+      pattern: 'https://github.com/yizhi996/evoker-docs/edit/main/src/:path'
     },
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/yizhi996/nzoth' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yizhi996/evoker' }],
 
     nav: [
       {
@@ -113,23 +113,23 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'nz.env', link: '/api/base/env' },
-            { text: 'nz.arrayBufferToBase64', link: '/api/base/arrayBufferToBase64' },
-            { text: 'nz.base64ToArrayBuffer', link: '/api/base/base64ToArrayBuffer' },
+            { text: 'ek.env', link: '/api/base/env' },
+            { text: 'ek.arrayBufferToBase64', link: '/api/base/arrayBufferToBase64' },
+            { text: 'ek.base64ToArrayBuffer', link: '/api/base/base64ToArrayBuffer' },
             {
               text: '系统',
               items: [
-                { text: 'nz.getWindowInfo', link: '/api/base/system/getWindowInfo' },
-                { text: 'nz.getSystemSetting', link: '/api/base/system/getSystemSetting' },
-                { text: 'nz.getDeviceInfo', link: '/api/base/system/getDeviceInfo' },
-                { text: 'nz.getAppBaseInfo', link: '/api/base/system/getAppBaseInfo' },
+                { text: 'ek.getWindowInfo', link: '/api/base/system/getWindowInfo' },
+                { text: 'ek.getSystemSetting', link: '/api/base/system/getSystemSetting' },
+                { text: 'ek.getDeviceInfo', link: '/api/base/system/getDeviceInfo' },
+                { text: 'ek.getAppBaseInfo', link: '/api/base/system/getAppBaseInfo' },
                 {
-                  text: 'nz.getAppAuthorizeSetting',
+                  text: 'ek.getAppAuthorizeSetting',
                   link: '/api/base/system/getAppAuthorizeSetting'
                 },
-                { text: 'nz.getSystemInfo', link: '/api/base/system/getSystemInfo' },
-                { text: 'nz.getSystemInfoAsync', link: '/api/base/system/getSystemInfoAsync' },
-                { text: 'nz.getSystemInfoSync', link: '/api/base/system/getSystemInfoSync' }
+                { text: 'ek.getSystemInfo', link: '/api/base/system/getSystemInfo' },
+                { text: 'ek.getSystemInfoAsync', link: '/api/base/system/getSystemInfoAsync' },
+                { text: 'ek.getSystemInfoSync', link: '/api/base/system/getSystemInfoSync' }
               ]
             }
           ]
@@ -139,11 +139,11 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'nz.navigateTo', link: '/api/route/navigateTo' },
-            { text: 'nz.navigateBack', link: '/api/route/navigateBack' },
-            { text: 'nz.reLaunch', link: '/api/route/reLaunch' },
-            { text: 'nz.redirectTo', link: '/api/route/redirectTo' },
-            { text: 'nz.switchTab', link: '/api/route/switchTab' }
+            { text: 'ek.navigateTo', link: '/api/route/navigateTo' },
+            { text: 'ek.navigateBack', link: '/api/route/navigateBack' },
+            { text: 'ek.reLaunch', link: '/api/route/reLaunch' },
+            { text: 'ek.redirectTo', link: '/api/route/redirectTo' },
+            { text: 'ek.switchTab', link: '/api/route/switchTab' }
           ]
         },
         {
@@ -151,8 +151,8 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'nz.navigateToMiniProgram', link: '/api/navigate/navigateToMiniProgram' },
-            { text: 'nz.exitMiniProgram', link: '/api/navigate/exitMiniProgram' }
+            { text: 'ek.navigateToMiniProgram', link: '/api/navigate/navigateToMiniProgram' },
+            { text: 'ek.exitMiniProgram', link: '/api/navigate/exitMiniProgram' }
           ]
         },
         {
@@ -163,35 +163,35 @@ export default defineConfig({
             {
               text: '交互',
               items: [
-                { text: 'nz.showToast', link: '/api/ui/interaction/showToast' },
-                { text: 'nz.hideToast', link: '/api/ui/interaction/hideToast' },
-                { text: 'nz.showModal', link: '/api/ui/interaction/showModal' },
-                { text: 'nz.showLoading', link: '/api/ui/interaction/showLoading' },
-                { text: 'nz.hideLoading', link: '/api/ui/interaction/hideLoading' },
-                { text: 'nz.showActionSheet', link: '/api/ui/interaction/showActionSheet' }
+                { text: 'ek.showToast', link: '/api/ui/interaction/showToast' },
+                { text: 'ek.hideToast', link: '/api/ui/interaction/hideToast' },
+                { text: 'ek.showModal', link: '/api/ui/interaction/showModal' },
+                { text: 'ek.showLoading', link: '/api/ui/interaction/showLoading' },
+                { text: 'ek.hideLoading', link: '/api/ui/interaction/hideLoading' },
+                { text: 'ek.showActionSheet', link: '/api/ui/interaction/showActionSheet' }
               ]
             },
             {
               text: '导航栏',
               items: [
                 {
-                  text: 'nz.showNavigationBarLoading',
+                  text: 'ek.showNavigationBarLoading',
                   link: '/api/ui/navigation/showNavigationBarLoading'
                 },
                 {
-                  text: 'nz.hideNavigationBarLoading',
+                  text: 'ek.hideNavigationBarLoading',
                   link: '/api/ui/navigation/hideNavigationBarLoading'
                 },
                 {
-                  text: 'nz.setNavigationBarTitle',
+                  text: 'ek.setNavigationBarTitle',
                   link: '/api/ui/navigation/setNavigationBarTitle'
                 },
                 {
-                  text: 'nz.setNavigationBarColor',
+                  text: 'ek.setNavigationBarColor',
                   link: '/api/ui/navigation/setNavigationBarColor'
                 },
                 {
-                  text: 'nz.hideHomeButton',
+                  text: 'ek.hideHomeButton',
                   link: '/api/ui/navigation/hideHomeButton'
                 }
               ]
@@ -199,41 +199,41 @@ export default defineConfig({
             {
               text: 'Tab Bar',
               items: [
-                { text: 'nz.showTabBarRedDot', link: '/api/ui/tabBar/showTabBarRedDot' },
-                { text: 'nz.hideTabBarRedDot', link: '/api/ui/tabBar/hideTabBarRedDot' },
-                { text: 'nz.showTabBar', link: '/api/ui/tabBar/showTabBar' },
-                { text: 'nz.hideTabBar', link: '/api/ui/tabBar/hideTabBar' },
-                { text: 'nz.setTabBarStyle', link: '/api/ui/tabBar/setTabBarStyle' },
-                { text: 'nz.setTabBarItem', link: '/api/ui/tabBar/setTabBarItem' },
-                { text: 'nz.setTabBarBadge', link: '/api/ui/tabBar/setTabBarBadge' },
-                { text: 'nz.removeTabBarBadge', link: '/api/ui/tabBar/removeTabBarBadge' }
+                { text: 'ek.showTabBarRedDot', link: '/api/ui/tabBar/showTabBarRedDot' },
+                { text: 'ek.hideTabBarRedDot', link: '/api/ui/tabBar/hideTabBarRedDot' },
+                { text: 'ek.showTabBar', link: '/api/ui/tabBar/showTabBar' },
+                { text: 'ek.hideTabBar', link: '/api/ui/tabBar/hideTabBar' },
+                { text: 'ek.setTabBarStyle', link: '/api/ui/tabBar/setTabBarStyle' },
+                { text: 'ek.setTabBarItem', link: '/api/ui/tabBar/setTabBarItem' },
+                { text: 'ek.setTabBarBadge', link: '/api/ui/tabBar/setTabBarBadge' },
+                { text: 'ek.removeTabBarBadge', link: '/api/ui/tabBar/removeTabBarBadge' }
               ]
             },
             {
               text: '字体',
-              items: [{ text: 'nz.loadFontFace', link: '/api/ui/font/loadFontFace' }]
+              items: [{ text: 'ek.loadFontFace', link: '/api/ui/font/loadFontFace' }]
             },
             {
               text: '下拉刷新',
               items: [
                 {
-                  text: 'nz.startPullDownRefresh',
+                  text: 'ek.startPullDownRefresh',
                   link: '/api/ui/pullDownRefresh/startPullDownRefresh'
                 },
                 {
-                  text: 'nz.stopPullDownRefresh',
+                  text: 'ek.stopPullDownRefresh',
                   link: '/api/ui/pullDownRefresh/stopPullDownRefresh'
                 }
               ]
             },
             {
               text: '滚动',
-              items: [{ text: 'nz.pageScrollTo', link: '/api/ui/scroll/pageScrollTo' }]
+              items: [{ text: 'ek.pageScrollTo', link: '/api/ui/scroll/pageScrollTo' }]
             },
             {
               text: '动画',
               items: [
-                { text: 'nz.createAnimation', link: '/api/ui/animation/createAnimation' },
+                { text: 'ek.createAnimation', link: '/api/ui/animation/createAnimation' },
                 {
                   text: 'Animation',
                   link: '/api/ui/animation/Animation',
@@ -297,7 +297,7 @@ export default defineConfig({
               text: '请求',
               items: [
                 {
-                  text: 'nz.request',
+                  text: 'ek.request',
                   link: '/api/network/request/request'
                 },
                 {
@@ -316,7 +316,7 @@ export default defineConfig({
               text: '下载',
               items: [
                 {
-                  text: 'nz.downloadFile',
+                  text: 'ek.downloadFile',
                   link: '/api/network/download/downloadFile'
                 },
                 {
@@ -343,7 +343,7 @@ export default defineConfig({
               text: '上传',
               items: [
                 {
-                  text: 'nz.uploadFile',
+                  text: 'ek.uploadFile',
                   link: '/api/network/upload/uploadFile'
                 },
                 {
@@ -373,16 +373,16 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'nz.getStorage', link: '/api/storage/getStorage' },
-            { text: 'nz.getStorageSync', link: '/api/storage/getStorageSync' },
-            { text: 'nz.setStorage', link: '/api/storage/setStorage' },
-            { text: 'nz.setStorageSync', link: '/api/storage/setStorageSync' },
-            { text: 'nz.removeStorage', link: '/api/storage/removeStorage' },
-            { text: 'nz.removeStorageSync', link: '/api/storage/removeStorageSync' },
-            { text: 'nz.clearStorage', link: '/api/storage/clearStorage' },
-            { text: 'nz.clearStorageSync', link: '/api/storage/clearStorageSync' },
-            { text: 'nz.getStorageInfo', link: '/api/storage/getStorageInfo' },
-            { text: 'nz.getStorageInfoSync', link: '/api/storage/getStorageInfoSync' }
+            { text: 'ek.getStorage', link: '/api/storage/getStorage' },
+            { text: 'ek.getStorageSync', link: '/api/storage/getStorageSync' },
+            { text: 'ek.setStorage', link: '/api/storage/setStorage' },
+            { text: 'ek.setStorageSync', link: '/api/storage/setStorageSync' },
+            { text: 'ek.removeStorage', link: '/api/storage/removeStorage' },
+            { text: 'ek.removeStorageSync', link: '/api/storage/removeStorageSync' },
+            { text: 'ek.clearStorage', link: '/api/storage/clearStorage' },
+            { text: 'ek.clearStorageSync', link: '/api/storage/clearStorageSync' },
+            { text: 'ek.getStorageInfo', link: '/api/storage/getStorageInfo' },
+            { text: 'ek.getStorageInfoSync', link: '/api/storage/getStorageInfoSync' }
           ]
         },
         {
@@ -394,23 +394,23 @@ export default defineConfig({
               text: '图片',
               items: [
                 {
-                  text: 'nz.saveImageToPhotosAlbum',
+                  text: 'ek.saveImageToPhotosAlbum',
                   link: '/api/media/image/saveImageToPhotosAlbum'
                 },
                 {
-                  text: 'nz.previewImage',
+                  text: 'ek.previewImage',
                   link: '/api/media/image/previewImage'
                 },
                 {
-                  text: 'nz.getImageInfo',
+                  text: 'ek.getImageInfo',
                   link: '/api/media/image/getImageInfo'
                 },
                 {
-                  text: 'nz.compressImage',
+                  text: 'ek.compressImage',
                   link: '/api/media/image/compressImage'
                 },
                 {
-                  text: 'nz.chooseImage',
+                  text: 'ek.chooseImage',
                   link: '/api/media/image/chooseImage'
                 }
               ]
@@ -419,19 +419,19 @@ export default defineConfig({
               text: '视频',
               items: [
                 {
-                  text: 'nz.saveVideoToPhotosAlbum',
+                  text: 'ek.saveVideoToPhotosAlbum',
                   link: '/api/media/video/saveVideoToPhotosAlbum'
                 },
                 {
-                  text: 'nz.getVideoInfo',
+                  text: 'ek.getVideoInfo',
                   link: '/api/media/video/getVideoInfo'
                 },
                 {
-                  text: 'nz.compressVideo',
+                  text: 'ek.compressVideo',
                   link: '/api/media/video/compressVideo'
                 },
                 {
-                  text: 'nz.chooseVideo',
+                  text: 'ek.chooseVideo',
                   link: '/api/media/video/chooseVideo'
                 }
               ]
@@ -440,7 +440,7 @@ export default defineConfig({
               text: '音频',
               items: [
                 {
-                  text: 'nz.createInnerAudioContext',
+                  text: 'ek.createInnerAudioContext',
                   link: '/api/media/audio/createInnerAudioContext'
                 },
                 {
@@ -486,7 +486,7 @@ export default defineConfig({
               text: '录音',
               items: [
                 {
-                  text: 'nz.getRecorderManager',
+                  text: 'ek.getRecorderManager',
                   link: '/api/media/recorder/getRecorderManager'
                 },
                 {
@@ -517,7 +517,7 @@ export default defineConfig({
             {
               text: '相机',
               items: [
-                { text: 'nz.createCameraContext', link: '/api/media/camera/createCameraContext' },
+                { text: 'ek.createCameraContext', link: '/api/media/camera/createCameraContext' },
                 {
                   text: 'CameraContext',
                   link: '/api/media/camera/CameraContext',
@@ -549,13 +549,13 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'nz.getLocation', link: '/api/location/getLocation' },
-            { text: 'nz.startLocationUpdate', link: '/api/location/startLocationUpdate' },
-            { text: 'nz.stopLocationUpdate', link: '/api/location/stopLocationUpdate' },
-            { text: 'nz.onLocationChange', link: '/api/location/onLocationChange' },
-            { text: 'nz.offLocationChange', link: '/api/location/offLocationChange' },
-            { text: 'nz.onLocationChangeError', link: '/api/location/onLocationChangeError' },
-            { text: 'nz.offLocationChangeError', link: '/api/location/offLocationChangeError' }
+            { text: 'ek.getLocation', link: '/api/location/getLocation' },
+            { text: 'ek.startLocationUpdate', link: '/api/location/startLocationUpdate' },
+            { text: 'ek.stopLocationUpdate', link: '/api/location/stopLocationUpdate' },
+            { text: 'ek.onLocationChange', link: '/api/location/onLocationChange' },
+            { text: 'ek.offLocationChange', link: '/api/location/offLocationChange' },
+            { text: 'ek.onLocationChangeError', link: '/api/location/onLocationChangeError' },
+            { text: 'ek.offLocationChangeError', link: '/api/location/offLocationChangeError' }
           ]
         },
         {
@@ -566,26 +566,26 @@ export default defineConfig({
             {
               text: '登录',
               items: [
-                { text: 'nz.login', link: '/api/open/login/login' },
-                { text: 'nz.checkSession', link: '/api/open/login/checkSession' }
+                { text: 'ek.login', link: '/api/open/login/login' },
+                { text: 'ek.checkSession', link: '/api/open/login/checkSession' }
               ]
             },
             {
               text: '用户信息',
               items: [
-                { text: 'nz.getUserInfo', link: '/api/open/user/getUserInfo' },
-                { text: 'nz.getUserProfile', link: '/api/open/user/getUserProfile' }
+                { text: 'ek.getUserInfo', link: '/api/open/user/getUserInfo' },
+                { text: 'ek.getUserProfile', link: '/api/open/user/getUserProfile' }
               ]
             },
             {
               text: '授权',
-              items: [{ text: 'nz.authorize', link: '/api/open/authorize' }]
+              items: [{ text: 'ek.authorize', link: '/api/open/authorize' }]
             },
             {
               text: '设置',
               items: [
-                { text: 'nz.openSetting', link: '/api/open/setting/openSetting' },
-                { text: 'nz.getSetting', link: '/api/open/setting/getSetting' }
+                { text: 'ek.openSetting', link: '/api/open/setting/openSetting' },
+                { text: 'ek.getSetting', link: '/api/open/setting/getSetting' }
               ]
             }
           ]
@@ -597,26 +597,26 @@ export default defineConfig({
           items: [
             {
               text: '电量',
-              items: [{ text: 'nz.getBatteryInfo', link: '/api/device/battery/getBatteryInfo' }]
+              items: [{ text: 'ek.getBatteryInfo', link: '/api/device/battery/getBatteryInfo' }]
             },
             {
               text: '剪切板',
               items: [
-                { text: 'nz.getClipboardData', link: '/api/device/clipboard/getClipboardData' },
-                { text: 'nz.setClipboardData', link: '/api/device/clipboard/setClipboardData' }
+                { text: 'ek.getClipboardData', link: '/api/device/clipboard/getClipboardData' },
+                { text: 'ek.setClipboardData', link: '/api/device/clipboard/setClipboardData' }
               ]
             },
             {
               text: '网络',
               items: [
-                { text: 'nz.getNetworkType', link: '/api/device/network/getNetworkType' },
-                { text: 'nz.getLocalIPAddress', link: '/api/device/network/getLocalIPAddress' },
+                { text: 'ek.getNetworkType', link: '/api/device/network/getNetworkType' },
+                { text: 'ek.getLocalIPAddress', link: '/api/device/network/getLocalIPAddress' },
                 {
-                  text: 'nz.onNetworkStatusChange',
+                  text: 'ek.onNetworkStatusChange',
                   link: '/api/device/network/onNetworkStatusChange'
                 },
                 {
-                  text: 'nz.offNetworkStatusChange',
+                  text: 'ek.offNetworkStatusChange',
                   link: '/api/device/network/offNetworkStatusChange'
                 }
               ]
@@ -624,43 +624,43 @@ export default defineConfig({
             {
               text: '加密',
               items: [
-                { text: 'nz.getRandomValues', link: '/api/device/crypto/getRandomValues' },
-                { text: 'nz.rsa', link: '/api/device/crypto/rsa' }
+                { text: 'ek.getRandomValues', link: '/api/device/crypto/getRandomValues' },
+                { text: 'ek.rsa', link: '/api/device/crypto/rsa' }
               ]
             },
             {
               text: '屏幕',
               items: [
-                { text: 'nz.getScreenBrightness', link: '/api/device/screen/getScreenBrightness' },
-                { text: 'nz.setScreenBrightness', link: '/api/device/screen/setScreenBrightness' },
-                { text: 'nz.setKeepScreenOn', link: '/api/device/screen/setKeepScreenOn' },
-                { text: 'nz.onUserCaptureScreen', link: '/api/device/screen/onUserCaptureScreen' },
-                { text: 'nz.offUserCaptureScreen', link: '/api/device/screen/offUserCaptureScreen' }
+                { text: 'ek.getScreenBrightness', link: '/api/device/screen/getScreenBrightness' },
+                { text: 'ek.setScreenBrightness', link: '/api/device/screen/setScreenBrightness' },
+                { text: 'ek.setKeepScreenOn', link: '/api/device/screen/setKeepScreenOn' },
+                { text: 'ek.onUserCaptureScreen', link: '/api/device/screen/onUserCaptureScreen' },
+                { text: 'ek.offUserCaptureScreen', link: '/api/device/screen/offUserCaptureScreen' }
               ]
             },
             {
               text: '键盘',
               items: [
                 {
-                  text: 'nz.onKeyboardHeightChange',
+                  text: 'ek.onKeyboardHeightChange',
                   link: '/api/device/keyboard/onKeyboardHeightChange'
                 },
                 {
-                  text: 'nz.offKeyboardHeightChange',
+                  text: 'ek.offKeyboardHeightChange',
                   link: '/api/device/keyboard/offKeyboardHeightChange'
                 },
-                { text: 'nz.hideKeyboard', link: '/api/device/keyboard/hideKeyboard' }
+                { text: 'ek.hideKeyboard', link: '/api/device/keyboard/hideKeyboard' }
               ]
             },
             {
               text: '电话',
-              items: [{ text: 'nz.makePhoneCall', link: '/api/open/phone/makePhoneCall' }]
+              items: [{ text: 'ek.makePhoneCall', link: '/api/open/phone/makePhoneCall' }]
             },
             {
               text: '振动',
               items: [
-                { text: 'nz.vibrateShort', link: '/api/open/vibrate/vibrateShort' },
-                { text: 'nz.vibrateLong', link: '/api/open/vibrate/vibrateLong' }
+                { text: 'ek.vibrateShort', link: '/api/open/vibrate/vibrateShort' },
+                { text: 'ek.vibrateLong', link: '/api/open/vibrate/vibrateLong' }
               ]
             }
           ]
@@ -670,7 +670,7 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
           items: [
-            { text: 'nz.createSelectorQuery', link: '/api/HTML/createSelectorQuery' },
+            { text: 'ek.createSelectorQuery', link: '/api/HTML/createSelectorQuery' },
             {
               text: 'SelectorQuery',
               link: '/api/HTML/SelectorQuery',

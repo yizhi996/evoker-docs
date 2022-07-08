@@ -1,4 +1,4 @@
-# nz.getStorage
+# ek.getStorage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const res = await nz.getStorage({ key: 'key_abc' })
+const res = await ek.getStorage({ key: 'key_abc' })
 console.log(res.data)
 ```
 

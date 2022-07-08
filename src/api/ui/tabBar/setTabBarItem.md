@@ -1,4 +1,4 @@
-# nz.setTabBarItem
+# ek.setTabBarItem
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.setTabBarItem({
+ek.setTabBarItem({
   index: 0,
   text: 'swift',
   iconPath: '/assets/tab/swift.png',

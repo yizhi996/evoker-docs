@@ -1,4 +1,4 @@
-# nz.getAppBaseInfo
+# ek.getAppBaseInfo
 
 获取宿主 APP 基础信息。
 
@@ -9,7 +9,7 @@
 ### Example
 
 ```ts
-const info = nz.getAppBaseInfo()
+const info = ek.getAppBaseInfo()
 ```
 
 <script setup>

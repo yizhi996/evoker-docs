@@ -5,7 +5,7 @@
 ### Example
 
 ```ts
-const ctx = nz.createInnerAudioContext()
+const ctx = ek.createInnerAudioContext()
 ctx.src = 'https://example.com/test.mp3'
 ctx.play()
 ```

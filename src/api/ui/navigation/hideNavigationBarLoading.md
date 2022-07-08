@@ -1,4 +1,4 @@
-# nz.hideNavigationBarLoading
+# ek.hideNavigationBarLoading
 
 > <Icon type="success" /> 支持 Promise
 
@@ -12,9 +12,9 @@
 
 ```ts
 const loadData = () => {
-  nz.showNavigationBarLoading()
+  ek.showNavigationBarLoading()
   setTimeout(() => {
-    nz.hideNavigationBarLoading()
+    ek.hideNavigationBarLoading()
   }, 2000)
 }
 ```

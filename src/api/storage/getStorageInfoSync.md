@@ -1,4 +1,4 @@
-# nz.getStorageInfoSync
+# ek.getStorageInfoSync
 
 同步获取当前 storage 的相关信息。
 
@@ -9,7 +9,7 @@
 ### Example
 
 ```ts
-const res = nz.getStorageInfoSync()
+const res = ek.getStorageInfoSync()
 console.log(res.keys)
 ```
 

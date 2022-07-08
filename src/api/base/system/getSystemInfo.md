@@ -1,10 +1,10 @@
-# nz.getSystemInfo
+# ek.getSystemInfo
 
 > <Icon type="success" /> 支持 Promise
 
 获取系统信息。
 
-是由 [nz.getAppBaseInfo](./getAppBaseInfo), [nz.getDeviceInfo](./getDeviceInfo), [nz.getSystemSetting](./getSystemSetting), [nz.getWindowInfo](./getWindowInfo), [nz.getAppAuthorizeSetting](./getAppAuthorizeSetting) 合并返回，所以可以直接请求相关需要的 API，提高性能。
+是由 [ek.getAppBaseInfo](./getAppBaseInfo), [ek.getDeviceInfo](./getDeviceInfo), [ek.getSystemSetting](./getSystemSetting), [ek.getWindowInfo](./getWindowInfo), [ek.getAppAuthorizeSetting](./getAppAuthorizeSetting) 合并返回，所以可以直接请求相关需要的 API，提高性能。
 
 ### 参数
 
@@ -31,7 +31,7 @@ type AuthorizedStatus = 'authorized' | 'denied' | 'not determined'
 ### Example
 
 ```ts
-const res = await nz.getSystemInfo()
+const res = await ek.getSystemInfo()
 console.log(res)
 ```
 

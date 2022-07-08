@@ -1,4 +1,4 @@
-# nz.getSystemSetting
+# ek.getSystemSetting
 
 获取设备设置。
 
@@ -9,7 +9,7 @@
 ### Example
 
 ```ts
-const setting = nz.getSystemSetting()
+const setting = ek.getSystemSetting()
 ```
 
 <script setup>

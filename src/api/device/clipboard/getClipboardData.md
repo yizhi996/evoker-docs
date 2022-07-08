@@ -1,4 +1,4 @@
-# nz.getClipboardData
+# ek.getClipboardData
 
 > <Icon type="success" /> 支持 Promise
 
@@ -19,7 +19,7 @@
 ### Example
 
 ```ts
-const { data } = await nz.getClipboardData()
+const { data } = await ek.getClipboardData()
 ```
 
 <script setup>

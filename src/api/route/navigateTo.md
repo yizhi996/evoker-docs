@@ -1,8 +1,8 @@
-# nz.navigateTo
+# ek.navigateTo
 
 > <Icon type="success" /> 支持 Promise
 
-保留当前页面，跳转到应用内的某个页面。但是不能跳到 tabBar 页面。使用 [nz.navigateBack](./navigateBack) 可以返回到原页面。
+保留当前页面，跳转到应用内的某个页面。但是不能跳到 tabBar 页面。使用 [ek.navigateBack](./navigateBack) 可以返回到原页面。
 
 ### 参数
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.navigateTo({ url: 'profile?id=1' })
+ek.navigateTo({ url: 'profile?id=1' })
 ```
 
 <script setup>

@@ -1,4 +1,4 @@
-# nz.reLaunch
+# ek.reLaunch
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.reLaunch({ url: 'home' })
+ek.reLaunch({ url: 'home' })
 ```
 
 <script setup>

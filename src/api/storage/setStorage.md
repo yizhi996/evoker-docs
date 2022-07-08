@@ -1,4 +1,4 @@
-# nz.setStorage
+# ek.setStorage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -12,7 +12,7 @@
 
 ```ts
 try {
-  await nz.setStorage({ key: 'key_abc', data: 'value' })
+  await ek.setStorage({ key: 'key_abc', data: 'value' })
 } catch (e) {
   console.log(e)
 }

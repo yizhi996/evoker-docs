@@ -19,7 +19,7 @@
 ### Example
 
 ```ts
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 const animData = anim
   .scale(2.0)
   .step()

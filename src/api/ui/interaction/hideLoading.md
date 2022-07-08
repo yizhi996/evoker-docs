@@ -1,4 +1,4 @@
-# nz.hideLoading
+# ek.hideLoading
 
 > <Icon type="success" /> 支持 Promise
 
@@ -12,12 +12,12 @@
 
 ```ts
 const loading = () => {
-  nz.showLoading({
+  ek.showLoading({
     title: 'Loading...',
     mask: 'true'
   })
   setTimeout(() => {
-    nz.hideLoading()
+    ek.hideLoading()
   }, 2000)
 }
 ```

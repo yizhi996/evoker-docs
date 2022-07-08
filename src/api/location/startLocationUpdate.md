@@ -1,4 +1,4 @@
-# nz.startLocationUpdate
+# ek.startLocationUpdate
 
 > <Icon type="success" /> 支持 Promise
 
@@ -13,11 +13,11 @@
 ### Example
 
 ```ts
-nz.onLocationChange(res => {
+ek.onLocationChange(res => {
   console.log('当前位置: ', res.latitude, res.longitude)
 })
 
-nz.startLocationUpdate({
+ek.startLocationUpdate({
   type: 'gcj02'
 })
 ```

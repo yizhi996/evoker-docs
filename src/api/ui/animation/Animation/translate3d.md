@@ -23,7 +23,7 @@
 ### Example
 
 ```ts
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 const animData = anim
   .translate3d(10, 10, 0)
   .step()

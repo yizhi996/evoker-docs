@@ -1,9 +1,9 @@
 # InnerAudioContext
 
-InnerAudioContext 实例，可通过 [nz.createInnerAudioContext](./createInnerAudioContext.md) 接口获取实例。
+InnerAudioContext 实例，可通过 [ek.createInnerAudioContext](./createInnerAudioContext.md) 接口获取实例。
 
 ::: tip
-音频播放过程中，可能被系统中断，可通过 nz.onAudioInterruptionBegin、nz.onAudioInterruptionEnd 事件来处理。
+音频播放过程中，可能被系统中断，可通过 ek.onAudioInterruptionBegin、ek.onAudioInterruptionEnd 事件来处理。
 :::
 
 ### 属性
@@ -167,7 +167,7 @@ const info = reactive({
   duration: 0
 })
 
-const ctx = nz.createInnerAudioContext()
+const ctx = ek.createInnerAudioContext()
 ctx.src = 'https://example.com/music.mp3'
 ctx.volume = 0.5
 ctx.autoplay = false

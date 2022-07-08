@@ -1,4 +1,4 @@
-# nz.hideTabBar
+# ek.hideTabBar
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.hideTabBar()
+ek.hideTabBar()
 ```
 
 <script setup>

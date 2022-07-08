@@ -15,7 +15,7 @@ Z 轴的缩放倍数
 ### Example
 
 ```ts
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 const animData = anim
   .scaleZ(2.0)
   .step()

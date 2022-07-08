@@ -1,4 +1,4 @@
-# nz.uploadFile
+# ek.uploadFile
 
 将本地资源上传到服务器。客户端发起一个 HTTPS POST 请求，其中 content-type 为 multipart/form-data。
 
@@ -18,7 +18,7 @@
 
 ```ts
 const chooseImage = async () => {
-  const result = await nz.chooseImage({
+  const result = await ek.chooseImage({
     count: 1,
     sizeType: ['compressed'],
     sourceType: ['album']
@@ -27,7 +27,7 @@ const chooseImage = async () => {
   const filePath = result.tempFilePaths[0]
   const key = filePath.substr(filePath.lastIndexOf('/') + 1)
 
-  nz.uploadFile({
+  ek.uploadFile({
     url: 'https://example.com/upload',
     name: 'file',
     filePath,

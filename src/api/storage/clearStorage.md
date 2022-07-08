@@ -1,4 +1,4 @@
-# nz.clearStorage
+# ek.clearStorage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,5 +11,5 @@
 ### Example
 
 ```ts
-nz.clearStorage()
+ek.clearStorage()
 ```

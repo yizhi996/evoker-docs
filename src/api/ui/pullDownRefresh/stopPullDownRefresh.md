@@ -1,4 +1,4 @@
-# nz.stopPullDownRefresh
+# ek.stopPullDownRefresh
 
 > <Icon type="success" /> 支持 Promise
 
@@ -17,16 +17,16 @@
 </template>
 
 <script setup lang="ts">
-import { usePage } from 'nzoth'
+import { usePage } from 'evoker'
 
 const { onPullDownRefresh } = usePage()
 
 onPullDownRefresh(() => {
-  nz.showToast({ title: 'Loading...', icon: 'none' })
+  ek.showToast({ title: 'Loading...', icon: 'none' })
 })
 
 const onStop = () => {
-  nz.stopPullDownRefresh()
+  ek.stopPullDownRefresh()
 }
 </script>
 ```

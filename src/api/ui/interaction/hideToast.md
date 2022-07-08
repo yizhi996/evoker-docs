@@ -1,4 +1,4 @@
-# nz.showToast
+# ek.showToast
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,5 +11,5 @@
 ### Example
 
 ```ts
-nz.hideToast()
+ek.hideToast()
 ```

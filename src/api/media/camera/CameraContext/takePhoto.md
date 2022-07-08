@@ -16,7 +16,7 @@
 
 ```vue
 <script setup lang="ts">
-const ctx = nz.createCameraContext()
+const ctx = ek.createCameraContext()
 
 const fn = async () => {
   const res = await ctx.takePhoto({ quality: 'high' })

@@ -1,6 +1,6 @@
 # CameraContext
 
-CameraContext 实例，可通过 [nz.createCameraContext](./createCameraContext) 获取，操作 [camera](../../../component/camera) 组件。
+CameraContext 实例，可通过 [ek.createCameraContext](./createCameraContext) 获取，操作 [camera](../../../component/camera) 组件。
 
 ### 方法
 

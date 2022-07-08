@@ -1,4 +1,4 @@
-# nz.getStorageSync
+# ek.getStorageSync
 
 从本地缓存中同步获取指定 key 的内容。
 
@@ -17,6 +17,6 @@ key 对应的内容
 ### Example
 
 ```ts
-const data = nz.getStorageSync('key_abc')
+const data = ek.getStorageSync('key_abc')
 console.log(data)
 ```

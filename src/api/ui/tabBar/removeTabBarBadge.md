@@ -1,4 +1,4 @@
-# nz.removeTabBarBadge
+# ek.removeTabBarBadge
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.removeTabBarBadge({
+ek.removeTabBarBadge({
   index: 0
 })
 ```

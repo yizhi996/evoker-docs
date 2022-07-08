@@ -1,6 +1,6 @@
-# nz.onLocationChange
+# ek.onLocationChange
 
-监听实时地理位置变化事件，需结合 [nz.startLocationUpdate](./startLocationUpdate.md) 使用。
+监听实时地理位置变化事件，需结合 [ek.startLocationUpdate](./startLocationUpdate.md) 使用。
 
 ### 参数
 

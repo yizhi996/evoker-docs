@@ -1,4 +1,4 @@
-# nz.getBatteryInfo
+# ek.getBatteryInfo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const { level, isCharging } = await nz.getBatteryInfo()
+const { level, isCharging } = await ek.getBatteryInfo()
 ```
 
 <script setup>

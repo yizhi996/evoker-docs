@@ -1,4 +1,4 @@
-# nz.getRandomValues
+# ek.getRandomValues
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,8 +15,8 @@
 ### Example
 
 ```ts
-const { randomValues } = await nz.getRandomValues({ length: 6 })
-const base64 = nz.arrayBufferToBase64(randomValues)
+const { randomValues } = await ek.getRandomValues({ length: 6 })
+const base64 = ek.arrayBufferToBase64(randomValues)
 ```
 
 <script setup>

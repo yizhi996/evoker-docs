@@ -1,4 +1,4 @@
-# nz.setNavigationBarTitle
+# ek.setNavigationBarTitle
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.setNavigationBarTitle({ title: 'NZoth' })
+ek.setNavigationBarTitle({ title: 'Evoker' })
 ```
 
 <script setup>

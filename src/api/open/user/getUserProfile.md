@@ -1,4 +1,4 @@
-# nz.getUserInfo
+# ek.getUserInfo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 const getUserInfo = () => {
-  const { userInfo } = await nz.getUserProfile()
+  const { userInfo } = await ek.getUserProfile()
   console.log(userInfo)
 }
 </script>

@@ -1,4 +1,4 @@
-# nz.saveVideoToPhotosAlbum
+# ek.saveVideoToPhotosAlbum
 
 > <Icon type="success" /> 支持 Promise
 
@@ -13,10 +13,10 @@
 ### Example
 
 ```ts
-const res = await nz.chooseVideo({
+const res = await ek.chooseVideo({
   sourceType: ['camera']
 })
-nz.saveVideoToPhotosAlbum({
+ek.saveVideoToPhotosAlbum({
   filePath: res.tempFilePath
 })
 ```

@@ -1,4 +1,4 @@
-# nz.switchTab
+# ek.switchTab
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.switchTab({ url: 'home' })
+ek.switchTab({ url: 'home' })
 ```
 
 <script setup>

@@ -1,4 +1,4 @@
-# nz.getLocalIPAddress
+# ek.getLocalIPAddress
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const { localip } = await nz.getLocalIPAddress()
+const { localip } = await ek.getLocalIPAddress()
 ```
 
 <script setup>

@@ -1,4 +1,4 @@
-# nz.setNavigationBarColor
+# ek.setNavigationBarColor
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-nz.setNavigationBarColor({
+ek.setNavigationBarColor({
   frontColor: '#ffffff',
   backgroundColor: '#000000',
   animation: {

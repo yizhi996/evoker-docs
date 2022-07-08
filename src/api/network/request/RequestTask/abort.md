@@ -5,7 +5,7 @@
 ### Example
 
 ```ts
-const task = nz.request({
+const task = ek.request({
   url: 'https://example.com/api/test',
   success: res => {
     console.log('success')

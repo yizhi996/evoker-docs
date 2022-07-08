@@ -1,4 +1,4 @@
-# nz.navigateBack
+# ek.navigateBack
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.navigateBack()
+ek.navigateBack()
 ```
 
 <script setup>

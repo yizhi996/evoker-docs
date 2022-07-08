@@ -1,4 +1,4 @@
-# nz.getWindowInfo
+# ek.getWindowInfo
 
 获取窗口信息。
 
@@ -13,7 +13,7 @@
 ### Example
 
 ```ts
-const info = nz.getWindowInfo()
+const info = ek.getWindowInfo()
 ```
 
 <script setup>

@@ -1,10 +1,10 @@
-# nz.getLocation
+# ek.getLocation
 
 > <Icon type="success" /> 支持 Promise
 
 > 需要用户授权 `scope.userLocation`。
 
-获取当前的地理位置、速度。当用户离开小程序后，此接口无法调用。开启高精度定位，接口耗时会增加，可指定 highAccuracyExpireTime 作为超时时间。地图相关使用的坐标格式应为 gcj02。 高频率调用会导致耗电，如有需要可使用持续定位接口 [nz.onLocationChange](./onLocationChange)。
+获取当前的地理位置、速度。当用户离开小程序后，此接口无法调用。开启高精度定位，接口耗时会增加，可指定 highAccuracyExpireTime 作为超时时间。地图相关使用的坐标格式应为 gcj02。 高频率调用会导致耗电，如有需要可使用持续定位接口 [ek.onLocationChange](./onLocationChange)。
 
 ### 参数
 
@@ -17,7 +17,7 @@
 ### Example
 
 ```ts
-const res = await nz.getLocation({
+const res = await ek.getLocation({
   type: 'gcj02'
 })
 console.log(res.latitude, res.longitude)

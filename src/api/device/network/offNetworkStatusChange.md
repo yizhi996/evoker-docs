@@ -1,4 +1,4 @@
-# nz.offNetworkStatusChange
+# ek.offNetworkStatusChange
 
 取消监听网络状态变化事件。
 

@@ -1,4 +1,4 @@
-# nz.chooseImage
+# ek.chooseImage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -19,7 +19,7 @@
 ### Example
 
 ```ts
-const res = await nz.chooseImage({
+const res = await ek.chooseImage({
   count: 2
 })
 console.log(res.tempFilePaths)

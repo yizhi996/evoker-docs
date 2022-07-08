@@ -1,4 +1,4 @@
-# nz.loadFontFace
+# ek.loadFontFace
 
 > <Icon type="success" /> 支持 Promise
 
@@ -32,7 +32,7 @@ const fontFamily = 'Bitstream Vera Serif Bold'
 const loaded = ref(false)
 
 const load = async () => {
-  await nz.loadFontFace({
+  await ek.loadFontFace({
     family: fontFamily,
     source: 'url("https://sungd.github.io/Pacifico.ttf")'
   })

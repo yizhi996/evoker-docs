@@ -1,4 +1,4 @@
-# nz.getVideoInfo
+# ek.getVideoInfo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const res = await nz.getVideoInfo({
+const res = await ek.getVideoInfo({
   src: 'nzfile://usr/test.mp4'
 })
 console.log(res)

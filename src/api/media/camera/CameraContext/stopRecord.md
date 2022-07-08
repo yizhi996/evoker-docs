@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const ctx = nz.createCameraContext()
+const ctx = ek.createCameraContext()
 
 const record = () => {
   ctx.startRecord()

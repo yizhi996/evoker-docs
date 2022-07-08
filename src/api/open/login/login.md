@@ -1,4 +1,4 @@
-# nz.login
+# ek.login
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const res = await nz.login()
+const res = await ek.login()
 console.log(res)
 ```
 

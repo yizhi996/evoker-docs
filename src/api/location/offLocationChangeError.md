@@ -1,4 +1,4 @@
-# nz.offLocationChangeError
+# ek.offLocationChangeError
 
 取消监听持续定位接口返回失败事件。
 

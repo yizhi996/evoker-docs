@@ -1,4 +1,4 @@
-# nz.showModal
+# ek.showModal
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-nz.showModal({
+ek.showModal({
   title: '是否删除',
   content: '删除后将无法找回照片'
 })

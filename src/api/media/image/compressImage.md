@@ -1,4 +1,4 @@
-# nz.compressImage
+# ek.compressImage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const res = await nz.compressImage({
+const res = await ek.compressImage({
   src: 'nzfile://usr/image.png',
   quality: 70
 })

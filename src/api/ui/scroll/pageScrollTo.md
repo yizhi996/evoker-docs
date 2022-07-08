@@ -1,4 +1,4 @@
-# nz.pageScrollTo
+# ek.pageScrollTo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,9 +11,9 @@
 ### Example
 
 ```ts
-nz.pageScrollTo({ scrollTop: 100 })
+ek.pageScrollTo({ scrollTop: 100 })
 // or
-nz.pageScrollTo({ selector: '.user-profile' })
+ek.pageScrollTo({ selector: '.user-profile' })
 ```
 
 <script setup>

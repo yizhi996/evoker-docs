@@ -1,4 +1,4 @@
-# nz.compressVideo
+# ek.compressVideo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -17,12 +17,12 @@
 ```ts
 const src = 'nzfile://usr/test.mp4'
 
-const res = await nz.compressVideo({
+const res = await ek.compressVideo({
   src,
   quality: 'medium'
 })
 // or
-const res = await nz.compressVideo({
+const res = await ek.compressVideo({
   src,
   bitrate: 2000,
   resolution: 0.7

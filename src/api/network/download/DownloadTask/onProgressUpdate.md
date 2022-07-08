@@ -9,7 +9,7 @@
 ### Example
 
 ```ts
-const task = nz.downloadFile({
+const task = ek.downloadFile({
   url: 'https://example.com/file/test.png',
   success: res => {
     console.log(res.tempFilePath)

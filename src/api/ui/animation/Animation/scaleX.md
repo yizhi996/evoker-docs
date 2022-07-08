@@ -15,7 +15,7 @@ X 轴的缩放倍数
 ### Example
 
 ```ts
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 const animData = anim
   .scaleX(2.0)
   .step()

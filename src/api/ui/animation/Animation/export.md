@@ -16,7 +16,7 @@ import { ref, onMounted } from 'vue'
 
 const animData = ref(null)
 
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 
 onMounted(() => {
   setTimeout(() => {

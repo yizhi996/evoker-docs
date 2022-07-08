@@ -1,4 +1,4 @@
-# nz.offUserCaptureScreen
+# ek.offUserCaptureScreen
 
 取消监听用户主动截屏事件。
 

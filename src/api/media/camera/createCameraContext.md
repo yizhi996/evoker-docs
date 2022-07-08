@@ -1,4 +1,4 @@
-# nz.createCameraContext
+# ek.createCameraContext
 
 > 相关组件 [camera](../../../component/camera)
 

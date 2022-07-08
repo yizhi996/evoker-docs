@@ -1,4 +1,4 @@
-# nz.downloadFile
+# ek.downloadFile
 
 下载文件资源到本地。客户端直接发起一个 GET 请求，返回文件的本地临时路径 (本地路径)。
 
@@ -17,13 +17,13 @@
 ### Example
 
 ```ts
-nz.downloadFile({
+ek.downloadFile({
   url: 'https://example.com/file/test.png',
   success: res => {
     console.log(res.tempFilePath)
   },
   fail: res => {
-    nz.showToast({ title: 'network error', icon: 'error' })
+    ek.showToast({ title: 'network error', icon: 'error' })
   }
 })
 ```

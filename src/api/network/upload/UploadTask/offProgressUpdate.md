@@ -5,7 +5,7 @@
 ### Example
 
 ```ts
-const task = nz.uploadFile({
+const task = ek.uploadFile({
   url: 'https://example.com/upload',
   // ...
   success: res => {

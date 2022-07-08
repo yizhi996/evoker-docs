@@ -1,4 +1,4 @@
-# nz.setClipboardData
+# ek.setClipboardData
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-nz.setClipboardData({ data: 'Hello world' })
+ek.setClipboardData({ data: 'Hello world' })
 ```
 
 <script setup>

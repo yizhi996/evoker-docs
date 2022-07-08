@@ -1,4 +1,4 @@
-# nz.makePhoneCall
+# ek.makePhoneCall
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.makePhoneCall({ phoneNumber: '10086' })
+ek.makePhoneCall({ phoneNumber: '10086' })
 ```
 
 <script setup>

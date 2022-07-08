@@ -1,4 +1,4 @@
-# nz.request
+# ek.request
 
 发起 HTTP 网络请求。
 
@@ -17,7 +17,7 @@
 ### Example
 
 ```ts
-nz.request({
+ek.request({
   url: 'https://example.com/api/profile',
   method: 'POST',
   data: { uid: 10001 },
@@ -27,7 +27,7 @@ nz.request({
     }
   },
   fail: res => {
-    nz.showToast({ title: 'network error', icon: 'error' })
+    ek.showToast({ title: 'network error', icon: 'error' })
   }
 })
 ```

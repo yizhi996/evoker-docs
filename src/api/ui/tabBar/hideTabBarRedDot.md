@@ -1,4 +1,4 @@
-# nz.hideTabBarRedDot
+# ek.hideTabBarRedDot
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.hideTabBarRedDot({ index: 0 })
+ek.hideTabBarRedDot({ index: 0 })
 ```
 
 <script setup>

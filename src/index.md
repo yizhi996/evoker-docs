@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: NZoth
+  name: Evoker
   text: Vue3 小程序引擎
   actions:
     - theme: brand
@@ -13,12 +13,5 @@ hero:
       link: /guide/introduction.html
     - theme: alt
       text: GitHub
-      link: https://github.com/yizhi996/nzoth
+      link: https://github.com/yizhi996/evoker
 ---
-
-<!-- home: true
-heroText: NZoth
-tagline: Vue3 小程序引擎
-actionText: 快速开始
-actionLink: /guide/introduction.html
-footer: MIT Licensed | Copyright © 2022-present YiZhi -->

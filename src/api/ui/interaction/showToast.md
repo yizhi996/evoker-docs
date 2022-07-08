@@ -1,4 +1,4 @@
-# nz.showToast
+# ek.showToast
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.showToast({
+ek.showToast({
   title: '加载成功',
   duration: '2000'
 })
@@ -19,7 +19,7 @@ nz.showToast({
 
 ### Tips
 
-- [nz.showLoading](./showLoading) 和 [nz.showToast](./showToast) 同时只能显示一个。
+- [ek.showLoading](./showLoading) 和 [ek.showToast](./showToast) 同时只能显示一个。
 
 <script setup>
 const props = [

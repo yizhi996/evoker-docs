@@ -1,4 +1,4 @@
-# nz.getSetting
+# ek.getSetting
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const { authSetting } = await nz.getSetting()
+const { authSetting } = await ek.getSetting()
 console.log(authSetting)
 ```
 

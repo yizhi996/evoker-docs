@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 const animData = anim
   .rotateY(45)
   .step()

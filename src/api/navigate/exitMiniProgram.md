@@ -1,4 +1,4 @@
-# nz.navigateToMiniProgram
+# ek.navigateToMiniProgram
 
 > <Icon type="success" /> 支持 Promise
 
@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 const onExit = () => {
-  nz.exitMiniProgram()
+  ek.exitMiniProgram()
 }
 </script>
 ```

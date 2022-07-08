@@ -1,4 +1,4 @@
-# nz.showTabBar
+# ek.showTabBar
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.showTabBar()
+ek.showTabBar()
 ```
 
 <script setup>

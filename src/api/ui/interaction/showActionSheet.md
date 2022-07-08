@@ -1,4 +1,4 @@
-# nz.showActionSheet
+# ek.showActionSheet
 
 > <Icon type="success" /> 支持 Promise
 
@@ -17,7 +17,7 @@
 ```ts
 try {
   const itemList = ['男', '女', '其他']
-  const res = await nz.showActionSheet({ itemList })
+  const res = await ek.showActionSheet({ itemList })
   console.log('selected: ' + itemList[res.tapIndex])
 } catch {
   console.log('cancel')

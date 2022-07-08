@@ -1,4 +1,4 @@
-# nz.getNetworkType
+# ek.getNetworkType
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const { networkType } = await nz.getNetworkType()
+const { networkType } = await ek.getNetworkType()
 ```
 
 <script setup>

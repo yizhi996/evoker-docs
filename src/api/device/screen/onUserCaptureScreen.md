@@ -1,4 +1,4 @@
-# nz.onUserCaptureScreen
+# ek.onUserCaptureScreen
 
 监听用户主动截屏事件。
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.onUserCaptureScreen(() => {
+ek.onUserCaptureScreen(() => {
   console.log('用户截屏了')
 })
 ```

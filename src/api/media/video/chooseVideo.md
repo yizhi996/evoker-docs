@@ -1,4 +1,4 @@
-# nz.chooseVideo
+# ek.chooseVideo
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const res = await nz.chooseVideo()
+const res = await ek.chooseVideo()
 console.log(res.tempFilePaths)
 ```
 

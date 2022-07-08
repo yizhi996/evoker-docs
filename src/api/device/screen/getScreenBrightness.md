@@ -1,4 +1,4 @@
-# nz.getScreenBrightness
+# ek.getScreenBrightness
 
 > <Icon type="success" /> 支持 Promise
 
@@ -15,7 +15,7 @@
 ### Example
 
 ```ts
-const { value } = nz.getScreenBrightness()
+const { value } = ek.getScreenBrightness()
 ```
 
 <script setup>

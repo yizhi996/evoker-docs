@@ -1,4 +1,4 @@
-# nz.navigateToMiniProgram
+# ek.navigateToMiniProgram
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.navigateToMiniProgram({
+ek.navigateToMiniProgram({
   appId: 'abcd...',
   path: 'profile?uid=10086'
 })

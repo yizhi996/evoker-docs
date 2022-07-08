@@ -1,4 +1,4 @@
-# nz.checkSession
+# ek.checkSession
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,13 +11,13 @@
 ### Example
 
 ```ts
-nz.checkSession({
+ek.checkSession({
   success: res => {
     // 未过期
   },
   fail: res => {
     // 已过期
-    nz.login()
+    ek.login()
     // ....
   }
 })

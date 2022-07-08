@@ -1,4 +1,4 @@
-# nz.env
+# ek.env
 
 环境变量。
 
@@ -11,6 +11,6 @@ string USER_DATA_PATH
 ### Example
 
 ```ts
-const path = nz.env.USER_DATA_PATH + '/test.png'
+const path = ek.env.USER_DATA_PATH + '/test.png'
 console.log(path) // nzfile://usr/test.png
 ```

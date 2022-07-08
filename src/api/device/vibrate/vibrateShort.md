@@ -1,4 +1,4 @@
-# nz.vibrateShort
+# ek.vibrateShort
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.vibrateShort({ type: 'light' })
+ek.vibrateShort({ type: 'light' })
 ```
 
 <script setup>

@@ -22,7 +22,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const text = ref('NZoth')
+const text = ref('Evoker')
 </script>
 ```
 

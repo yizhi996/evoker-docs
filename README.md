@@ -1,9 +1,9 @@
-# NZoth documentation
+# Evoker documentation
 
 ## Project
 
-[NZoth](https://github.com/yizhi996/nzoth)
+[Evoker](https://github.com/yizhi996/evoker)
 
 ## Documentation
 
-[https://nzothdev.com](https://nzothdev.com)
+[https://evokerdev.com](https://evokerdev.com)

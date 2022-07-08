@@ -16,7 +16,7 @@
 
 ```vue
 <script setup lang="ts">
-const ctx = nz.createCameraContext()
+const ctx = ek.createCameraContext()
 
 const fn = () => {
   ctx.setZoom({ zoom: 2.0 })

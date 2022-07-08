@@ -1,4 +1,4 @@
-# nz.getAppAuthorizeSetting
+# ek.getAppAuthorizeSetting
 
 获取宿主 APP 授权设置。
 
@@ -19,7 +19,7 @@ type AuthorizedStatus = 'authorized' | 'denied' | 'not determined'
 ### Example
 
 ```ts
-const setting = nz.getAppAuthorizeSetting()
+const setting = ek.getAppAuthorizeSetting()
 ```
 
 <script setup>

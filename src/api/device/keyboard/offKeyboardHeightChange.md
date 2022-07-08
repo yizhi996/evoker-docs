@@ -1,4 +1,4 @@
-# nz.offKeyboardHeightChange
+# ek.offKeyboardHeightChange
 
 取消监听键盘高度变化。
 

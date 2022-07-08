@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-const anim = nz.createAnimation()
+const anim = ek.createAnimation()
 const animData = anim
   .matrix(1, 2, -1, 1, 80, 80)
   .step()

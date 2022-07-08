@@ -1,4 +1,4 @@
-# nz.removeStorageSync
+# ek.removeStorageSync
 
 从本地缓存中移除指定 key。
 
@@ -11,5 +11,5 @@
 ### Example
 
 ```ts
-nz.removeStorageSync('key_abc')
+ek.removeStorageSync('key_abc')
 ```

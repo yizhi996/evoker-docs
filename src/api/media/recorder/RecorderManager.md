@@ -51,7 +51,7 @@
 ### Example
 
 ```ts
-const mgr = nz.getRecorderManager()
+const mgr = ek.getRecorderManager()
 
 mgr.onStart(() => {
   console.log('开始录制')

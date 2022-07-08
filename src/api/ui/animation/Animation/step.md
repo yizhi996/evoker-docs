@@ -2,7 +2,7 @@
 
 表示一组动画完成，可以在一组动画中调用任意多个动画方法，一组动画中的所有动画会同时开始，一组动画完成后才会进行下一组动画。
 
-默认情况下的参数使用 [nz.createAnimation](../createAnimation) 的 options。
+默认情况下的参数使用 [ek.createAnimation](../createAnimation) 的 options。
 
 ### 参数
 
@@ -24,7 +24,7 @@ import { ref, onMounted } from 'vue'
 
 const animData = ref(null)
 
-const anim = nz.createAnimation({ duration: 500 })
+const anim = ek.createAnimation({ duration: 500 })
 
 onMounted(() => {
   setTimeout(() => {

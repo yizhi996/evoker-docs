@@ -1,4 +1,4 @@
-# nz.showTabBarRedDot
+# ek.showTabBarRedDot
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.showTabBarRedDot({ index: 0 })
+ek.showTabBarRedDot({ index: 0 })
 ```
 
 <script setup>

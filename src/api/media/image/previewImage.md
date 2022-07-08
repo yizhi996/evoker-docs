@@ -1,4 +1,4 @@
-# nz.previewImage
+# ek.previewImage
 
 > <Icon type="success" /> 支持 Promise
 
@@ -17,7 +17,7 @@ const urls = [
   'nzfile://usr/test.png',
   'nzfile://tmp_{random}.png'
 ]
-nz.previewImage({
+ek.previewImage({
   urls,
   current: urls[2]
 })

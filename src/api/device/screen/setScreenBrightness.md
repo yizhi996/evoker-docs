@@ -1,4 +1,4 @@
-# nz.setScreenBrightness
+# ek.setScreenBrightness
 
 > <Icon type="success" /> 支持 Promise
 
@@ -11,7 +11,7 @@
 ### Example
 
 ```ts
-nz.setScreenBrightness({ value: 0.6 })
+ek.setScreenBrightness({ value: 0.6 })
 ```
 
 <script setup>

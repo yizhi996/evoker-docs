@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t}from"./app.5d0ea970.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"component/canvas.md","lastUpdated":1658334696000}'),n={name:"component/canvas.md"};function o(c,r,s,p,d,_){return e(),t("div")}var f=a(n,[["render",o]]);export{i as __pageData,f as default};

@@ -1,7 +1,7 @@
 <template>
   <tr>
     <td colspan="6">
-      <table class="ll-table__values">
+      <table class="values">
         <thead>
           <tr>
             <th>合法值</th>
@@ -20,13 +20,13 @@
 </template>
 
 <script setup lang="ts">
-import type { DataItemValue } from "../models"
+import type { DataItemValue } from '../models'
 
 defineProps<{ values: DataItemValue[] }>()
 </script>
 
 <style scoped>
-.ll-table__values {
+.values {
   margin-left: 20px;
   padding: 0 10px;
   border-radius: 8px;
@@ -34,19 +34,19 @@ defineProps<{ values: DataItemValue[] }>()
   border: 1px solid var(--vp-c-text-inverse-2);
 }
 
-.ll-table__values thead tr {
+.values thead tr {
   border: none;
 }
 
-.ll-table__values tr {
+.values tr {
   border-top: 1px solid var(--vp-c-text-inverse-2);
 }
 
-.ll-table__values th {
+.values th {
   background-color: var(--vp-c-bg-mute);
 }
 
-.ll-table__values td {
+.values td {
   border-top: solid 1px var(---vp-c-text-inverse-2);
   background-color: var(--vp-c-bg-mute);
 }

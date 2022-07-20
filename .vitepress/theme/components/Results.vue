@@ -1,5 +1,5 @@
 <template>
-  <LLTable :headers="headers">
+  <Table :headers="headers">
     <template v-for="item of data" :key="item.name">
       <tr>
         <td>{{ item.name }}</td>
@@ -7,14 +7,14 @@
         <td v-html="item.desc"></td>
         <td>{{ item.version }}</td>
       </tr>
-      <LLValues v-if="item.values" :values="item.values"></LLValues>
+      <Values v-if="item.values" :values="item.values" />
     </template>
-  </LLTable>
+  </Table>
 </template>
 
 <script setup lang="ts">
-import LLTable from './Table.vue'
-import LLValues from './Values.vue'
+import Table from './Table.vue'
+import Values from './Values.vue'
 import type { ResultsDataItem } from "../models"
 
 const headers = ['属性', '类型', '说明', '最低版本']

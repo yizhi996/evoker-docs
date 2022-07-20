@@ -9,9 +9,6 @@ hero:
       text: 快速开始
       link: /guide/introduction.html
     - theme: alt
-      text: 安装
-      link: /guide/introduction.html
-    - theme: alt
       text: GitHub
       link: https://github.com/yizhi996/evoker
 ---

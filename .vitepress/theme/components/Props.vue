@@ -1,12 +1,12 @@
 <template>
-  <LLTable :headers="headers">
+  <Table :headers="headers">
     <template v-for="item of _data" :key="item.name">
       <tr>
         <td>{{ item.name }}</td>
         <td>{{ item.type }}</td>
         <td>
-          <div v-if="isColor(item.default)" class="ll-table__default">
-            <div class="ll-table__color-box" :style="{ 'background-color': item.default }"></div>
+          <div v-if="isColor(item.default)" class="table__default">
+            <div class="table__color-box" :style="{ 'background-color': item.default }"></div>
             {{ item.default }}
           </div>
           <span v-else>{{ item.default }}</span>
@@ -15,16 +15,16 @@
         <td v-html="item.desc"></td>
         <td>{{ item.version }}</td>
       </tr>
-      <LLValues v-if="item.values" :values="item.values"> </LLValues>
+      <Values v-if="item.values" :values="item.values" />
     </template>
-  </LLTable>
+  </Table>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import LLTable from './Table.vue'
-import LLValues from './Values.vue'
-import type { PropsDataItem } from "../models"
+import Table from './Table.vue'
+import Values from './Values.vue'
+import type { PropsDataItem } from '../models'
 
 const headers = ['参数', '类型', '默认值', '必填', '说明', '最低版本']
 
@@ -81,13 +81,13 @@ const _data = computed(() => {
 </script>
 
 <style scoped>
-.ll-table__default {
+.table__default {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.ll-table__color-box {
+.table__color-box {
   flex-shrink: 0;
   width: 12px;
   height: 12px;

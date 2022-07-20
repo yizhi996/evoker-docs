@@ -1,7 +1,7 @@
 <template>
-  <table class="ll-table">
+  <table class="table">
     <thead>
-      <tr class="ll-table-headers">
+      <tr class="table-headers">
         <th v-for="header of headers" :key="header">{{ header }}</th>
       </tr>
     </thead>
@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<{ headers: string[] }>(), {
 </script>
 
 <style>
-.ll-table {
+.table {
   font-size: 14px;
   padding: 10px;
   border-radius: 8px;
@@ -26,11 +26,11 @@ const props = withDefaults(defineProps<{ headers: string[] }>(), {
   background-color: var(--vp-c-bg-alt);
 }
 
-.ll-table thead tr {
+.table thead tr {
   border: none;
 }
 
-.ll-table th,
+.table th,
 tr,
 td {
   border: none;
@@ -38,21 +38,21 @@ td {
   padding: 10px 20px;
 }
 
-.ll-table th {
+.table th {
   font-weight: 600;
   text-align: left;
   white-space: nowrap;
 }
 
-.ll-table th:first-child {
+.table th:first-child {
   padding-left: 5px;
 }
 
-.ll-table th:last-child {
+.table th:last-child {
   padding-right: 5px;
 }
 
-.ll-table td {
+.table td {
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -60,11 +60,11 @@ td {
   text-align: left;
 }
 
-.ll-table td:first-child {
+.table td:first-child {
   padding-left: 5px;
 }
 
-.ll-table td:last-child {
+.table td:last-child {
   padding-right: 5px;
 }
 </style>

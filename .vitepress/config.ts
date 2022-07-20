@@ -57,6 +57,15 @@ export default defineConfig({
             { text: '应用生命周期', link: '/guide/essentials/app-lifecycle' },
             { text: '页面生命周期', link: '/guide/essentials/page-lifecycle' }
           ]
+        },
+        {
+          text: '配置',
+          items: [
+            { text: '共享', link: '/guide/config/shared' },
+            { text: '路由', link: '/guide/config/pages' },
+            { text: '窗口', link: '/guide/config/window' },
+            { text: 'Tab Bar', link: '/guide/config/tab-bar' },
+          ]
         }
       ],
       '/component/': [

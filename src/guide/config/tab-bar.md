@@ -68,13 +68,13 @@ Tab 上按钮文字。
     "backgroundColor": "#1989fa",
     "list": [
       {
-        "path": "index",
+        "path": "pages/Index",
         "text": "Home",
         "iconPath": "assets/tab-bar/index.png",
         "selectedIconPath": "assets/tab-bar/index_selected.png"
       },
       {
-        "path": "me",
+        "path": "pages/Me",
         "text": "Me",
         "iconPath": "assets/tab-bar/me.png",
         "selectedIconPath": "assets/tab-bar/me_selected.png"

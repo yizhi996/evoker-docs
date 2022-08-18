@@ -31,80 +31,70 @@ const props = [
         type:"number",
         default: "0",
         required: false, 
-        desc:"当前取值（支持 v-model:value）", 
-        version: "0.1.0"
+        desc:"当前取值（支持 v-model:value）"
     },
     {
         name: "min", 
         type: "number",
         default: "0",
         required: false, 
-        desc:"最小值", 
-        version: "0.1.0"
+        desc:"最小值"
     },
     {
         name: "max", 
         type: "number",
         default: "100",
         required: false, 
-        desc:"最大值", 
-        version: "0.1.0"
+        desc:"最大值"
     },
     {
         name: "step", 
         type:"number",
         default: "1",
         required: false, 
-        desc:"步长，取值必须大于 0，并且可被(max - min)整除", 
-        version: "0.1.0"
+        desc:"步长，取值必须大于 0，并且可被(max - min)整除"
     },
     {
         name: "disabled", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否禁用", 
-        version: "0.1.0"
+        desc:"是否禁用"
     },
     {
         name: "active-color", 
         type:"color",
         default: "#1989fa",
         required: false, 
-        desc:"已选择的颜色", 
-        version: "0.1.0"
+        desc:"已选择的颜色"
     },
     {
         name: "background-color", 
         type:"color",
         default: "#e5e5e5",
         required: false, 
-        desc:"背景条的颜色", 
-        version: "0.1.0"
+        desc:"背景条的颜色"
     },
     {
         name: "block-size", 
         type:"number",
         default: "28",
         required: false, 
-        desc:"滑块的大小", 
-        version: "0.1.0"
+        desc:"滑块的大小"
     },
     {
         name: "block-color", 
         type:"color",
         default: "#ffffff",
         required: false, 
-        desc:"滑块的颜色", 
-        version: "0.1.0"
+        desc:"滑块的颜色"
     },
     {
         name: "show-value", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否显示当前 value", 
-        version: "0.1.0"
+        desc:"是否显示当前 value"
     },
 ]
 
@@ -112,14 +102,12 @@ const events = [
     {
         name: "change", 
         desc: "完成一次拖动后触发", 
-        event:"{ value: number }",
-        version: "0.1.0"
+        event:"{ value: number }"
     },
     {
         name: "changing", 
         desc: "拖动过程中触发", 
-        event:"{ value: number }",
-        version: "0.1.0"
+        event:"{ value: number }"
     },
 ]
 </script>

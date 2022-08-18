@@ -9,8 +9,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc:`icon的类型`, 
-        version: "0.1.0",
+        desc:`icon的类型`,
         values: [
             { value: "success", desc: icon("success") },
             { value: "success-no-circle", desc: icon("success-no-circle") },
@@ -30,16 +29,14 @@ const props = [
         type:"number | string",
         default: "23",
         required: false, 
-        desc:"icon的大小，单位默认为px", 
-        version: "0.1.0"
+        desc:"icon的大小，单位默认为px"
     },
     {
         name: "color", 
         type:"color",
         default: "",
         required: false, 
-        desc:"icon的颜色", 
-        version: "0.1.0"
+        desc:"icon的颜色"
     },
 ]
 

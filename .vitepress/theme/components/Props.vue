@@ -13,7 +13,7 @@
         </td>
         <td>{{ item.required ? '是' : '否' }}</td>
         <td v-html="item.desc"></td>
-        <td>{{ item.version }}</td>
+        <!-- <td>{{ item.version }}</td> -->
       </tr>
       <Values v-if="item.values" :values="item.values" />
     </template>
@@ -26,7 +26,7 @@ import Table from './Table.vue'
 import Values from './Values.vue'
 import type { PropsDataItem } from '../models'
 
-const headers = ['参数', '类型', '默认值', '必填', '说明', '最低版本']
+const headers = ['参数', '类型', '默认值', '必填', '说明']
 
 const props = withDefaults(
   defineProps<{

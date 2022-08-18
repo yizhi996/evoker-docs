@@ -21,8 +21,7 @@ const props = [
         type: "boolean",
         default: "false",
         required: false, 
-        desc: "是否需要动画效果", 
-        version: "0.1.0"
+        desc: "是否需要动画效果"
     },
 ]
 </script>

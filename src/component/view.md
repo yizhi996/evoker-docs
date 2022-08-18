@@ -5,32 +5,28 @@ const props = [
         type:"string",
         default: "none",
         required: false, 
-        desc:`指定按下去的样式类。当 hover-class="none" 时，没有点击态效果`, 
-        version: "0.1.0"
+        desc:`指定按下去的样式类。当 hover-class="none" 时，没有点击态效果`
     },
     {
         name: "hover-stop-propagation", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"指定是否阻止本节点的祖先节点出现点击态", 
-        version: "0.1.0"
+        desc:"指定是否阻止本节点的祖先节点出现点击态"
     },
     {
         name: "hover-start-time", 
         type:"number",
         default: "50",
         required: false, 
-        desc:"按住后多久出现点击态，单位毫秒", 
-        version: "0.1.0"
+        desc:"按住后多久出现点击态，单位毫秒"
     },
     {
         name: "hover-stay-time", 
         type:"number",
         default: "400",
         required: false, 
-        desc:"手指松开后点击态保留时间，单位毫秒", 
-        version: "0.1.0"
+        desc:"手指松开后点击态保留时间，单位毫秒"
     },
 ]
 

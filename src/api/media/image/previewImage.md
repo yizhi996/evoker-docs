@@ -30,16 +30,14 @@ const props = [
         type: "string[]",
         default: "",
         required: true, 
-        desc: "需要预览的图片链接列表", 
-        version: "0.1.0"
+        desc: "需要预览的图片链接列表"
     },
     {
         name: "current", 
         type: "string",
         default: "urls[0]",
         required: false, 
-        desc: "当前显示图片的链接", 
-        version: "0.1.0"
+        desc: "当前显示图片的链接"
     },
 ]
 </script>

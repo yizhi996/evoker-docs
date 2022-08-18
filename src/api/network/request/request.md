@@ -39,40 +39,35 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "服务器接口地址", 
-        version: "0.1.0"
+        desc: "服务器接口地址"
     },
     {
         name: "data", 
         type: "string | Object | ArrayBuffer",
         default: "",
         required: false, 
-        desc: "请求的参数", 
-        version: "0.1.0"
+        desc: "请求的参数"
     },
     {
         name: "header", 
         type: "Object",
         default: "",
         required: false, 
-        desc: "设置请求的 header，header 中不能设置 Referrer，content-type 默认为 application/json", 
-        version: "0.1.0"
+        desc: "设置请求的 header，header 中不能设置 Referrer，content-type 默认为 application/json"
     },
     {
         name: "timeout", 
         type: "number",
         default: "60000",
         required: false, 
-        desc: "超时时间，单位为毫秒", 
-        version: "0.1.0"
+        desc: "超时时间，单位为毫秒"
     },
     {
         name: "method", 
         type: "string",
         default: "GET",
         required: false, 
-        desc: "HTTP 请求方法", 
-        version: "0.1.0",
+        desc: "HTTP 请求方法",
         values: [
           { value: "OPTIONS", desc: "HTTP 请求 OPTIONS" },
           { value: "GET", desc: "HTTP 请求 GET" },
@@ -89,8 +84,7 @@ const props = [
         type: "string",
         default: "json",
         required: false, 
-        desc: "返回的数据格式", 
-        version: "0.1.0",
+        desc: "返回的数据格式",
         values: [
           { value: "json", desc: "返回的数据为 JSON，返回后会对返回的数据进行一次 JSON.parse" },
           { value: "其他", desc: "不对返回的内容进行 JSON.parse" },
@@ -101,8 +95,7 @@ const props = [
         type: "string",
         default: "text",
         required: false, 
-        desc: "响应的数据类型", 
-        version: "0.1.0",
+        desc: "响应的数据类型",
         values: [
           { value: "text", desc: "响应的数据为文本" },
           { value: "arraybuffer", desc: "响应的数据为 ArrayBuffer" },

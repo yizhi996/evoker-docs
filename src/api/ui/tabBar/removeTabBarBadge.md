@@ -23,8 +23,7 @@ const props = [
         type: "number",
         default: "",
         required: true, 
-        desc: "Tab Bar 的哪一项，从左边算起第一个为 0", 
-        version: "0.1.0"
+        desc: "Tab Bar 的哪一项，从左边算起第一个为 0"
     },
 ]
 </script>

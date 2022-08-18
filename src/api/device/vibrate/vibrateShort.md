@@ -21,8 +21,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "震动强度, 有效值为：heavy、medium、light", 
-        version: "0.1.0"
+        desc: "震动强度, 有效值为：heavy、medium、light"
     },
 ]
 </script>

@@ -21,8 +21,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "需要拨打的电话号码", 
-        version: "0.1.0",
+        desc: "需要拨打的电话号码"
     },
 ]
 </script>

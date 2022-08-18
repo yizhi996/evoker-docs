@@ -28,8 +28,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "图片的路径，支持网络路径、本地路径、代码包路径", 
-        version: "0.1.0"
+        desc: "图片的路径，支持网络路径、本地路径、代码包路径"
     },
 ]
 

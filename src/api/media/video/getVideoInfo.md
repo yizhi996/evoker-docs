@@ -28,8 +28,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "视频文件路径，可以是临时文件路径也可以是永久文件路径", 
-        version: "0.1.0"
+        desc: "视频文件路径，可以是临时文件路径也可以是永久文件路径"
     },
 ]
 

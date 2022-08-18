@@ -29,16 +29,14 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "图片的路径，支持本地路径、代码包路径", 
-        version: "0.1.0"
+        desc: "图片的路径，支持本地路径、代码包路径"
     },
     {
         name: "quality", 
         type: "number",
         default: "",
         required: false, 
-        desc: "压缩质量，范围0～100，数值越小，质量越低，压缩率越高", 
-        version: "0.1.0"
+        desc: "压缩质量，范围0～100，数值越小，质量越低，压缩率越高"
     },
 ]
 

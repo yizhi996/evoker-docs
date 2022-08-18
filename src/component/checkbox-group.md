@@ -11,8 +11,7 @@ const events = [
     {
         name: "change", 
         desc: "选中值改变时触发", 
-        event:"{ value: string[] }",
-        version: "0.1.0"
+        event:"{ value: string[] }"
     },
 ]
 </script>

@@ -31,24 +31,21 @@ const props = [
         type: "string",
         default: "",
         required: false, 
-        desc:"警示文案", 
-        version: "0.1.0"
+        desc:"警示文案"
     },
     {
         name: "itemList", 
         type: "string[]",
         default: "",
         required: true, 
-        desc:"按钮的文字数组，数组长度最大为 6", 
-        version: "0.1.0",
+        desc:"按钮的文字数组，数组长度最大为 6",
     },
     {
         name: "itemColor", 
         type: "string",
         default: "#000",
         required: false, 
-        desc:"按钮的文字颜色，必须是 16 进制格式", 
-        version: "0.1.0"
+        desc:"按钮的文字颜色，必须是 16 进制格式"
     },
 ]
 

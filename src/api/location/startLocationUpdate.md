@@ -30,7 +30,6 @@ const props = [
         default: "gcj02",
         required: false, 
         desc: "返回的 gps 坐标系", 
-        version: "0.1.0",
         values: [
           { value: "wgs84", desc: "地球坐标" },
           { value: "gcj02", desc: "火星坐标" },

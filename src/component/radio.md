@@ -46,32 +46,28 @@ const props = [
         type: "string",
         default: "",
         required: false, 
-        desc:"radio 标识。当该 radio 选中时，radio-group 的 change 事件会携带 radio 的 value", 
-        version: "0.1.0"
+        desc:"radio 标识。当该 radio 选中时，radio-group 的 change 事件会携带 radio 的 value"
     },
     {
         name: "checked", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"当前是否选中", 
-        version: "0.1.0"
+        desc:"当前是否选中"
     },
     {
         name: "disabled", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否禁用", 
-        version: "0.1.0"
+        desc:"是否禁用"
     },
     {
         name: "color", 
         type:"color",
         default: "#1989fa",
         required: false, 
-        desc:"radio 的颜色", 
-        version: "0.1.0"
+        desc:"radio 的颜色"
     }
 ]
 </script>

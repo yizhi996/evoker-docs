@@ -58,24 +58,21 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "定义的字体名称", 
-        version: "0.1.0"
+        desc: "定义的字体名称"
     },
     {
         name: "source", 
         type: "string",
         default: "",
         required: true, 
-        desc: "字体资源的地址", 
-        version: "0.1.0"
+        desc: "字体资源的地址"
     },
     {
         name: "desc", 
         type: "Desc",
         default: "",
         required: false, 
-        desc: "可选的字体描述符", 
-        version: "0.1.0"
+        desc: "可选的字体描述符"
     },
 ]
 
@@ -85,24 +82,21 @@ const desc = [
         type: "string",
         default: "normal",
         required: false, 
-        desc: "字体样式，可选值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-style#values'>font-style</a>", 
-        version: "0.1.0"
+        desc: "字体样式，可选值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-style#values'>font-style</a>"
     },
     {
         name: "weight", 
         type: "string",
         default: "normal",
         required: false, 
-        desc: "字体粗细，可选值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight#values'>font-weight</a>", 
-        version: "0.1.0"
+        desc: "字体粗细，可选值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-weight#values'>font-weight</a>"
     },
     {
         name: "variant", 
         type: "string",
         default: "normal",
         required: false, 
-        desc: "设置小型大写字母的字体显示文本，可选值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-variant#values'>font-varint</a>", 
-        version: "0.1.0"
+        desc: "设置小型大写字母的字体显示文本，可选值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-variant#values'>font-varint</a>"
     },
 ]
 

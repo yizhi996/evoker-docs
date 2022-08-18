@@ -5,32 +5,28 @@ const props = [
         type:`'all' | 'vertical' | 'horizontal' | 'none'`,
         default: "none",
         required: false, 
-        desc:"movable-view的移动方向", 
-        version: "0.1.0"
+        desc:"movable-view的移动方向"
     },
     {
         name: "x", 
         type:"number | string",
         default: "",
         required: false, 
-        desc:"定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画；单位支持px", 
-        version: "0.1.0"
+        desc:"定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画；单位支持px"
     },
     {
         name: "y", 
         type:"number | string",
         default: "",
         required: false, 
-        desc:"定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画；单位支持px", 
-        version: "0.1.0"
+        desc:"定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画；单位支持px"
     },
     {
         name: "animation", 
         type:"boolean",
         default: "true",
         required: false, 
-        desc:"是否使用动画", 
-        version: "0.1.0"
+        desc:"是否使用动画"
     },
 ]
 
@@ -38,8 +34,7 @@ const events = [
     {
         name: "change", 
         desc:"拖动过程中触发的事件", 
-        event:"{ x: number, y: number }",
-        version: "0.1.0"
+        event:"{ x: number, y: number }"
     },
 ]
 </script>

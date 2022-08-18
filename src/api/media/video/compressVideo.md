@@ -36,16 +36,14 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "视频文件路径，可以是临时文件路径也可以是永久文件路径", 
-        version: "0.1.0"
+        desc: "视频文件路径，可以是临时文件路径也可以是永久文件路径"
     },
     {
         name: "quality", 
         type: "string",
         default: "",
         required: true, 
-        desc: "压缩质量", 
-        version: "0.1.0",
+        desc: "压缩质量",
         values: [
           { value: "low", desc: "低" },
           { value: "medium", desc: "中" },
@@ -57,24 +55,21 @@ const props = [
         type: "number",
         default: "",
         required: false, 
-        desc: "码率，单位 kbps", 
-        version: "0.1.0"
+        desc: "码率，单位 kbps"
     },
     {
         name: "fps", 
         type: "number",
         default: "",
         required: false, 
-        desc: "帧率", 
-        version: "0.1.0"
+        desc: "帧率"
     },
     {
         name: "resolution", 
         type: "number",
         default: "",
         required: false, 
-        desc: "相对于原视频的分辨率比例，取值范围 0 - 1", 
-        version: "0.1.0"
+        desc: "相对于原视频的分辨率比例，取值范围 0 - 1"
     },
 ]
 

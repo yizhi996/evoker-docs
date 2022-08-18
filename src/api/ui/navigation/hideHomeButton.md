@@ -27,8 +27,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc:"页面标题", 
-        version: "0.1.0"
+        desc:"页面标题"
     },
 ]
 </script>

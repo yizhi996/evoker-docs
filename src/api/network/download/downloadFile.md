@@ -35,32 +35,28 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "下载资源的 ur", 
-        version: "0.1.0"
+        desc: "下载资源的 ur"
     },
     {
         name: "header", 
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer", 
-        version: "0.1.0"
+        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer"
     },
     {
         name: "timeout", 
         type: "number",
         default: "60000",
         required: false, 
-        desc: "超时时间，单位为毫秒", 
-        version: "0.1.0"
+        desc: "超时时间，单位为毫秒"
     },
     {
         name: "filePath", 
         type: "string",
         default: "",
         required: false, 
-        desc: "指定文件下载后存储的路径 (本地路径)", 
-        version: "0.1.0",
+        desc: "指定文件下载后存储的路径 (本地路径)",
     },
 ]
 

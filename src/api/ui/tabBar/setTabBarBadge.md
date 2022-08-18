@@ -24,16 +24,14 @@ const props = [
         type: "number",
         default: "",
         required: true, 
-        desc: "Tab Bar 的哪一项，从左边算起第一个为 0", 
-        version: "0.1.0"
+        desc: "Tab Bar 的哪一项，从左边算起第一个为 0"
     },
     {
         name: "text", 
         type: "string",
         default: "",
         required: true, 
-        desc: "显示的文本", 
-        version: "0.1.0"
+        desc: "显示的文本"
     },
 ]
 </script>

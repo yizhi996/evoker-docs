@@ -26,8 +26,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "本地缓存中指定的 key", 
-        version: "0.1.0"
+        desc: "本地缓存中指定的 key"
     },
 ]
 

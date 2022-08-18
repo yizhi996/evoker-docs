@@ -13,8 +13,7 @@ const props = [
         type: "string | ArrayBuffer",
         default: "",
         required: true, 
-        desc: "需要发送的内容", 
-        version: "0.1.0"
+        desc: "需要发送的内容"
     }
 ]
 

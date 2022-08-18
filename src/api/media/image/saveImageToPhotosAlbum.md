@@ -29,8 +29,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "图片文件路径，可以是临时文件路径或永久文件路径 (本地路径)，不支持网络路径", 
-        version: "0.1.0"
+        desc: "图片文件路径，可以是临时文件路径或永久文件路径 (本地路径)，不支持网络路径"
     },
 ]
 </script>

@@ -57,56 +57,49 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "下载资源的 ur", 
-        version: "0.1.0"
+        desc: "下载资源的 ur"
     },
     {
         name: "filePath", 
         type: "string",
         default: "",
         required: true, 
-        desc: "要上传文件资源的路径 (本地路径)", 
-        version: "0.1.0"
+        desc: "要上传文件资源的路径 (本地路径)"
     },
     {
         name: "name", 
         type: "string",
         default: "",
         required: true, 
-        desc: "文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容", 
-        version: "0.1.0"
+        desc: "文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容"
     },
     {
         name: "header", 
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer", 
-        version: "0.1.0"
+        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer"
     },
     {
         name: "formData", 
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP 请求中其他额外的 form data", 
-        version: "0.1.0"
+        desc: "HTTP 请求中其他额外的 form data"
     },
     {
         name: "timeout", 
         type: "number",
         default: "60000",
         required: false, 
-        desc: "超时时间，单位为毫秒", 
-        version: "0.1.0"
+        desc: "超时时间，单位为毫秒"
     },
     {
         name: "filePath", 
         type: "string",
         default: "",
         required: false, 
-        desc: "指定文件下载后存储的路径 (本地路径)", 
-        version: "0.1.0",
+        desc: "指定文件下载后存储的路径 (本地路径)",
     },
 ]
 

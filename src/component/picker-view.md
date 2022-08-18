@@ -61,40 +61,35 @@ const props = [
         type: "number[]",
         default: "",
         required: false, 
-        desc:"数组中的数字依次表示 picker-view 内的 picker-view-column 选择的第几项（下标从 0 开始）", 
-        version: "0.1.0"
+        desc:"数组中的数字依次表示 picker-view 内的 picker-view-column 选择的第几项（下标从 0 开始）"
     },
     {
         name: "indicator-style", 
         type:"string",
         default: "",
         required: false, 
-        desc:"设置选择器中间选中框的样式", 
-        version: "0.1.0"
+        desc:"设置选择器中间选中框的样式"
     },
     {
         name: "indicator-class", 
         type:"string",
         default: "",
         required: false, 
-        desc:"设置选择器中间选中框的类名", 
-        version: "0.1.0"
+        desc:"设置选择器中间选中框的类名"
     },
     {
         name: "mask-class", 
         type:"string",
         default: "",
         required: false, 
-        desc:"设置蒙层的样式", 
-        version: "0.1.0"
+        desc:"设置蒙层的样式"
     },
     {
         name: "mask-style", 
         type:"string",
         default: "",
         required: false, 
-        desc:"设置蒙层的类名", 
-        version: "0.1.0"
+        desc:"设置蒙层的类名"
     }
 ]
 
@@ -102,20 +97,17 @@ const events = [
     {
         name: "change", 
         desc:"滚动选择时触发", 
-        event:"{ value: number[] }",
-        version: "0.1.0"
+        event:"{ value: number[] }"
     },
     {
         name: "pickstart", 
         desc:"当滚动选择开始时候触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "pickend", 
         desc:"当滚动选择结束时候触发事件", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
 ]
 </script>

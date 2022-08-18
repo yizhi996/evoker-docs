@@ -106,14 +106,12 @@ const events = [
     {
         name: "submit", 
         desc: "表单提交时触发", 
-        event:"{ value: { name: string, value: any } }",
-        version: "0.1.0"
+        event:"{ value: { name: string, value: any } }"
     },
     {
         name: "reset", 
         desc: "表单重置时会触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
 ]
 </script>

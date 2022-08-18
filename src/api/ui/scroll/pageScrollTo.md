@@ -23,32 +23,28 @@ const props = [
         type: "number",
         default: "",
         required: false, 
-        desc: "滚动到页面的目标位置，单位 px", 
-        version: "0.1.0"
+        desc: "滚动到页面的目标位置，单位 px"
     },
     {
         name: "duration", 
         type: "number",
         default: "300",
         required: false, 
-        desc: "滚动动画的时长，单位 ms", 
-        version: "0.1.0"
+        desc: "滚动动画的时长，单位 ms"
     },
     {
         name: "selector", 
         type: "string",
         default: "",
         required: false, 
-        desc: "选择器", 
-        version: "0.1.0"
+        desc: "选择器"
     },
     {
         name: "offsetTop", 
         type: "number",
         default: "",
         required: false, 
-        desc: "偏移距离，需要和 selector 参数搭配使用，可以滚动到 selector 加偏移距离的位置，单位 px", 
-        version: "0.1.0"
+        desc: "偏移距离，需要和 selector 参数搭配使用，可以滚动到 selector 加偏移距离的位置，单位 px"
     },
 ]
 </script>

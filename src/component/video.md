@@ -225,68 +225,57 @@ const events = [
     {
         name: "play", 
         desc: "开始/继续播放时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "pause", 
         desc: "暂停播放时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "ended", 
         desc: "播放到末尾时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "timeupdate", 
         desc: "播放进度变化时触发，触发频率 250ms 一次", 
-        event:"{ currentTime: number, duration: number }",
-        version: "0.1.0"
+        event:"{ currentTime: number, duration: number }"
     },
     {
         name: "fullscreenchange", 
         desc: "视频进入和退出全屏时触发", 
-        event:"{fullScreen: boolean, direction: 'vertical' | 'horizontal' }",
-        version: "0.1.0"
+        event:"{fullScreen: boolean, direction: 'vertical' | 'horizontal' }"
     },
     {
         name: "waiting", 
         desc: "视频出现缓冲时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "error", 
         desc: "视频播放出错时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "progress", 
         desc: "加载进度变化时触发，只支持一段加载，单位为百分比", 
-        event:"{ buffered: number }",
-        version: "0.1.0"
+        event:"{ buffered: number }"
     },
     {
         name: "loadedmetadata", 
         desc: "视频元数据加载完成时触发", 
-        event:"{ width: number, height: number, duration: number }",
-        version: "0.1.0"
+        event:"{ width: number, height: number, duration: number }"
     },
     {
         name: "controlstoggle", 
         desc: "切换 controls 显示隐藏时触发", 
-        event:"{ show: boolean }",
-        version: "0.1.0"
+        event:"{ show: boolean }"
     },
     {
         name: "seekcomplete", 
         desc: "seek 完成时触发，单位为秒", 
-        event:"{ position: number }",
-        version: "0.1.0"
+        event:"{ position: number }"
     },
 ]
 

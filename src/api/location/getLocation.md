@@ -31,7 +31,6 @@ const props = [
         default: "wgs84",
         required: false, 
         desc: "返回的 gps 坐标系", 
-        version: "0.1.0",
         values: [
           { value: "wgs84", desc: "地球坐标" },
           { value: "gcj02", desc: "火星坐标" },
@@ -42,24 +41,21 @@ const props = [
         type: "boolean",
         default: "false",
         required: false, 
-        desc: "传入 true 会返回高度信息", 
-        version: "0.1.0"
+        desc: "传入 true 会返回高度信息"
     },
     {
         name: "isHighAccuracy", 
         type: "boolean",
         default: "false",
         required: false, 
-        desc: "开启高精度定位", 
-        version: "0.1.0"
+        desc: "开启高精度定位"
     },
     {
         name: "highAccuracyExpireTime", 
         type: "number",
         default: "",
         required: false, 
-        desc: "高精度定位超时时间(ms)，指定时间内返回最高精度，该值3000ms以上高精度定位才有效果", 
-        version: "0.1.0",
+        desc: "高精度定位超时时间(ms)，指定时间内返回最高精度，该值3000ms以上高精度定位才有效果"
     },
 ]
 

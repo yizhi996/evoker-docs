@@ -5,24 +5,21 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc:"图片地址", 
-        version: "0.1.0"
+        desc:"图片地址"
     },
     {
         name: "lazy-load", 
         type: "boolean",
         default: "false",
         required: false, 
-        desc:"懒加载", 
-        version: "0.1.0"
+        desc:"懒加载"
     },
     {
         name: "mode", 
         type: "string",
         default: "scaleToFill",
         required: false, 
-        desc:"图片裁剪、缩放的模式", 
-        version: "0.1.0",
+        desc:"图片裁剪、缩放的模式",
         values: [
             { value: 'scaleToFill', desc: '不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素' },
             { value: 'aspectFit', desc: '保持纵横比缩放图片，使图片的长边能完全显示出来。可以完整地将图片显示出来' },
@@ -45,8 +42,7 @@ const props = [
         type: "boolean",
         default: "false",
         required: false, 
-        desc:"如果使用网络 webp 资源，则需要设置 true。本地 webp 资源不需要设置。", 
-        version: "0.1.0"
+        desc:"如果使用网络 webp 资源，则需要设置 true。本地 webp 资源不需要设置。"
     },
 ]
 </script>

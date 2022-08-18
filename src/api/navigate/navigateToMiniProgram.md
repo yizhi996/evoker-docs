@@ -24,32 +24,28 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc:"要打开的小程序 appId", 
-        version: "0.1.0"
+        desc:"要打开的小程序 appId"
     },
     {
         name: "path", 
         type: "string",
         default: "",
         required: false, 
-        desc:"打开的页面路径，如果为空则打开首页，目标小程序可在 App.onLaunch，App.onShow， Page.onLoad 中获取", 
-        version: "0.1.0"
+        desc:"打开的页面路径，如果为空则打开首页，目标小程序可在 App.onLaunch，App.onShow， Page.onLoad 中获取"
     },
     {
         name: "extraData", 
         type: "object",
         default: "",
         required: false, 
-        desc:"需要传递给目标小程序的数据，目标小程序可在 App.onLaunch，App.onShow 中获取", 
-        version: "0.1.0"
+        desc:"需要传递给目标小程序的数据，目标小程序可在 App.onLaunch，App.onShow 中获取"
     },
     {
         name: "envVersion", 
         type: "string",
         default: "release",
         required: false, 
-        desc:"要打开的小程序版本。仅在当前小程序为开发版或体验版时此参数有效。如果当前小程序是正式版，则打开的小程序必定是正式版", 
-        version: "0.1.0",
+        desc:"要打开的小程序版本。仅在当前小程序为开发版或体验版时此参数有效。如果当前小程序是正式版，则打开的小程序必定是正式版",
         values: [
             { value: "develop", desc: "开发版" },
             { value: "trial", desc: "体验版" },

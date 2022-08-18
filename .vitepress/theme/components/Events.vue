@@ -4,7 +4,7 @@
       <td>{{ item.name }}</td>
       <td v-html="item.desc"></td>
       <td style="white-space: pre-wrap;">{{ item.event }}</td>
-      <td>{{ item.version }}</td>
+      <!-- <td>{{ item.version }}</td> -->
     </tr>
   </LLTable>
 </template>
@@ -13,7 +13,7 @@
 import LLTable from './Table.vue'
 import type { EventsDataItem } from "../models"
 
-const headers = ['事件名', '说明', '回调参数', '最低版本']
+const headers = ['事件名', '说明', '回调参数']
 
 const props = withDefaults(defineProps<{ data: EventsDataItem[] }>(), {
   data: () => []

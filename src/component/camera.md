@@ -85,26 +85,22 @@ const events = [
     {
         name: "initdone", 
         desc: "相机初始化完成时触发", 
-        event:"{ maxZoom: number }",
-        version: "0.1.0"
+        event:"{ maxZoom: number }"
     },
     {
         name: "stop", 
         desc: "摄像头在非正常终止时触发，如退出后台等情况", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "error", 
         desc: "用户不允许使用摄像头时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
     {
         name: "scancode", 
         desc: `在扫码识别成功时触发，仅在 mode="scanCode" 时生效`, 
-        event:"{ value: string }",
-        version: "0.1.0"
+        event:"{ value: string }"
     },
 ]
 </script>

@@ -43,32 +43,28 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "服务器 wss 接口地址", 
-        version: "0.1.0"
+        desc: "服务器 wss 接口地址"
     },
     {
         name: "header", 
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP Header", 
-        version: "0.1.0"
+        desc: "HTTP Header"
     },
     {
         name: "protocols", 
         type: "string[]",
         default: "",
         required: false, 
-        desc: "子协议数组", 
-        version: "0.1.0"
+        desc: "子协议数组"
     },
     {
         name: "timeout", 
         type: "number",
         default: "",
         required: false, 
-        desc: "超时时间，单位为毫秒", 
-        version: "0.1.0"
+        desc: "超时时间，单位为毫秒"
     }
 ]
 

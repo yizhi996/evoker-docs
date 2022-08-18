@@ -44,16 +44,14 @@ const props = [
         type: "number",
         default: "400",
         required: false, 
-        desc: "动画持续时间，单位 ms", 
-        version: "0.1.0"
+        desc: "动画持续时间，单位 ms"
     },
     {
         name: "timingFunction", 
         type: "string",
         default: "linear",
         required: false, 
-        desc: "动画的效果", 
-        version: "0.1.0",
+        desc: "动画的效果",
         values: [
             { value: "linear", desc: "线性" },
             { value: "ease", desc: "动画以低速开始，然后加快，在结束前变慢" },
@@ -69,16 +67,14 @@ const props = [
         type: "number",
         default: "0",
         required: false, 
-        desc: "动画延迟时间，单位 ms", 
-        version: "0.1.0"
+        desc: "动画延迟时间，单位 ms"
     },
     {
         name: "transformOrigin", 
         type: "string",
         default: "50% 50% 0",
         required: false, 
-        desc: "<a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin'>语法</a>", 
-        version: "0.1.0"
+        desc: "<a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin'>语法</a>"
     },
 ]
 

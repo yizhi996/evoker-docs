@@ -26,8 +26,7 @@ const props = [
         type: "number",
         default: "",
         required: true, 
-        desc: "整数，生成随机数的字节数，最大 1048576", 
-        version: "0.1.0"
+        desc: "整数，生成随机数的字节数，最大 1048576"
     },
 ]
 

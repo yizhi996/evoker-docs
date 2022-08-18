@@ -11,8 +11,7 @@ const events = [
     {
         name: "change", 
         desc:`radio-group 中选中项发生改变时触发`, 
-        event:"{ value: radio 的 value }",
-        version: "0.1.0"
+        event:"{ value: radio 的 value }"
     }
 ]
 </script>

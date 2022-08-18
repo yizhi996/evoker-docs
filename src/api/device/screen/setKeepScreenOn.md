@@ -21,8 +21,7 @@ const props = [
         type: "boolean",
         default: "",
         required: true, 
-        desc: "是否保持屏幕常亮", 
-        version: "0.1.0",
+        desc: "是否保持屏幕常亮"
     },
 ]
 </script>

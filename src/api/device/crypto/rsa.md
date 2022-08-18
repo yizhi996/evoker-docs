@@ -45,7 +45,6 @@ const props = [
         default: "",
         required: true, 
         desc: "使用 RSA 加密还是 RSA 解密", 
-        version: "0.1.0",
         values: [
             { value: "encrypt", desc: "加密" },
             { value: "decrypt", desc: "解密" },
@@ -56,16 +55,14 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "要处理的文本，加密为原始文本，解密为 Base64 编码格式文本", 
-        version: "0.1.0",
+        desc: "要处理的文本，加密为原始文本，解密为 Base64 编码格式文本"
     },
     {
         name: "key", 
         type: "string",
         default: "",
         required: true, 
-        desc: "RSA 密钥，加密使用公钥，解密使用私钥", 
-        version: "0.1.0",
+        desc: "RSA 密钥，加密使用公钥，解密使用私钥",
     },
 ]
 
@@ -73,8 +70,7 @@ const results = [
   {
     name: 'text',
     type: 'string',
-    desc: "经过处理过后得到的文本，加密为 Base64编码文本，解密为原始文本。",
-    version: '0.1.0',
+    desc: "经过处理过后得到的文本，加密为 Base64编码文本，解密为原始文本。"
   },
 ]
 </script>

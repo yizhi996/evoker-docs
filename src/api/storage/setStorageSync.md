@@ -29,16 +29,14 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "本地缓存中指定的 key", 
-        version: "0.1.0"
+        desc: "本地缓存中指定的 key"
     },
     {
         name: "data", 
         type: "any",
         default: "",
         required: true, 
-        desc: "需要存储的内容。只支持原生类型、Date、及能够通过 JSON.stringify 序列化的对象", 
-        version: "0.1.0"
+        desc: "需要存储的内容。只支持原生类型、Date、及能够通过 JSON.stringify 序列化的对象"
     },
 ]
 </script>

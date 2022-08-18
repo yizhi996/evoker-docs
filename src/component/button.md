@@ -31,80 +31,70 @@ const props = [
         type:`'primary' | 'default' | 'success' | 'warning' | 'danger'`,
         default: "default",
         required: false, 
-        desc:"类型", 
-        version: "0.1.0"
+        desc:"类型"
     },
     {
         name: "size", 
         type:`'large' | 'normal' | 'small' | 'mini'`,
         default: "normal",
         required: false, 
-        desc:"尺寸", 
-        version: "0.1.0"
+        desc:"尺寸"
     },
     {
         name: "color", 
         type:"string",
         default: "",
         required: false, 
-        desc:"按钮颜色", 
-        version: "0.1.0"
+        desc:"按钮颜色"
     },
     {
         name: "plain", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否为朴素按钮", 
-        version: "0.1.0"
+        desc:"是否为朴素按钮"
     },
     {
         name: "disabled", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否禁用按钮", 
-        version: "0.1.0"
+        desc:"是否禁用按钮"
     },
     {
         name: "loading", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否显示为加载状态", 
-        version: "0.1.0"
+        desc:"是否显示为加载状态"
     },
      {
         name: "hover-class", 
         type:"string",
         default: "ll-button--hover",
         required: false, 
-        desc:`指定按下去的样式类。当 hover-class="none" 时，没有点击态效果`, 
-        version: "0.1.0"
+        desc:`指定按下去的样式类。当 hover-class="none" 时，没有点击态效果`
     },
     {
         name: "hover-stop-propagation", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"指定是否阻止本节点的祖先节点出现点击态", 
-        version: "0.1.0"
+        desc:"指定是否阻止本节点的祖先节点出现点击态"
     },
     {
         name: "hover-start-time", 
         type:"number",
         default: "20",
         required: false, 
-        desc:"按住后多久出现点击态，单位毫秒", 
-        version: "0.1.0"
+        desc:"按住后多久出现点击态，单位毫秒"
     },
     {
         name: "hover-stay-time", 
         type:"number",
         default: "70",
         required: false, 
-        desc:"手指松开后点击态保留时间，单位毫秒", 
-        version: "0.1.0"
+        desc:"手指松开后点击态保留时间，单位毫秒"
     },
 ]
 
@@ -112,8 +102,7 @@ const events = [
     {
         name: "click", 
         desc:"点击按钮，且按钮状态不为加载或禁用时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
 ]
 </script>

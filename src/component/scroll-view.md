@@ -5,64 +5,56 @@ const props = [
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"允许横向滚动", 
-        version: "0.1.0"
+        desc:"允许横向滚动"
     },
     {
         name: "scroll-y", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"允许纵向滚动", 
-        version: "0.1.0"
+        desc:"允许纵向滚动"
     },
     {
         name: "upper-threshold", 
         type:"number | string",
         default: "50",
         required: false, 
-        desc:"距顶部/左边多远时，触发 scrolltoupper 事件", 
-        version: "0.1.0"
+        desc:"距顶部/左边多远时，触发 scrolltoupper 事件"
     },
     {
         name: "lower-threshold", 
         type:"number | string",
         default: "50",
         required: false, 
-        desc:"距底部/右边多远时，触发 scrolltolower 事件", 
-        version: "0.1.0"
+        desc:"距底部/右边多远时，触发 scrolltolower 事件"
     },
     {
         name: "scroll-left", 
         type:"number | string",
         default: "",
         required: false, 
-        desc:"设置横向滚动位置", 
-        version: "0.1.0"
+        desc:"设置横向滚动位置"
     },
     {
         name: "scroll-top", 
         type:"number | string",
         default: "",
         required: false, 
-        desc:"设置纵向滚动位置", 
-        version: "0.1.0"
+        desc:"设置纵向滚动位置"
     },
     {
         name: "scroll-into-view", 
         type:"string",
         default: "",
         required: false, 
-        desc:"值应为某子元素id，在可滚动方向滚动到该元素", 
-        version: "0.1.0"
+        desc:"值应为某子元素id，在可滚动方向滚动到该元素"
     },
     {
         name: "scroll-with-animation", 
         type:"boolean",
         default: "",
         required: false, 
-        desc:"在设置滚动位置时使用动画过渡", 
-        version: "0.1.0"
+        desc:"在设置滚动位置时使用动画过渡"
     },
 ]
 
@@ -70,20 +62,17 @@ const events = [
     {
         name: "scrolltoupper", 
         desc:"滚动到顶部/左边时触发", 
-        event:"{ direction: 'left' | 'top' }",
-        version: "0.1.0"
+        event:"{ direction: 'left' | 'top' }"
     },
     {
         name: "scrolltolower", 
         desc:"滚动到底部/右边时触发", 
-        event:"{ direction: 'right' | 'bottom' }",
-        version: "0.1.0"
+        event:"{ direction: 'right' | 'bottom' }"
     },
     {
         name: "scroll", 
         desc:"滚动时触发", 
-        event:"{\n  scrollLeft: number,\n  scrollTop: number,\n  scrollHeight: number,\n  scrollWidth: number,\n  deltaX: number,\n  deltaY: number\n}",
-        version: "0.1.0"
+        event:"{\n  scrollLeft: number,\n  scrollTop: number,\n  scrollHeight: number,\n  scrollWidth: number,\n  deltaX: number,\n  deltaY: number\n}"
     },
 ]
 </script>

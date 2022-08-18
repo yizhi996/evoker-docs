@@ -32,8 +32,7 @@ const props = [
         type: "string",
         default: "",
         required: false, 
-        desc:"绑定组件的 id", 
-        version: "0.1.0"
+        desc:"绑定组件的 id"
     },
 ]
 </script>

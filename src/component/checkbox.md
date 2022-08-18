@@ -48,32 +48,28 @@ const props = [
         type: "string",
         default: "",
         required: false, 
-        desc: `选中时触发 <a href="./checkbox-group.html">checkbox-group</a> 的 change 事件，并携带此 value`, 
-        version: "0.1.0"
+        desc: `选中时触发 <a href="./checkbox-group.html">checkbox-group</a> 的 change 事件，并携带此 value`
     },
      {
         name: "checked", 
         type: "boolean",
         default: "false",
         required: false, 
-        desc:"当前是否选中，可用来设置默认选中", 
-        version: "0.1.0"
+        desc:"当前是否选中，可用来设置默认选中"
     },
     {
         name: "color", 
         type:"color",
         default: "#1989fa",
         required: false, 
-        desc:"颜色", 
-        version: "0.1.0"
+        desc:"颜色"
     },
     {
         name: "disabled", 
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否禁用", 
-        version: "0.1.0"
+        desc:"是否禁用"
     },
 ]
 </script>

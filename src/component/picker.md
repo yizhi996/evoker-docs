@@ -216,16 +216,14 @@ const props = [
         type: "string",
         default: "",
         required: false, 
-        desc:"选择器的标题", 
-        version: "0.1.0"
+        desc:"选择器的标题"
     },
     {
         name: "mode", 
         type:"string",
         default: "selector",
         required: false, 
-        desc:"选择器类型", 
-        version: "0.1.0",
+        desc:"选择器类型",
          values: [
             { value: "selector", desc: '普通选择器' },
             { value: "multiSelector", desc: '多列选择器' },
@@ -238,8 +236,7 @@ const props = [
         type:"boolean",
         default: "false",
         required: false, 
-        desc:"是否禁用", 
-        version: "0.1.0"
+        desc:"是否禁用"
     }
 ]
 
@@ -247,8 +244,7 @@ const events = [
     {
         name: "cancel", 
         desc:"取消选择时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
 ]
 
@@ -258,24 +254,21 @@ const selectorProps = [
         type:"array/object[]",
         default: "[]",
         required: true, 
-        desc:"mode 为 selector 或 multiSelector 时，range 有效", 
-        version: "0.1.0"
+        desc:"mode 为 selector 或 multiSelector 时，range 有效"
     },
     {
         name: "range-key", 
         type:"string",
         default: "",
         required: false, 
-        desc:"当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容", 
-        version: "0.1.0"
+        desc:"当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容"
     },
     {
         name: "value", 
         type:"number",
         default: "0",
         required: false, 
-        desc:"表示选择了 range 中的第几个（下标从 0 开始）", 
-        version: "0.1.0"
+        desc:"表示选择了 range 中的第几个（下标从 0 开始）"
     },
 ]
 
@@ -283,8 +276,7 @@ const selectorEvents = [
      {
         name: "change", 
         desc:"value 改变时触发 change 事件", 
-        event:"{ value: number }",
-        version: "0.1.0"
+        event:"{ value: number }"
     },
 ]
 
@@ -294,24 +286,21 @@ const multiSelectorProps = [
         type:"array/object[]",
         default: "[]",
         required: true, 
-        desc:"mode 为 selector 或 multiSelector 时，range 有效", 
-        version: "0.1.0"
+        desc:"mode 为 selector 或 multiSelector 时，range 有效"
     },
     {
         name: "range-key", 
         type:"string",
         default: "",
         required: false, 
-        desc:"当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容", 
-        version: "0.1.0"
+        desc:"当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容"
     },
     {
         name: "value", 
         type:"number[]",
         default: "[]",
         required: false, 
-        desc:"表示选择了 range 中的第几个（下标从 0 开始）", 
-        version: "0.1.0"
+        desc:"表示选择了 range 中的第几个（下标从 0 开始）"
     },
 ]
 
@@ -319,14 +308,12 @@ const multiSelectorEvents = [
     {
         name: "change", 
         desc:"value 改变时触发 change 事件", 
-        event:"{ value: number[] }",
-        version: "0.1.0"
+        event:"{ value: number[] }"
     },
     {
         name: "columnchange", 
         desc:"列改变时触发", 
-        event:"",
-        version: "0.1.0"
+        event:""
     },
 ]
 
@@ -336,24 +323,21 @@ const timeProps = [
         type:"string",
         default: "",
         required: false, 
-        desc: `表示选中的时间，格式为"hh:mm"`, 
-        version: "0.1.0"
+        desc: `表示选中的时间，格式为"hh:mm"`
     },
     {
         name: "start", 
         type:"string",
         default: "",
         required: false, 
-        desc:`表示有效时间范围的开始，格式为"hh:mm"`, 
-        version: "0.1.0"
+        desc:`表示有效时间范围的开始，格式为"hh:mm"`
     },
     {
         name: "end", 
         type:"string",
         default: "",
         required: false, 
-        desc:`表示有效时间范围的结束，格式为"hh:mm"`, 
-        version: "0.1.0"
+        desc:`表示有效时间范围的结束，格式为"hh:mm"`
     },
 ]
 
@@ -361,8 +345,7 @@ const timeEvents = [
     {
         name: "change", 
         desc:"value 改变时触发 change 事件", 
-        event:"{ value: string }",
-        version: "0.1.0"
+        event:"{ value: string }"
     }
 ]
 
@@ -372,24 +355,21 @@ const dateProps = [
         type:"string",
         default: "",
         required: false, 
-        desc: `表示选中的日期，格式为"yyyy-MM-dd"`, 
-        version: "0.1.0"
+        desc: `表示选中的日期，格式为"yyyy-MM-dd"`
     },
     {
         name: "start", 
         type:"string",
         default: "",
         required: false, 
-        desc:`表示有效日期范围的开始，格式为"yyyy-MM-dd"`, 
-        version: "0.1.0"
+        desc:`表示有效日期范围的开始，格式为"yyyy-MM-dd"`
     },
     {
         name: "end", 
         type:"string",
         default: "",
         required: false, 
-        desc:`表示有效日期范围的结束，字符串格式为"yyyy-MM-dd"`, 
-        version: "0.1.0"
+        desc:`表示有效日期范围的结束，字符串格式为"yyyy-MM-dd"`
     },
 ]
 
@@ -397,8 +377,7 @@ const dateEvents = [
     {
         name: "change", 
         desc:"value 改变时触发 change 事件", 
-        event:"{ value: string }",
-        version: "0.1.0"
+        event:"{ value: string }"
     }
 ]
 </script>

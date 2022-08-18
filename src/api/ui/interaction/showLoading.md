@@ -33,16 +33,14 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc:"提示的内容", 
-        version: "0.1.0"
+        desc:"提示的内容"
     },
     {
         name: "mask", 
         type: "boolean",
         default: "false",
         required: false, 
-        desc:"是否显示半透明蒙层，防止触摸穿透", 
-        version: "0.1.0",
+        desc:"是否显示半透明蒙层，防止触摸穿透",
     },
 ]
 </script>

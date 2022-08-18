@@ -114,6 +114,12 @@ export default defineConfig({
             { text: 'video', link: '/component/video' },
             { text: 'camera', link: '/component/camera' }
           ]
+        },
+        {
+          text: '画布',
+          items: [
+            { text: 'canvas', link: '/component/canvas' },
+          ]
         }
       ],
       '/api/': [

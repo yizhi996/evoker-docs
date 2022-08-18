@@ -8,17 +8,17 @@
 
 构建一个 Hello world 应用
 
-<n-tabs type="line" trigger="hover">
-    <n-tab-pane name="npm" tab="npm">
+<Tabs type="line" trigger="hover">
+    <TabPane name="npm" tab="npm">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">npm create evoker my-app --template blank --platform iOS</span></span></code></pre></div>
-    </n-tab-pane>
-    <n-tab-pane name="yarn" tab="yarn">
+    </TabPane>
+    <TabPane name="yarn" tab="yarn">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">yarn create evoker my-app --template blank --platform iOS</span></span></code></pre></div>
-    </n-tab-pane>
-    <n-tab-pane name="pnpm" tab="pnpm">
+    </TabPane>
+    <TabPane name="pnpm" tab="pnpm">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">pnpm create evoker my-app --template blank --platform iOS</span></span></code></pre></div>
-    </n-tab-pane>
-</n-tabs>
+    </TabPane>
+</Tabs>
 
 所有模板：
 
@@ -38,17 +38,17 @@ cd my-app
 
 安装 Node 依赖
 
-<n-tabs type="line" trigger="hover">
-    <n-tab-pane name="npm" tab="npm">
+<Tabs>
+    <TabPane name="npm" tab="npm">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">npm install</span></span></code></pre></div>
-    </n-tab-pane>
-    <n-tab-pane name="yarn" tab="yarn">
+    </TabPane>
+    <TabPane name="yarn" tab="yarn">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">yarn</span></span></code></pre></div>
-    </n-tab-pane>
-    <n-tab-pane name="pnpm" tab="pnpm">
+    </TabPane>
+    <TabPane name="pnpm" tab="pnpm">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">pnpm install</span></span></code></pre></div>
-    </n-tab-pane>
-</n-tabs>
+    </TabPane>
+</Tabs>
 
 安装 iOS 依赖
 
@@ -62,17 +62,17 @@ pod install --repo-update
 
 启动 Dev Server
 
-<n-tabs type="line" trigger="hover">
-    <n-tab-pane name="npm" tab="npm">
+<Tabs type="line" trigger="hover">
+    <TabPane name="npm" tab="npm">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">npm run dev</span></span></code></pre></div>
-    </n-tab-pane>
-    <n-tab-pane name="yarn" tab="yarn">
+    </TabPane>
+    <TabPane name="yarn" tab="yarn">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">yarn run dev</span></span></code></pre></div>
-    </n-tab-pane>
-    <n-tab-pane name="pnpm" tab="pnpm">
+    </TabPane>
+    <TabPane name="pnpm" tab="pnpm">
          <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">pnpm run dev</span></span></code></pre></div>
-    </n-tab-pane>
-</n-tabs>
+    </TabPane>
+</Tabs>
 
 启动 iOS App
 

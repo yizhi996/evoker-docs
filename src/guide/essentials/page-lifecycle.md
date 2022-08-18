@@ -2,8 +2,6 @@
 
 Evoker 并非一个单页应用，所以额外增加了页面的显示隐藏等部分原生客户端生命周期的钩子。
 
-也可以直接使用 Vue 的[生命周期](https://vuejs.org/guide/essentials/lifecycle.html)。
-
 ### onLoad
 
 在页面被首次加载时触发，对应 Vue 的 setup。
@@ -48,10 +46,14 @@ function onUnload(callback: () => void): void
 <script setup lang="ts">
 import { usePage } from 'evoker'
 
-const { onShow, onHide } = usePage()
+const { onShow, onReady, onHide } = usePage()
 
 onShow(() => {
   console.log('onShow')
+})
+
+onReady(() => {
+  console.log('onReady')
 })
 
 onHide(() => {

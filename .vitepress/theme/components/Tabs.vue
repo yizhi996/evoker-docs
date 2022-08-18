@@ -70,6 +70,7 @@ const onActive = (name: string) => {
 }
 
 .tab-active {
+  color: var(--vp-c-brand);
   border-bottom: 2px solid var(--vp-c-brand);
 }
 </style>

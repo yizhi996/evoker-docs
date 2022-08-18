@@ -2,19 +2,13 @@
 
 用于设置小程序的页面路由。
 
-由 `Page[]` 组成。
+由 `(string | Page)[]` 组成。
 
 ## Page.path
 
 - **类型：** `string`
 
 页面的路径，不可以带参数。
-
-## Page.component
-
-- **类型：** `string`
-
-页面的 `.vue` 单文件所在的路径。
 
 ## Page.style
 
@@ -27,21 +21,21 @@
 
 导航栏背景颜色。
 
-## navigationBarTextStyle
+## Page.style.navigationBarTextStyle
 
 - **类型：** `'white' | 'black'`
 - **默认：** 使用 [window.navigationBarTextStyle](./window.md#navigationBarTextStyle)
 
 导航栏标题颜色。
 
-## navigationBarTitleText
+## Page.style.navigationBarTitleText
 
 - **类型：** `string`
 - **默认：** 使用 [window.navigationBarTitleText](./window.md#navigationBarTitleText)
 
 导航栏标题。
 
-## navigationStyle
+## Page.style.navigationStyle
 
 - **类型：** `'default' | 'custom'`
 - **默认：** 使用 [window.navigationStyle](./window.md#navigationStyle)
@@ -55,16 +49,10 @@
 ```json
 {
   "pages": [
+    "pages/Index",
+    "pages/Me",
     {
-      "path": "index",
-      "component": "pages/Index.vue",
-      "style": {
-        "navigationBarTitleText": "Home"
-      }
-    },
-    {
-      "path": "detail",
-      "component": "pages/Detail.vue",
+      "path": "pages/Detail",
       "style": {
         "navigationBarTitleText": "Detail",
         "navigationBarTextStyle": "white",

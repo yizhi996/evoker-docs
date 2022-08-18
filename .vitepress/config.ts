@@ -380,6 +380,45 @@ export default defineConfig({
                   ]
                 }
               ]
+            },
+            {
+              text: 'WebSocket',
+              items: [
+                {
+                  text: 'ek.connectSocket',
+                  link: '/api/network/webSocket/connectSocket'
+                },
+                {
+                  text: 'SocketTask',
+                  link: '/api/network/webSocket/SocketTask',
+                  items: [
+                    {
+                      text: 'SocketTask.send',
+                      link: '/api/network/webSocket/SocketTask/send'
+                    },
+                    {
+                      text: 'SocketTask.close',
+                      link: '/api/network/webSocket/SocketTask/close'
+                    },
+                    {
+                      text: 'SocketTask.onOpen',
+                      link: '/api/network/webSocket/SocketTask/onOpen'
+                    },
+                    {
+                      text: 'SocketTask.onClose',
+                      link: '/api/network/webSocket/SocketTask/onClose'
+                    },
+                    {
+                      text: 'SocketTask.onError',
+                      link: '/api/network/webSocket/SocketTask/onError'
+                    },
+                    {
+                      text: 'SocketTask.onMessage',
+                      link: '/api/network/webSocket/SocketTask/onMessage'
+                    },
+                  ]
+                }
+              ]
             }
           ]
         },

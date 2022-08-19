@@ -9,7 +9,11 @@ export default defineConfig({
 
   lastUpdated: true,
 
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]],
+
   themeConfig: {
+    logo: '/favicon.svg',
+
     footer: {
       message: 'MIT Licensed',
       copyright: 'Copyright © 2022-present YiZhi'
@@ -64,7 +68,7 @@ export default defineConfig({
             { text: '共享', link: '/guide/config/shared' },
             { text: '路由', link: '/guide/config/pages' },
             { text: '窗口', link: '/guide/config/window' },
-            { text: 'Tab Bar', link: '/guide/config/tab-bar' },
+            { text: 'Tab Bar', link: '/guide/config/tab-bar' }
           ]
         }
       ],
@@ -117,9 +121,7 @@ export default defineConfig({
         },
         {
           text: '画布',
-          items: [
-            { text: 'canvas', link: '/component/canvas' },
-          ]
+          items: [{ text: 'canvas', link: '/component/canvas' }]
         }
       ],
       '/api/': [
@@ -415,7 +417,7 @@ export default defineConfig({
                     {
                       text: 'SocketTask.onMessage',
                       link: '/api/network/webSocket/SocketTask/onMessage'
-                    },
+                    }
                   ]
                 }
               ]

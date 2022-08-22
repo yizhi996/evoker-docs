@@ -173,6 +173,15 @@ export default defineConfig({
           ]
         },
         {
+          text: '分享',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'ek.showShareMenu', link: '/api/share/showShareMenu' },
+            { text: 'ek.hideShareMenu', link: '/api/share/hideShareMenu' }
+          ]
+        },
+        {
           text: '界面',
           collapsible: true,
           collapsed: true,

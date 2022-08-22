@@ -96,12 +96,40 @@ const props = [
         required: false, 
         desc:"手指松开后点击态保留时间，单位毫秒"
     },
+    {
+        name: "from-type", 
+        type:"string",
+        default: "",
+        required: false, 
+        desc: "用于 form 组件，点击分别会触发 form 组件的 submit/reset 事件",
+        values: [
+            { value: "submit", desc: "提交表单" },
+            { value: "reset", desc: "重置表单" },
+        ]
+    },
+    {
+        name: "open-type", 
+        type:"string",
+        default: "",
+        required: false, 
+        desc: "开放能力",
+        values: [
+            { value: "share", desc: "触发用户转发" },
+            { value: "getUserInfo", desc: "获取用户信息，可以从 @getuserinfo 回调中获取到用户信息 " },
+            { value: "openSetting", desc: "打开授权设置页" }
+        ]
+    },
 ]
 
 const events = [
     {
         name: "click", 
         desc:"点击按钮，且按钮状态不为加载或禁用时触发", 
+        event:""
+    },
+    {
+        name: "getuserinfo", 
+        desc: `用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与 <a target='_black' href='/api/open/user/getUserInfo.html' >ek.getUserInfo</a> 返回的一致，open-type="getUserInfo"时有效`, 
         event:""
     },
 ]

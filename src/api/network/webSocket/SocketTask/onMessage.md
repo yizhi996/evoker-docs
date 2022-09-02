@@ -11,8 +11,7 @@ const results = [
   {
     name: 'data',
     type: 'string | ArrayBuffer',
-    desc: '服务器返回的消息',
-    version: '0.1.0',
+    desc: '服务器返回的消息'
   }
 ]
 </script>

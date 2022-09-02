@@ -77,14 +77,12 @@ const results = [
   {
     name: 'tempFilePath',
     type: 'string',
-    desc: '压缩后的临时文件地址',
-    version: '0.1.0',
+    desc: '压缩后的临时文件地址'
   },
   {
     name: 'size',
     type: 'number',
-    desc: '压缩后的大小，单位 KB',
-    version: '0.1.0',
+    desc: '压缩后的大小，单位 KB'
   },
 ]
 </script>

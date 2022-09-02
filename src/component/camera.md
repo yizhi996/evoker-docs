@@ -34,7 +34,6 @@ const props = [
     default: 'normal',
     required: false,
     desc: '应用模式，只在初始化时有效，不能动态变更',
-    version: '0.1.0',
     values: [
         { value: "normal", desc: "相机模式" },
         { value: "scanCode", desc: "扫码模式" },
@@ -46,7 +45,6 @@ const props = [
     default: 'medium',
     required: false,
     desc: '分辨率，不支持动态修改',
-    version: '0.1.0',
     values: [
         { value: "low", desc: "低" },
         { value: "medium", desc: "中" },
@@ -59,7 +57,6 @@ const props = [
     default: 'back',
     required: false,
     desc: '摄像头朝向',
-    version: '0.1.0',
     values: [
         { value: "front", desc: "前置" },
         { value: "back", desc: "后置" },
@@ -71,7 +68,6 @@ const props = [
     default: 'auto',
     required: false,
     desc: '闪光灯',
-    version: '0.1.0',
     values: [
         { value: "auto", desc: "自动" },
         { value: "on", desc: "打开" },

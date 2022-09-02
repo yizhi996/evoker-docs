@@ -53,8 +53,7 @@ const results = [
   {
     name: 'tapIndex',
     type: 'number',
-    desc: '用户点击的按钮序号，从上到下的顺序，从0开始',
-    version: '0.1.0',
+    desc: '用户点击的按钮序号，从上到下的顺序，从0开始'
   },
 ]
 </script>

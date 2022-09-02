@@ -11,8 +11,7 @@ const results = [
   {
     name: 'errMsg',
     type: 'string',
-    desc: '错误信息',
-    version: '0.1.0',
+    desc: '错误信息'
   }
 ]
 </script>

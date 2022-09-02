@@ -92,20 +92,17 @@ const results = [
   {
     name: 'content',
     type: 'string',
-    desc: 'editable 为 true 时，用户输入的文本',
-    version: '0.1.0',
+    desc: 'editable 为 true 时，用户输入的文本'
   },
   {
     name: 'confirm',
     type: 'boolean',
-    desc: '为 true 时，表示用户点击了确定按钮',
-    version: '0.1.0',
+    desc: '为 true 时，表示用户点击了确定按钮'
   },
   {
     name: 'cancel',
     type: 'boolean',
-    desc: '为 true 时，表示用户点击了取消',
-    version: '0.1.0',
+    desc: '为 true 时，表示用户点击了取消'
   },
 ]
 </script>

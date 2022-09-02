@@ -57,7 +57,7 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "下载资源的 ur"
+        desc: "服务器地址"
     },
     {
         name: "filePath", 
@@ -78,7 +78,7 @@ const props = [
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer"
+        desc: "HTTP 请求的 Header"
     },
     {
         name: "formData", 
@@ -93,28 +93,24 @@ const props = [
         default: "60000",
         required: false, 
         desc: "超时时间，单位为毫秒"
-    },
-    {
-        name: "filePath", 
-        type: "string",
-        default: "",
-        required: false, 
-        desc: "指定文件下载后存储的路径 (本地路径)",
-    },
+    }
 ]
 
 const results = [
   {
     name: 'data',
     type: 'string',
-    desc: "开发者服务器返回的数据",
-    version: '0.1.0',
+    desc: "服务器返回的数据"
   },
   {
     name: 'statusCode',
     type: 'number',
-    desc: "开发者服务器返回的 HTTP 状态码",
-    version: '0.1.0',
+    desc: "服务器返回的 HTTP 状态码"
   },
+  {
+    name: 'header',
+    type: 'Object',
+    desc: "服务器返回的 HTTP Response Header"
+  }
 ]
 </script>

@@ -23,8 +23,7 @@ const results = [
   {
     name: 'localip',
     type: 'string',
-    desc: "本机局域网 IP 地址",
-    version: '0.1.0',
+    desc: "本机局域网 IP 地址"
   },
 ]
 </script>

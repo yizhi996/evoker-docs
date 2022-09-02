@@ -44,8 +44,7 @@ const results = [
   {
     name: 'tempFilePath',
     type: 'string',
-    desc: '压缩后图片的临时文件路径 (本地路径)，jpg 格式',
-    version: '0.1.0',
+    desc: '压缩后图片的临时文件路径 (本地路径)，jpg 格式'
   },
 ]
 </script>

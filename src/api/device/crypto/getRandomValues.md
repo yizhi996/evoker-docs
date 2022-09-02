@@ -34,8 +34,7 @@ const results = [
   {
     name: 'randomValues',
     type: 'ArrayBuffer',
-    desc: "随机数内容，长度为传入的字节数",
-    version: '0.1.0',
+    desc: "随机数内容，长度为传入的字节数"
   },
 ]
 </script>

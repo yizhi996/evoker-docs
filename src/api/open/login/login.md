@@ -24,8 +24,7 @@ const results = [
   {
     name: 'code',
     type: 'string',
-    desc: "用户登录凭证，在开发者服务器后台使用 code 换取需要的信息",
-    version: '0.1.0',
+    desc: "用户登录凭证，在开发者服务器后台使用 code 换取需要的信息"
   },
 ]
 </script>

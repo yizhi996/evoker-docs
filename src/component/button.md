@@ -129,7 +129,7 @@ const events = [
     },
     {
         name: "getuserinfo", 
-        desc: `用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与 <a target='_black' href='/api/open/user/getUserInfo.html' >ek.getUserInfo</a> 返回的一致，open-type="getUserInfo"时有效`, 
+        desc: `用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与 <a target='_blank' href='/api/open/user/getUserInfo.html' >ek.getUserInfo</a> 返回的一致，open-type="getUserInfo"时有效`, 
         event:""
     },
 ]

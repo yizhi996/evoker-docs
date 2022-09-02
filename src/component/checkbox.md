@@ -48,7 +48,7 @@ const props = [
         type: "string",
         default: "",
         required: false, 
-        desc: `选中时触发 <a href="./checkbox-group.html">checkbox-group</a> 的 change 事件，并携带此 value`
+        desc: `选中时触发 <a target="_blank" href="./checkbox-group.html">checkbox-group</a> 的 change 事件，并携带此 value`
     },
      {
         name: "checked", 

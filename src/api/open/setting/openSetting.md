@@ -24,8 +24,7 @@ const results = [
   {
     name: 'authSetting',
     type: '[x: string]: boolean',
-    desc: `<a target='_black' href='/api/open/auth/scope.html'>用户授权</a>`,
-    version: '0.1.0',
+    desc: `<a target='_blank' href='/api/open/auth/scope.html'>用户授权</a>`
   },
 ]
 </script>

@@ -36,44 +36,37 @@ const results = [
   {
     name: 'type',
     type: 'string',
-    desc: '视频的格式',
-    version: '0.1.0',
+    desc: '视频的格式'
   },
   {
     name: 'duration',
     type: 'number',
-    desc: '视频的长度',
-    version: '0.1.0',
+    desc: '视频的长度'
   },
   {
     name: 'size',
     type: 'number',
-    desc: '视频的大小，单位 KB',
-    version: '0.1.0',
+    desc: '视频的大小，单位 KB'
   },
   {
     name: 'width',
     type: 'number',
-    desc: '视频的宽度',
-    version: '0.1.0',
+    desc: '视频的宽度'
   },
   {
     name: 'height',
     type: 'number',
-    desc: '视频的高度',
-    version: '0.1.0',
+    desc: '视频的高度'
   },
   {
     name: 'fps',
     type: 'number',
-    desc: '视频的帧率',
-    version: '0.1.0',
+    desc: '视频的帧率'
   },
   {
     name: 'bitrate',
     type: 'number',
-    desc: '视频的码率，单位 kbps',
-    version: '0.1.0',
+    desc: '视频的码率，单位 kbps'
   },
 ]
 </script>

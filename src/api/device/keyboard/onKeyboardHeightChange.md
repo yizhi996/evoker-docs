@@ -19,8 +19,7 @@ const results = [
   {
     name: 'height',
     type: 'number',
-    desc: "键盘高度",
-    version: '0.1.0',
+    desc: "键盘高度"
   },
 ]
 </script>

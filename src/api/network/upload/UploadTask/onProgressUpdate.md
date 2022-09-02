@@ -30,20 +30,17 @@ const results = [
   {
     name: 'progress',
     type: 'number',
-    desc: '上传进度百分比, 0 - 100',
-    version: '0.1.0',
+    desc: '上传进度百分比, 0 - 100'
   },
   {
     name: 'totalBytesWritten',
     type: 'number',
-    desc: '已经上传的数据长度，单位 Bytes',
-    version: '0.1.0',
+    desc: '已经上传的数据长度，单位 Bytes'
   },
   {
     name: 'totalBytesExpectedToWrite',
     type: 'number',
-    desc: '预期需要上传的数据总长度，单位 Bytes',
-    version: '0.1.0',
+    desc: '预期需要上传的数据总长度，单位 Bytes'
   },
 ]
 </script>

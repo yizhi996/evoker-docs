@@ -19,20 +19,17 @@ const results = [
   {
     name: 'tempFilePath',
     type: 'string',
-    desc: '录音文件的临时路径 (本地路径)',
-    version: '0.1.0',
+    desc: '录音文件的临时路径 (本地路径)'
   },
   {
     name: 'duration',
     type: 'number',
-    desc: '录音总时长，单位：ms',
-    version: '0.1.0',
+    desc: '录音总时长，单位：ms'
   },
   {
     name: 'fileSize',
     type: 'number',
-    desc: '录音文件大小，单位：Byte',
-    version: '0.1.0',
+    desc: '录音文件大小，单位：Byte'
   },
 ]
 </script>

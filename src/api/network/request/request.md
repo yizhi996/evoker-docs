@@ -53,7 +53,7 @@ const props = [
         type: "Object",
         default: "",
         required: false, 
-        desc: "设置请求的 header，header 中不能设置 Referrer，content-type 默认为 application/json"
+        desc: "设置请求的 header，content-type 默认为 application/json"
     },
     {
         name: "timeout", 
@@ -107,26 +107,22 @@ const results = [
   {
     name: 'data',
     type: 'string | Object | ArrayBuffer',
-    desc: "服务器返回的数据",
-    version: '0.1.0',
+    desc: "服务器返回的数据"
   },
   {
     name: 'statusCode',
     type: 'number',
-    desc: "服务器返回的 HTTP 状态码",
-    version: '0.1.0',
+    desc: "服务器返回的 HTTP 状态码"
   },
   {
     name: 'header',
     type: 'Object',
-    desc: "服务器返回的 HTTP Response Header",
-    version: '0.1.0',
+    desc: "服务器返回的 HTTP Response Header"
   },
   {
     name: 'cookies',
     type: 'string[]',
-    desc: "服务器返回的 cookies，格式为字符串数组",
-    version: '0.1.0',
+    desc: "服务器返回的 cookies，格式为字符串数组"
   },
 ]
 </script>

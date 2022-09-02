@@ -105,8 +105,7 @@ const results = [
     {
     name: 'status',
     type: 'string',
-    desc: `加载字体结果，值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/API/FontFace/status#value'>FontFace.status</a>`,
-    version: '0.1.0',
+    desc: `加载字体结果，值为 <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/API/FontFace/status#value'>FontFace.status</a>`
   },
 ]
 </script>

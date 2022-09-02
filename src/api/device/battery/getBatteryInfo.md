@@ -23,14 +23,12 @@ const results = [
   {
     name: 'level',
     type: 'number',
-    desc: "设备电量，范围 1 - 100",
-    version: '0.1.0',
+    desc: "设备电量，范围 1 - 100"
   },
   {
     name: 'isCharging',
     type: 'boolean',
-    desc: "是否正在充电中",
-    version: '0.1.0',
+    desc: "是否正在充电中"
   },
 ]
 </script>

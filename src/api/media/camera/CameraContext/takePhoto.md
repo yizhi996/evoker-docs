@@ -34,7 +34,6 @@ const props = [
     default: 'normal',
     required: false,
     desc: '成像质量',
-    version: '0.1.0',
     values: [
         { value: "high", desc: "高质量" },
         { value: "normal", desc: "普通质量" },
@@ -47,8 +46,7 @@ const results = [
   {
     name: 'tempImagePath',
     type: 'string',
-    desc: '照片文件的临时路径 (本地路径)',
-    version: '0.1.0',
+    desc: '照片文件的临时路径 (本地路径)'
   },
 ]
 

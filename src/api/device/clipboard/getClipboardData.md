@@ -27,8 +27,7 @@ const results = [
   {
     name: 'data',
     type: 'string',
-    desc: "剪贴板的内容",
-    version: '0.1.0',
+    desc: "剪贴板的内容"
   },
 ]
 </script>

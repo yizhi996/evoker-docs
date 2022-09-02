@@ -36,26 +36,22 @@ const results = [
   {
     name: 'width',
     type: 'number',
-    desc: '图片原始宽度，单位px',
-    version: '0.1.0',
+    desc: '图片原始宽度，单位px'
   },
   {
     name: 'height',
     type: 'number',
-    desc: '图片原始高度，单位px',
-    version: '0.1.0',
+    desc: '图片原始高度，单位px'
   },
   {
     name: 'path',
     type: 'string',
-    desc: '图片的本地路径',
-    version: '0.1.0',
+    desc: '图片的本地路径'
   },
   {
     name: 'orientation',
     type: 'string',
     desc: '拍照时设备方向',
-    version: '0.1.0',
     values: [
       { value: "up", desc: "默认方向（手机横持拍照），对应 Exif 中的 1。或无 orientation 信息。" },
       { value: "up-mirrored", desc: "同 up，但镜像翻转，对应 Exif 中的 2" },
@@ -71,7 +67,6 @@ const results = [
     name: 'type',
     type: 'string',
     desc: '图片格式',
-    version: '0.1.0',
     values: [
       { value: "unknown", desc: "未知格式" },
       { value: "jpeg", desc: "jpeg" },

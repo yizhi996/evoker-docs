@@ -25,8 +25,7 @@ const props = [
     type: 'string',
     default: '',
     required: true,
-    desc: '剪贴板的内容',
-    version: '0.1.0',
+    desc: '剪贴板的内容'
   },
 ]
 </script>

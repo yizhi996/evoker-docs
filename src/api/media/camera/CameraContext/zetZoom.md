@@ -31,8 +31,7 @@ const props = [
     type: 'number',
     default: '',
     required: false,
-    desc: '缩放级别，范围[1, maxZoom]。zoom 可取小数，精确到小数后一位。maxZoom 可在 bindinitdone 返回值中获取。',
-    version: '0.1.0',
+    desc: '缩放级别，范围[1, maxZoom]。zoom 可取小数，精确到小数后一位。maxZoom 可在 initdone 返回值中获取。'
   },
 ]
 
@@ -40,8 +39,7 @@ const results = [
   {
     name: 'zoom',
     type: 'number',
-    desc: '实际设置的缩放级别',
-    version: '0.1.0',
+    desc: '实际设置的缩放级别'
   },
 ]
 </script>

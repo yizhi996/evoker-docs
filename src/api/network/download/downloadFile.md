@@ -35,14 +35,14 @@ const props = [
         type: "string",
         default: "",
         required: true, 
-        desc: "下载资源的 ur"
+        desc: "下载资源的 url"
     },
     {
         name: "header", 
         type: "Object",
         default: "",
         required: false, 
-        desc: "HTTP 请求的 Header，Header 中不能设置 Referrer"
+        desc: "HTTP 请求的 Header"
     },
     {
         name: "timeout", 
@@ -64,20 +64,27 @@ const results = [
   {
     name: 'tempFilePath',
     type: 'string',
-    desc: "临时文件路径 (本地路径)。没传入 filePath 指定文件存储路径时会返回，下载后的文件会存储到一个临时文件",
-    version: '0.1.0',
+    desc: "临时文件路径 (本地路径)。没传入 filePath 指定文件存储路径时会返回，下载后的文件会存储到一个临时文件"
   },
   {
     name: 'filePath',
     type: 'string',
-    desc: "用户文件路径 (本地路径)。传入 filePath 时会返回，跟传入的 filePath 一致",
-    version: '0.1.0',
+    desc: "用户文件路径 (本地路径)。传入 filePath 时会返回，跟传入的 filePath 一致"
+  },
+  {
+    name: 'dataLength',
+    type: 'number',
+    desc: "服务器返回的数据长度"
+  },
+  {
+    name: 'header',
+    type: 'Object',
+    desc: "服务器返回的 HTTP Response Header"
   },
   {
     name: 'statusCode',
     type: 'number',
-    desc: "开发者服务器返回的 HTTP 状态码",
-    version: '0.1.0',
+    desc: "服务器返回的 HTTP 状态码"
   },
 ]
 </script>

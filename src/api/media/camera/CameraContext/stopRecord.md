@@ -33,8 +33,7 @@ const props = [
     type: 'boolean',
     default: 'false',
     required: false,
-    desc: '压缩视频',
-    version: '0.1.0',
+    desc: '压缩视频'
   },
 ]
 
@@ -42,14 +41,12 @@ const results = [
   {
     name: 'tempThumbPath',
     type: 'string',
-    desc: '封面图片文件的临时路径 (本地路径)',
-    version: '0.1.0',
+    desc: '封面图片文件的临时路径 (本地路径)'
   },
   {
     name: 'tempVideoPath',
     type: 'string',
-    desc: '视频文件的临时路径 (本地路径)',
-    version: '0.1.0',
+    desc: '视频文件的临时路径 (本地路径)'
   },
 ]
 </script>

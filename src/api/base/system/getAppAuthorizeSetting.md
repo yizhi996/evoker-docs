@@ -27,62 +27,52 @@ const results = [
   {
     name: 'albumAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主使用相册的开关',
-    version: '0.1.0',
+    desc: '允许宿主使用相册的开关'
   },
   {
     name: 'bluetoothAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主使用蓝牙的开关',
-    version: '0.1.0',
+    desc: '允许宿主使用蓝牙的开关'
   },
   {
     name: 'cameraAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主使用摄像头的开关',
-    version: '0.1.0',
+    desc: '允许宿主使用摄像头的开关'
   },
   {
     name: 'locationAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主使用定位的开关',
-    version: '0.1.0',
+    desc: '允许宿主使用定位的开关'
   },
   {
     name: 'locationReducedAccuracy',
     type: 'boolean',
-    desc: '是否是模糊定位',
-    version: '0.1.0',
+    desc: '是否是模糊定位'
   },
   {
     name: 'microphoneAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主使用麦克风的开关',
-    version: '0.1.0',
+    desc: '允许宿主使用麦克风的开关'
   },
   {
     name: 'notificationAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主通知的开关',
-    version: '0.1.0',
+    desc: '允许宿主通知的开关'
   },
   {
     name: 'notificationAlertAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主通知带有提醒的开关',
-    version: '0.1.0',
+    desc: '允许宿主通知带有提醒的开关'
   },
   {
     name: 'notificationBadgeAuthorized',
     type: 'AuthorizeStatus',
-    desc: '允许宿主通知带有标记的开关',
-    version: '0.1.0',
+    desc: '允许宿主通知带有标记的开关'
   },
   {
     name: 'notificationSoundAuthorized',
     type: 'AuthorizedStatus',
-    desc: '允许宿主通知带有声音的开关',
-    version: '0.1.0',
+    desc: '允许宿主通知带有声音的开关'
   },
 ]
 </script>

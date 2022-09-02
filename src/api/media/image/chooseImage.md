@@ -62,14 +62,12 @@ const results = [
   {
     name: 'tempFilePaths',
     type: 'string[]',
-    desc: '图片的本地临时文件路径列表 (本地路径)',
-    version: '0.1.0',
+    desc: '图片的本地临时文件路径列表 (本地路径)'
   },
   {
     name: 'tempFiles',
     type: 'TempFile[]',
-    desc: '图片的本地临时文件列表',
-    version: '0.1.0',
+    desc: '图片的本地临时文件列表'
   },
 ]
 
@@ -77,14 +75,12 @@ const tempFile = [
   {
     name: 'path',
     type: 'string',
-    desc: '本地临时文件路径 (本地路径)',
-    version: '0.1.0',
+    desc: '本地临时文件路径 (本地路径)'
   },
   {
     name: 'size',
     type: 'number',
-    desc: '本地临时文件大小，单位 B',
-    version: '0.1.0',
+    desc: '本地临时文件大小，单位 B'
   },
 ]
 </script>

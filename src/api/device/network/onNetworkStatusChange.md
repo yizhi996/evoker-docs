@@ -28,14 +28,12 @@ const results = [
   {
     name: 'isConnected',
     type: 'boolean',
-    desc: "当前是否有网络连接",
-    version: '0.1.0',
+    desc: "当前是否有网络连接"
   },
   {
     name: 'networkType',
     type: 'string',
     desc: "网络类型",
-    version: '0.1.0',
     values: [
       { value: "wifi", desc: "WiFi 网络" },
       { value: "2g", desc: "2g 网络" },

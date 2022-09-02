@@ -34,8 +34,7 @@ const results = [
   {
     name: 'data',
     type: 'any',
-    desc: 'key 对应的内容',
-    version: '0.1.0',
+    desc: 'key 对应的内容'
   },
 ]
 </script>

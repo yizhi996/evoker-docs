@@ -53,24 +53,21 @@ const _data = computed(() => {
           type: 'function',
           default: '',
           required: false,
-          desc: '接口调用成功的回调函数',
-          version: '0.1.0'
+          desc: '接口调用成功的回调函数'
         },
         {
           name: 'fail',
           type: 'function',
           default: '',
           required: false,
-          desc: '接口调用失败的回调函数',
-          version: '0.1.0'
+          desc: '接口调用失败的回调函数'
         },
         {
           name: 'complete',
           type: 'function',
           default: '',
           required: false,
-          desc: '接口调用结束的回调函数（调用成功、失败都会执行）',
-          version: '0.1.0'
+          desc: '接口调用结束的回调函数（调用成功、失败都会执行）'
         }
       ]
     )

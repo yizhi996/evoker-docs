@@ -624,6 +624,203 @@ export default defineConfig({
           ]
         },
         {
+          text: '文件',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            { text: 'ek.saveFile', link: '/api/file/saveFile' },
+            { text: 'ek.removeSavedFile', link: '/api/file/removeSavedFile' },
+            { text: 'ek.getSavedFileList', link: '/api/file/getSavedFileList' },
+            { text: 'ek.getSavedFileInfo', link: '/api/file/getSavedFileInfo' },
+            { text: 'ek.getFileInfo', link: '/api/file/getFileInfo' },
+            { text: 'ek.getFileSystemManager', link: '/api/file/getFileSystemManager' },
+            {
+              text: 'FileSystemManager',
+              link: '/api/file/FileSystemManager',
+              items: [
+                {
+                  text: 'FileSystemManager.access',
+                  link: '/api/file/FileSystemManager/access'
+                },
+                {
+                  text: 'FileSystemManager.accessSync',
+                  link: '/api/file/FileSystemManager/accessSync'
+                },
+                {
+                  text: 'FileSystemManager.readFile',
+                  link: '/api/file/FileSystemManager/readFile'
+                },
+                {
+                  text: 'FileSystemManager.readFileSync',
+                  link: '/api/file/FileSystemManager/readFileSync'
+                },
+                {
+                  text: 'FileSystemManager.writeFile',
+                  link: '/api/file/FileSystemManager/writeFile'
+                },
+                {
+                  text: 'FileSystemManager.writeFileSync',
+                  link: '/api/file/FileSystemManager/writeFileSync'
+                },
+                {
+                  text: 'FileSystemManager.appendFile',
+                  link: '/api/file/FileSystemManager/appendFile'
+                },
+                {
+                  text: 'FileSystemManager.appendFileSync',
+                  link: '/api/file/FileSystemManager/appendFileSync'
+                },
+                {
+                  text: 'FileSystemManager.copyFile',
+                  link: '/api/file/FileSystemManager/copyFile'
+                },
+                {
+                  text: 'FileSystemManager.copyFileSync',
+                  link: '/api/file/FileSystemManager/copyFileSync'
+                },
+                {
+                  text: 'FileSystemManager.rename',
+                  link: '/api/file/FileSystemManager/rename'
+                },
+                {
+                  text: 'FileSystemManager.renameSync',
+                  link: '/api/file/FileSystemManager/renameSync'
+                },
+                {
+                  text: 'FileSystemManager.mkdir',
+                  link: '/api/file/FileSystemManager/mkdir'
+                },
+                {
+                  text: 'FileSystemManager.mkdirSync',
+                  link: '/api/file/FileSystemManager/mkdirSync'
+                },
+                {
+                  text: 'FileSystemManager.rmdir',
+                  link: '/api/file/FileSystemManager/rmdir'
+                },
+                {
+                  text: 'FileSystemManager.rmdirSync',
+                  link: '/api/file/FileSystemManager/rmdirSync'
+                },
+                {
+                  text: 'FileSystemManager.readdir',
+                  link: '/api/file/FileSystemManager/readdir'
+                },
+                {
+                  text: 'FileSystemManager.readdirSync',
+                  link: '/api/file/FileSystemManager/readdirSync'
+                },
+                {
+                  text: 'FileSystemManager.unlink',
+                  link: '/api/file/FileSystemManager/unlink'
+                },
+                {
+                  text: 'FileSystemManager.unlinkSync',
+                  link: '/api/file/FileSystemManager/unlinkSync'
+                },
+                {
+                  text: 'FileSystemManager.stat',
+                  link: '/api/file/FileSystemManager/stat'
+                },
+                {
+                  text: 'FileSystemManager.statSync',
+                  link: '/api/file/FileSystemManager/statSync'
+                },
+                {
+                  text: 'FileSystemManager.saveFile',
+                  link: '/api/file/FileSystemManager/saveFile'
+                },
+                {
+                  text: 'FileSystemManager.saveFileSync',
+                  link: '/api/file/FileSystemManager/saveFileSync'
+                },
+                {
+                  text: 'FileSystemManager.open',
+                  link: '/api/file/FileSystemManager/open'
+                },
+                {
+                  text: 'FileSystemManager.openSync',
+                  link: '/api/file/FileSystemManager/openSync'
+                },
+                {
+                  text: 'FileSystemManager.read',
+                  link: '/api/file/FileSystemManager/read'
+                },
+                {
+                  text: 'FileSystemManager.readSync',
+                  link: '/api/file/FileSystemManager/readSync'
+                },
+                {
+                  text: 'FileSystemManager.write',
+                  link: '/api/file/FileSystemManager/write'
+                },
+                {
+                  text: 'FileSystemManager.writeSync',
+                  link: '/api/file/FileSystemManager/writeSync'
+                },
+                {
+                  text: 'FileSystemManager.fstat',
+                  link: '/api/file/FileSystemManager/fstat'
+                },
+                {
+                  text: 'FileSystemManager.fstatSync',
+                  link: '/api/file/FileSystemManager/fstatSync'
+                },
+                {
+                  text: 'FileSystemManager.ftruncate',
+                  link: '/api/file/FileSystemManager/ftruncate'
+                },
+                {
+                  text: 'FileSystemManager.ftruncateSync',
+                  link: '/api/file/FileSystemManager/ftruncateSync'
+                },
+                {
+                  text: 'FileSystemManager.close',
+                  link: '/api/file/FileSystemManager/close'
+                },
+                {
+                  text: 'FileSystemManager.closeSync',
+                  link: '/api/file/FileSystemManager/closeSync'
+                },
+                {
+                  text: 'FileSystemManager.getFileInfo',
+                  link: '/api/file/FileSystemManager/getFileInfo'
+                },
+                {
+                  text: 'FileSystemManager.getSavedFileList',
+                  link: '/api/file/FileSystemManager/getSavedFileList'
+                },
+                {
+                  text: 'FileSystemManager.removeSavedFile',
+                  link: '/api/file/FileSystemManager/removeSavedFile'
+                }
+              ]
+            },
+            {
+              text: 'Stats',
+              link: '/api/file/Stats',
+              items: [
+                {
+                  text: 'Stats.isDirectory',
+                  link: '/api/file/Stats/isDirectory'
+                },
+                {
+                  text: 'Stats.isFile',
+                  link: '/api/file/Stats/isFile'
+                }
+              ]
+            },
+            {
+              text: 'ReadResult',
+              link: '/api/file/ReadResult'
+            },
+            {
+              text: 'WriteResult',
+              link: '/api/file/WriteResult'
+            }
+          ]
+        },
+        {
           text: '开放接口',
           collapsible: true,
           collapsed: true,
@@ -719,13 +916,17 @@ export default defineConfig({
             },
             {
               text: '电话',
-              items: [{ text: 'ek.makePhoneCall', link: '/api/open/phone/makePhoneCall' }]
+              items: [{ text: 'ek.makePhoneCall', link: '/api/device/phone/makePhoneCall' }]
+            },
+            {
+              text: '扫码',
+              items: [{ text: 'ek.scanCode', link: '/api/device/scan/scanCode' }]
             },
             {
               text: '振动',
               items: [
-                { text: 'ek.vibrateShort', link: '/api/open/vibrate/vibrateShort' },
-                { text: 'ek.vibrateLong', link: '/api/open/vibrate/vibrateLong' }
+                { text: 'ek.vibrateShort', link: '/api/device/vibrate/vibrateShort' },
+                { text: 'ek.vibrateLong', link: '/api/device/vibrate/vibrateLong' }
               ]
             }
           ]

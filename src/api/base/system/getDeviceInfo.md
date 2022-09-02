@@ -17,26 +17,22 @@ const results = [
   {
     name: 'brand',
     type: 'string',
-    desc: '设备品牌',
-    version: '0.1.0',
+    desc: '设备品牌'
   },
   {
     name: 'model',
     type: 'string',
-    desc: '设备型号',
-    version: '0.1.0',
+    desc: '设备型号'
   },
   {
     name: 'system',
     type: 'string',
-    desc: '操作系统及版本',
-    version: '0.1.0',
+    desc: '操作系统及版本'
   },
   {
     name: 'platform',
     type: 'string',
-    desc: '客户端平台',
-    version: '0.1.0',
+    desc: '客户端平台'
   },
 ]
 

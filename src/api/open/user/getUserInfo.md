@@ -14,10 +14,6 @@
 
 <Props options />
 
-### 成功返回
-
-<Results :data="results" />
-
 ### Example
 
 ```vue
@@ -43,15 +39,3 @@ const getUserInfo = ev => {
 }
 </script>
 ```
-
-<script setup>
-const results = [
-  {
-    name: 'userInfo',
-    type: 'UserInfo',
-    desc: "自定义的用户信息对象，在 Native 返回",
-    version: '0.1.0',
-  },
-]
-
-</script>

@@ -50,6 +50,13 @@ const props = [
           { value: "front", desc: "默认拉起前置摄像头" },
         ]
     },
+    {
+        name: "maxDuration", 
+        type: "number",
+        default: "60",
+        required: false, 
+        desc: "摄视频最长拍摄时间，单位秒"
+    },
 ]
 
 const results = [

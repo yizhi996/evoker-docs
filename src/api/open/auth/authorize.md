@@ -28,8 +28,7 @@ const props = [
     type: 'string',
     default: '',
     required: true,
-    desc: '需要获取权限的 scope，详见 scope 列表',
-    version: '0.1.0',
+    desc: '需要获取权限的 scope，详见 scope 列表'
   },
 ]
 </script>

@@ -24,20 +24,17 @@ const results = [
   {
     name: 'keys',
     type: 'string[]',
-    desc: '当前 storage 中所有的 key',
-    version: '0.1.0',
+    desc: '当前 storage 中所有的 key'
   },
   {
     name: 'currentSize',
     type: 'number',
-    desc: '当前占用的空间大小, 单位 KB',
-    version: '0.1.0',
+    desc: '当前占用的空间大小, 单位 KB'
   },
   {
     name: 'limitSize',
     type: 'number',
-    desc: '限制的空间大小，单位 KB',
-    version: '0.1.0',
+    desc: '限制的空间大小，单位 KB'
   },
 ]
 </script>

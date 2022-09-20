@@ -1,6 +1,6 @@
 # api
 
-全部变量 `ek`。
+全局变量 `ek`。
 
 ## Example
 

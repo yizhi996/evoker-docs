@@ -24,39 +24,7 @@
 
 - [blank](https://github.com/yizhi996/evoker/tree/main/packages/create-evoker/template-blank): Hello world
 
-- [example](https://github.com/yizhi996/evoker/tree/main/packages/create-evoker/template-example): 包含所有组件和 API 的示例
-
-查看 [create-evoker](https://github.com/yizhi996/evoker/tree/main/packages/create-evoker) 更多使用方法。
-
-## 安装依赖
-
-应用创建完成后需要安装所需要的依赖才能启动。
-
-```sh
-cd my-app
-```
-
-安装 Node 依赖
-
-<Tabs>
-    <TabPane name="npm" tab="npm">
-         <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">npm install</span></span></code></pre></div>
-    </TabPane>
-    <TabPane name="yarn" tab="yarn">
-         <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">yarn</span></span></code></pre></div>
-    </TabPane>
-    <TabPane name="pnpm" tab="pnpm">
-         <div class="language-sh"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">pnpm install</span></span></code></pre></div>
-    </TabPane>
-</Tabs>
-
-安装 iOS 依赖
-
-```sh
-cd my-app/iOS
-
-pod install --repo-update
-```
+如果带上 `--platform iOS` 将会包含一个 Launcher
 
 ## 启动应用
 
@@ -74,13 +42,26 @@ pod install --repo-update
     </TabPane>
 </Tabs>
 
-启动 iOS App
+## 使用 Launcher 运行
 
-打开 iOS 目录下的扩展名是的 `.xcworkspace` 文件，点击运行（⌘ + R），等待应用启动完成。
+iOS 模板中自带一个 Launcher, 可以添加和运行应用。
 
-## 真机运行
+首次启动需要安装依赖
 
-查看[运行在设备上](./quick-start.md)
+```sh
+cd my-app/iOS
+
+pod install --repo-update
+```
+
+启动 `iOS/Launcher.xcworkspace` 文件，点击运行（⌘ + R），等待应用启动完成。
+
+![launcher](../assets/launcher_add.png)
+
+点击右上角的 + 添加应用，输入 ws 地址
+
+地址在 cli 的最后一行会输出：
+![dev](../assets/dev.png)
 
 ## 修改代码
 

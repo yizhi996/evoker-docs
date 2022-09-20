@@ -20,4 +20,3 @@
 
 ![Framework](../assets/framework.png)
 
-[开始开始](./quick-start.md)

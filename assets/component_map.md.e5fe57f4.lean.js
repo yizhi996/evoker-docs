@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.f4d26b80.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"component/map.md","lastUpdated":1663688878000}'),o={name:"component/map.md"};function n(r,c,p,s,m,d){return t(),a("div")}const f=e(o,[["render",n]]);export{i as __pageData,f as default};
